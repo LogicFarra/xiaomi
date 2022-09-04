@@ -12,8 +12,8 @@
       <ul class="site_list">
         <li>
           <a href="javascript:;" 
-          @mouseenter="throttling(drop,500,true)" 
-          @mouseleave="throttling(drop,500,false)">Xiaomi手机</a>
+          @mouseenter="throttling(drop,500)" 
+          @mouseleave="throttling(pull,500)">Xiaomi手机</a>
         </li>
         <li>
           <a href="javascript:;">Redmi手机</a>
@@ -116,50 +116,38 @@
 </template>
 
 <script>
-
   export default {
     name: "ProductNavCom",
     data() {
       return {
         productNavHeight: 0,
         dropTimer:null,
-        pullTimer:null,
-        leave:false
+        pullTimer:null
       };
     },
     methods: {
       // 节流函数
-      throttling(fn, time = 1000,status) {
-        if(status === false){
-          this.leave = true
-        }
+      throttling(fn, time = 1000) {
           return (function () {
           if (fn.timer) return;
           fn.timer = setTimeout(() => {
-            fn(status);
+            fn();
             fn.timer = null;
           }, time);
         })();
       },
       // 下拉
-      drop(status){
-       if(status === true){
+      drop(){
         clearInterval(this.pullTimer)
          this.dropTimer = setInterval(()=>{
           // 高度一直拉到230像素
           if(this.productNavHeight < 230){
-            this.productNavHeight += 5
+            this.productNavHeight += 3
         }else{
           // 完全下拉之后停止计时器
-          if(this.leave === true){
-            this.pull()
-          }
           clearInterval(this.dropTimer)
         }
         },1)
-       }else if(status === false){
-        this.pull()
-       }
       },
       // 收回
       pull(){
@@ -167,10 +155,9 @@
         this.pullTimer = setInterval(()=>{
           // 高度一直减到0像素
           if(this.productNavHeight > 1){
-            this.productNavHeight -= 5
+            this.productNavHeight -= 3
         }else{
           // 完全收回之后停止计时器
-          this.leave = false
           clearInterval(this.pullTimer)
         }
         },1)

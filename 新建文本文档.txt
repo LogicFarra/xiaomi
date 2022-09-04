@@ -148,7 +148,7 @@
          this.dropTimer = setInterval(()=>{
           // 高度一直拉到230像素
           if(this.productNavHeight < 230){
-            this.productNavHeight += 5
+            this.productNavHeight += 3
         }else{
           // 完全下拉之后停止计时器
           if(this.leave === true){
@@ -167,7 +167,7 @@
         this.pullTimer = setInterval(()=>{
           // 高度一直减到0像素
           if(this.productNavHeight > 1){
-            this.productNavHeight -= 5
+            this.productNavHeight -= 3
         }else{
           // 完全收回之后停止计时器
           this.leave = false
