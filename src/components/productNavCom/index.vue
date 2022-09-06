@@ -1,6 +1,9 @@
 <template>
+  <!-- 商品导航栏 -->
   <nav class="site_header">
+    <!-- 导航栏内容区 -->
     <div class="site_container">
+      <!-- logo -->
       <img
         src="./imgs/logo-mi2.png"
         alt=""
@@ -9,216 +12,263 @@
         title="小米官网"
         style="cursor: pointer"
       />
+      <!-- 导航列表 -->
       <ul class="site_list">
-        <li>
-          <a href="javascript:;" 
-          @mouseenter="throttling(drop,500,true)" 
-          @mouseleave="throttling(drop,500,false)">Xiaomi手机</a>
+        <!-- 导航列表的单个标签 -->
+        <li
+          v-for="item in products"
+          :key="item.id"
+          @mouseenter="throttling(showDropdown, 300, true, item.id)"
+          @mouseleave="throttling(showDropdown, 300, false, item.id)"
+        >
+          <a href="javascript:;" @mouseenter="aHover(item.id)">{{
+            item.title
+          }}</a>
         </li>
         <li>
-          <a href="javascript:;">Redmi手机</a>
+          <a href="javascript:;" @mouseenter="b(true)" @mouseleave="b(false)"
+            >服务中心</a
+          >
         </li>
         <li>
-          <a href="javascript:;">电视</a>
+          <a href="javascript:;" @mouseenter="b(true)" @mouseleave="b(false)"
+            >社区</a
+          >
         </li>
-        <li>
-          <a href="javascript:;">笔记本</a>
-        </li>
-        <li>
-          <a href="javascript:;">平板</a>
-        </li>
-        <li>
-          <a href="javascript:;">家电</a>
-        </li>
-        <li>
-          <a href="javascript:;">路由器</a>
-        </li>
-        <li>
-          <a href="javascript:;">服务中心</a>
-        </li>
-        <li>
-          <a href="javascript:;">社区</a>
-        </li>
+        <transition>
+          <!-- 下拉框 -->
+          <div
+            class="product_list"
+            v-show="showProductDropdown"
+            @mouseenter="throttling(showDropdown, 300, true)"
+            @mouseleave="throttling(showDropdown, 300, false)"
+          >
+            <!-- 下拉框_内容区 -->
+            <ul class="product_list_container">
+              <!-- 内容区_单个内容 -->
+              <li
+                v-for="item in curProducts"
+                :key="item.id"
+                :class="item.class"
+              >
+                <img :src="item.img" alt="" width="160px" height="110px" />
+                <div class="title">{{ item.product }}</div>
+                <p class="price">{{ item.price }}</p>
+              </li>
+            </ul>
+          </div>
+        </transition>
       </ul>
+      <!-- 搜索框 -->
       <div class="search_box">
-        <input type="text" placeholder="电视" />
+        <!-- 搜索框_输入栏 -->
+        <input
+          type="text"
+          placeholder="电视"
+          @focus="showSearhDropdown = true"
+          @blur="showSearhDropdown = false"
+        />
+        <!-- 搜索框_按钮 -->
         <div class="search_btn">
           <i class="fa fa-search" aria-hidden="true"></i>
         </div>
+        <!-- the dropdown of the search bar -->
+        <ul class="search_box_dropdown" v-show="showSearhDropdown">
+          <li>全部商品</li>
+          <li>全部商品</li>
+          <li>全部商品</li>
+          <li>全部商品</li>
+          <li>全部商品</li>
+          <li>全部商品</li>
+          <li>全部商品</li>
+          <li>全部商品</li>
+        </ul>
       </div>
-    </div>
-    <!-- 下拉框 -->
-    <div class="product_list" :style="{ height: productNavHeight + 'px' }">
-      <ul class="product_list_container">
-        <li>
-          <img
-            src="./imgs/581f3a690e6803add02e4c9fde98cb78.webp"
-            alt=""
-            width="160px"
-            height="110px"
-          />
-          <div class="title">Xiaomi MIX Fold 2</div>
-          <p class="price">8999元起</p>
-        </li>
-        <li>
-          <img
-            src="./imgs/581f3a690e6803add02e4c9fde98cb78.webp"
-            alt=""
-            width="160px"
-            height="110px"
-          />
-          <div class="title">Xiaomi MIX Fold 2</div>
-          <p class="price">8999元起</p>
-        </li>
-        <li>
-          <img
-            src="./imgs/581f3a690e6803add02e4c9fde98cb78.webp"
-            alt=""
-            width="160px"
-            height="110px"
-          />
-          <div class="title">Xiaomi MIX Fold 2</div>
-          <p class="price">8999元起</p>
-        </li>
-        <li>
-          <img
-            src="./imgs/581f3a690e6803add02e4c9fde98cb78.webp"
-            alt=""
-            width="160px"
-            height="110px"
-          />
-          <div class="title">Xiaomi MIX Fold 2</div>
-          <p class="price">8999元起</p>
-        </li>
-        <li>
-          <img
-            src="./imgs/581f3a690e6803add02e4c9fde98cb78.webp"
-            alt=""
-            width="160px"
-            height="110px"
-          />
-          <div class="title">Xiaomi MIX Fold 2</div>
-          <p class="price">8999元起</p>
-        </li>
-        <li>
-          <img
-            src="./imgs/581f3a690e6803add02e4c9fde98cb78.webp"
-            alt=""
-            width="160px"
-            height="110px"
-          />
-          <div class="title">Xiaomi MIX Fold 2</div>
-          <p class="price">8999元起</p>
-        </li>
-      </ul>
     </div>
   </nav>
 </template>
 
 <script>
-
-  export default {
-    name: "ProductNavCom",
-    data() {
-      return {
-        productNavHeight: 0,
-        dropTimer:null,
-        pullTimer:null,
-        leave:false
-      };
+import { getProductNavAPI } from "@/api";
+export default {
+  name: "ProductNavCom",
+  data() {
+    return {
+      showSearhDropdown: false, //控制搜索框的下拉菜单
+      showProductDropdown: false, //控制商品导航的下拉菜单
+      leave: null, //判断鼠标位置
+      products: [], //商品导航下拉菜单的所有数据
+      curProducts: [], //商品导航下拉菜单当前展示的数据
+    };
+  },
+  methods: {
+    b(status) {
+      if (status === true) {
+        this.leave = false;
+        this.showDropdown();
+      } else {
+        this.leave = null;
+      }
     },
-    methods: {
-      // 节流函数
-      throttling(fn, time = 1000,status) {
-        if(status === false){
-          this.leave = true
-        }
-          return (function () {
-          if (fn.timer) return;
-          fn.timer = setTimeout(() => {
-            fn(status);
-            fn.timer = null;
-          }, time);
-        })();
-      },
-      // 下拉
-      drop(status){
-       if(status === true){
-        clearInterval(this.pullTimer)
-         this.dropTimer = setInterval(()=>{
-          // 高度一直拉到230像素
-          if(this.productNavHeight < 230){
-            this.productNavHeight += 5
-        }else{
-          // 完全下拉之后停止计时器
-          if(this.leave === true){
-            this.pull()
-          }
-          clearInterval(this.dropTimer)
-        }
-        },1)
-       }else if(status === false){
-        this.pull()
-       }
-      },
-      // 收回
-      pull(){
-        clearInterval(this.dropTimer)
-        this.pullTimer = setInterval(()=>{
-          // 高度一直减到0像素
-          if(this.productNavHeight > 1){
-            this.productNavHeight -= 5
-        }else{
-          // 完全收回之后停止计时器
-          this.leave = false
-          clearInterval(this.pullTimer)
-        }
-        },1)
-      },
+    // 节流函数，控制鼠标滑出下拉菜单数频率
+    throttling(fn, time = 1000, status) {
+      this.leave = status;
+      return (function () {
+        if (fn.timer) return;
+        fn.timer = setTimeout(() => {
+          fn();
+          fn.timer = null;
+        }, time);
+      })();
     },
-  };
-  </script>
+    // 展示下拉菜单
+    showDropdown() {
+      this.showProductDropdown = this.leave;
+    },
+    // 获取商品下拉菜单的商品数据
+    async getProducts() {
+      const { data } = await getProductNavAPI();
+      this.products = data;
+    },
+    // 导航栏单个链接被鼠标覆盖时的回调
+    aHover(index) {
+      this.curProducts = this.products[index - 1].products;
+    },
+  },
+  created() {
+    this.getProducts();
+  },
+};
+</script>
 <style scoped lang="less">
+// 商品导航
 .site_header {
   position: relative;
+  // 商品导航_内容
   .site_container {
     width: 1226px;
     height: 100px;
     margin: 0 auto;
     display: flex;
     align-items: center;
-    position: relative;
+    // position: relative;
     // 导航
     .site_list {
       display: flex;
       margin-left: 170px;
-      a {
-        color: black;
-        display: block;
-        padding: 38px 10px 38px 10px;
-        &:hover {
-          color: #ff6700;
+      height: 100%;
+      li {
+        a {
+          cursor: pointer;
+          color: black;
+          display: block;
+          padding: 38px 10px 38px 10px;
+          &:hover {
+            color: #ff6700;
+          }
+          &:hover + .product_list {
+            height: 230px;
+          }
+        }
+      }
+      // 下拉框
+      .product_list {
+        height: 230px;
+        position: absolute;
+        left: 0;
+        top: 100px;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0 5px 10px silver;
+        overflow: hidden;
+        width: 100%;
+        z-index: 1000;
+        .product_list_container {
+          width: 1226px;
+          margin: 0 auto;
+          display: flex;
+          li {
+            box-sizing: content-box;
+            position: relative;
+            width: 180px;
+            padding: 35px 12px 0 12px;
+            cursor: pointer;
+            &:last-of-type {
+              &::before {
+                background-color: transparent;
+              }
+            }
+            &::before {
+              content: "";
+              width: 1px;
+              height: 100px;
+              background-color: #e0e0e0;
+              position: absolute;
+              top: 35px;
+              right: 0;
+            }
+            img {
+              margin: 0 10px 16px;
+            }
+            .title {
+              width: 100%;
+              font-size: 12px;
+              line-height: 18px;
+              text-align: center;
+            }
+            .price {
+              font-size: 12px;
+              color: #ff6700;
+              width: 100%;
+              text-align: center;
+              line-height: 22px;
+            }
+          }
+          .more {
+            .price {
+              font-size: 12px;
+              color: black;
+              width: 100%;
+              text-align: center;
+              line-height: 22px;
+            }
+          }
         }
       }
     }
     // 搜索
     .search_box {
-      position: absolute;
-      right: 0;
+      position: relative;
+      left: 70px;
       height: 50px;
       display: flex;
+      &:hover input {
+        border-color: #b0b0b0;
+      }
+      &:hover div {
+        border-color: #b0b0b0;
+      }
+      // the input of the search bar
       input {
         width: 245px;
         height: 100%;
         outline: none;
         border: 1px solid #e0e0e0;
         padding: 0 10px;
+        transition: 0.3s;
+        &:focus {
+          border-color: #ff6700;
+        }
+        &:focus + div {
+          border-color: #ff6700;
+        }
       }
+      // the button of the search bar
       div {
         width: 52px;
         border-top: 1px solid #e0e0e0;
         border-bottom: 1px solid #e0e0e0;
         border-right: 1px solid #e0e0e0;
+        transition: 0.3s;
         i {
           display: block;
           font-size: 20px;
@@ -226,57 +276,44 @@
           color: #616161;
         }
       }
-    }
-  }
-  .product_list {
-    position: absolute;
-    background-color: rgb(255, 255, 255);
-    border-top: 1px solid #e0e0e0;
-    box-shadow: 0 5px 10px silver;
-    overflow: hidden;
-    width: 100%;
-    z-index: 1000;
-    .product_list_container {
-      width: 1226px;
-      margin: 0 auto;
-      display: flex;
-      li {
-        box-sizing: content-box;
-        position: relative;
-        width: 180px;
-        padding: 35px 12px 0 12px;
-        cursor: pointer;
-        &:last-of-type {
-          &::before {
-            background-color: transparent;
+      // the dropdown of the search bar
+      .search_box_dropdown {
+        // display: none;
+        position: absolute;
+        top: 50px;
+        z-index: 1000;
+        border-left: 1px solid #ff6700;
+        border-right: 1px solid #ff6700;
+        border-bottom: 1px solid #ff6700;
+        width: 245px;
+        background-color: white;
+        li {
+          height: 30px;
+          line-height: 30px;
+          font-size: 12px;
+          padding-left: 15px;
+          cursor: pointer;
+          &:hover {
+            background-color: #b0b0b0;
           }
         }
-        &::before {
-          content: "";
-          width: 1px;
-          height: 100px;
-          background-color: #e0e0e0;
-          position: absolute;
-          top: 35px;
-          right: 0;
-        }
-        img {
-          margin: 0 10px 16px;
-        }
-        .title {
-          width: 100%;
-          font-size: 12px;
-          line-height: 18px;
-          text-align: center;
-        }
-        .price {
-          font-size: 12px;
-          color: #ff6700;
-          width: 100%;
-          text-align: center;
-          line-height: 22px;
-        }
       }
+    }
+  }
+
+  .v-enter-active {
+    animation: drop 0.2s;
+  }
+  .v-leave-active {
+    animation: drop 0.2s reverse;
+  }
+
+  @keyframes drop {
+    0% {
+      height: 0%;
+    }
+    100% {
+      height: 230px;
     }
   }
 }

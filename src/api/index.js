@@ -6,3 +6,21 @@ export const getHeaderNavAPI = () =>{
         url:'/header_nav'
     })
 }
+// 获取轮播图图片
+export const getShufflingImgAPI = () =>{
+    return axios.request({
+        url:'/shuffling_figure'
+    })
+}
+// 获取横向商品导航栏商品数据
+export const getProductNavAPI = ()=>{
+    return axios.request({
+        url:'/product_nav'
+    })
+}
+// 获取竖向导航栏商品数据
+export const getProductAsideNavAPI = ()=>{
+    return axios.request({
+        url:'/product_aside_nav'
+    })
+}
