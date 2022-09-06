@@ -74,14 +74,9 @@
         </div>
         <!-- the dropdown of the search bar -->
         <ul class="search_box_dropdown" v-show="showSearhDropdown">
-          <li>全部商品</li>
-          <li>全部商品</li>
-          <li>全部商品</li>
-          <li>全部商品</li>
-          <li>全部商品</li>
-          <li>全部商品</li>
-          <li>全部商品</li>
-          <li>全部商品</li>
+          <li v-for="item in searchKeywords" :key="item.id">
+          {{item.keywords}}
+          </li>
         </ul>
       </div>
     </div>
@@ -89,7 +84,7 @@
 </template>
 
 <script>
-import { getProductNavAPI } from "@/api";
+import { getProductNavAPI , getSearchKeywordsAPI } from "@/api";
 export default {
   name: "ProductNavCom",
   data() {
@@ -99,6 +94,7 @@ export default {
       leave: null, //判断鼠标位置
       products: [], //商品导航下拉菜单的所有数据
       curProducts: [], //商品导航下拉菜单当前展示的数据
+      searchKeywords:[], //搜索框的关键词
     };
   },
   methods: {
@@ -134,9 +130,15 @@ export default {
     aHover(index) {
       this.curProducts = this.products[index - 1].products;
     },
+    // 获取搜索框关键词函数
+    async getSearchKeywords(){
+      const {data} = await getSearchKeywordsAPI()
+      this.searchKeywords = data
+    }
   },
   created() {
     this.getProducts();
+    this.getSearchKeywords()
   },
 };
 </script>
@@ -278,7 +280,6 @@ export default {
       }
       // the dropdown of the search bar
       .search_box_dropdown {
-        // display: none;
         position: absolute;
         top: 50px;
         z-index: 1000;
@@ -288,13 +289,14 @@ export default {
         width: 245px;
         background-color: white;
         li {
+          width: 100%;
           height: 30px;
           line-height: 30px;
           font-size: 12px;
           padding-left: 15px;
           cursor: pointer;
           &:hover {
-            background-color: #b0b0b0;
+            background-color: #f6f6f689;
           }
         }
       }

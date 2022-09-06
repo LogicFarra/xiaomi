@@ -4,6 +4,16 @@ import store from './store'
 import router from './router'
 import 'animate.css';
 Vue.config.productionTip = false
+function throttling(fn, time = 1000){
+  return function () {
+    if (fn.timer) return;
+    fn.timer = setTimeout(() => {
+      fn();
+      fn.timer = null;
+    }, time);
+  };
+}
+Vue.prototype.throttling = throttling
 
 new Vue({
   render: h => h(App),

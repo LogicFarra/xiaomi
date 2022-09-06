@@ -2,49 +2,45 @@
   <div class="main_sub">
     <!-- 频道 -->
     <ul class="main_channel_list">
-      <li>
-        <i class="fa fa-clock-o" aria-hidden="true"></i><br /><font
-          >保障服务</font
-        >
-      </li>
-      <li>
-        <i class="fa fa-clock-o" aria-hidden="true"></i><br /><font
-          >保障服务</font
-        >
-      </li>
-      <li>
-        <i class="fa fa-clock-o" aria-hidden="true"></i><br /><font
-          >保障服务</font
-        >
-      </li>
-      <li>
-        <i class="fa fa-clock-o" aria-hidden="true"></i><br /><font
-          >保障服务</font
-        >
-      </li>
-      <li>
-        <i class="fa fa-clock-o" aria-hidden="true"></i><br /><font
-          >保障服务</font
-        >
-      </li>
-      <li>
-        <i class="fa fa-clock-o" aria-hidden="true"></i><br /><font
-          >保障服务</font
-        >
+      <li v-for="item in webChannel" :key="item.id">
+        <i :class="item.class"></i><br /><font>{{item.title}}</font>
       </li>
     </ul>
     <!-- 宣传图片 -->
     <ul class="main_publicity_picture">
-      <li><img src="./imgs/publicity_picture.jpg" alt="" /></li>
-      <li><img src="./imgs/publicity_picture.jpg" alt="" /></li>
-      <li><img src="./imgs/publicity_picture.jpg" alt="" /></li>
+      <li v-for="item in webChannelPublicityImgs" :key="item.id">
+        <img :src="item.img" alt="" />
+      </li>
     </ul>
   </div>
 </template>
 
 <script>
+import { getWebChannelAPI , getWebChannelPublicityAPI } from "@/api";
 export default {
   name: "ChannelCom",
+  data() {
+    return {
+      webChannel: [],   //网站频道导航信息
+      webChannelPublicityImgs:[], //网站频道导航区域右侧商品宣传图片信息
+    };
+  },
+  methods: {
+    // 获取网站频道导航数据
+    async getWebChannel() {
+      const { data } = await getWebChannelAPI()
+      this.webChannel = data
+    },
+    // 获取网站频道导航区域右侧商品宣传图片信息
+    async getWebChannelPublicity(){
+      const { data } = await getWebChannelPublicityAPI()
+      this.webChannelPublicityImgs = data
+    }
+  },
+  created() {
+    this.getWebChannel()
+    this.getWebChannelPublicity()
+  },
 };
 </script>
 

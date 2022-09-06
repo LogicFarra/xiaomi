@@ -24,3 +24,21 @@ export const getProductAsideNavAPI = ()=>{
         url:'/product_aside_nav'
     })
 }
+// 获取搜索框关键词
+export const getSearchKeywordsAPI = ()=>{
+    return axios.request({
+        url:"/search_keywords"
+    })
+}
+// 获取网站频道导航数据
+export const getWebChannelAPI = ()=>{
+    return axios.request({
+        url:"/web_channel"
+    })
+}
+// 获取网站频道右侧商品宣传图片信息
+export const getWebChannelPublicityAPI = ()=>{
+    return axios.request({
+        url:"/web_channel_publicity_imgs"
+    })
+}

@@ -1340,5 +1340,85 @@
         "img":"https://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/c9279a17e9399958420af64e449e3214.jpg"
       }]
     }
+  ],
+  "search_keywords":[
+    {
+      "id":"0",
+      "keywords":"全部商品"
+    },
+    {
+      "id":"1",
+      "keywords":"红米"
+    },
+    {
+      "id":"2",
+      "keywords":"手机"
+    },
+    {
+      "id":"3",
+      "keywords":"黑鲨5"
+    },
+    {
+      "id":"4",
+      "keywords":"冰箱"
+    },
+    {
+      "id":"5",
+      "keywords":"电视"
+    },
+    {
+      "id":"6",
+      "keywords":"洗衣机"
+    },
+    {
+      "id":"7",
+      "keywords":"Redmi G 2021"
+    }
+  ],
+  "web_channel":[
+    {
+      "id":"0",
+      "class":"fa fa-clock-o",
+      "title":"保障服务"
+    },
+    {
+      "id":"1",
+      "class":"fa fa-building-o",
+      "title":"企业团购"
+    },
+    {
+      "id":"2",
+      "class":"fa fa-smile-o",
+      "title":"F码通道"
+    },
+    {
+      "id":"3",
+      "class":"fa fa-credit-card",
+      "title":"米粉卡"
+    },
+    {
+      "id":"4",
+      "class":"fa fa-retweet",
+      "title":"以旧换新"
+    },
+    {
+      "id":"5",
+      "class":"fa fa-mobile",
+      "title":"话费充值"
+    }
+  ],
+  "web_channel_publicity_imgs":[
+    {
+      "id":"0",
+      "img":"https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/32a62196b9af47752c96e7a50c86417c.jpg?w=632&h=340"
+    },
+    {
+      "id":"1",
+      "img":"https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/5d1892854c8bb165e755d68bde287d71.jpg?w=632&h=340"
+    },
+    {
+      "id":"2",
+      "img":"https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/28c13d0d11b38ec17fa5d83bc6ba5912.jpg?w=632&h=340"
+    }
   ]
 }

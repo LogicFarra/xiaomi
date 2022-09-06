@@ -6,6 +6,7 @@
     <ChannelCom/>
     <ProductsCom/>
     <FooterCom/>
+    <ToolBarCom/>
   </div>
 </template>
 
@@ -16,6 +17,7 @@ import AsideSiteCom from './components/asideSiteCom'
 import ChannelCom from './components/channelCom/index.vue'
 import ProductsCom from './components/ProductsCom/index.vue'
 import FooterCom from './components/footerCom/index.vue'
+import ToolBarCom from './components/toolBarCom/index.vue'
 export default {
   name: 'App',
   components:{
@@ -24,7 +26,8 @@ export default {
     AsideSiteCom,
     ChannelCom,
     ProductsCom,
-    FooterCom
+    FooterCom,
+    ToolBarCom
 },
 }
 </script>
