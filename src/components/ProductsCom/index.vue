@@ -486,149 +486,7 @@
       <!-- 中间宣传广告 -->
       <img src="./imgs/product1.webp" alt="" class="product1" />
       <!-- 生活电器 -->
-      <div class="product_component">
-        <!-- 标题 -->
-        <div class="title">
-          <span style="font-size: 22px">生活电器</span>
-          <div>
-            <p class="normal cur">
-              <font>扫地机</font>
-            </p>
-            <p class="normal">
-              <font>空净</font>
-            </p>
-            <p class="normal">
-              <font>清洁</font>
-            </p>
-            <p class="normal">
-              <font>风扇</font>
-            </p>
-          </div>
-        </div>
-        <!-- 内容 -->
-        <div class="product_container">
-          <ul class="product_container_left">
-            <ul class="two_picture">
-              <li><img src="./imgs/product2.webp" alt="" /></li>
-              <li><img src="./imgs/product2.webp" alt="" /></li>
-            </ul>
-          </ul>
-          <ul class="product_container_right">
-            <li>
-              <img
-                src="./imgs/product_list2.webp"
-                alt=""
-                width="160px"
-                height="160px"
-              />
-              <h3>Xiaomi MIX Fold 2</h3>
-              <p class="desc">超轻薄折叠机身设计,小米自研微水滴形态转轴</p>
-              <p class="price">
-                <span class="num">8999</span><span>元起</span><del>1099元</del>
-              </p>
-            </li>
-            <li>
-              <img
-                src="./imgs/product_list2.webp"
-                alt=""
-                width="160px"
-                height="160px"
-              />
-              <h3>Xiaomi MIX Fold 2</h3>
-              <p class="desc">超轻薄折叠机身设计,小米自研微水滴形态转轴</p>
-              <p class="price">
-                <span class="num">8999</span><span>元起</span><del>1099元</del>
-              </p>
-            </li>
-            <li>
-              <img
-                src="./imgs/product_list2.webp"
-                alt=""
-                width="160px"
-                height="160px"
-              />
-              <h3>Xiaomi MIX Fold 2</h3>
-              <p class="desc">超轻薄折叠机身设计,小米自研微水滴形态转轴</p>
-              <p class="price">
-                <span class="num">8999</span><span>元起</span><del>1099元</del>
-              </p>
-            </li>
-            <li>
-              <img
-                src="./imgs/product_list2.webp"
-                alt=""
-                width="160px"
-                height="160px"
-              />
-              <h3>Xiaomi MIX Fold 2</h3>
-              <p class="desc">超轻薄折叠机身设计,小米自研微水滴形态转轴</p>
-              <p class="price">
-                <span class="num">8999</span><span>元起</span><del>1099元</del>
-              </p>
-            </li>
-            <li>
-              <img
-                src="./imgs/product_list2.webp"
-                alt=""
-                width="160px"
-                height="160px"
-              />
-              <h3>Xiaomi MIX Fold 2</h3>
-              <p class="desc">超轻薄折叠机身设计,小米自研微水滴形态转轴</p>
-              <p class="price">
-                <span class="num">8999</span><span>元起</span><del>1099元</del>
-              </p>
-            </li>
-            <li>
-              <img
-                src="./imgs/product_list2.webp"
-                alt=""
-                width="160px"
-                height="160px"
-              />
-              <h3>Xiaomi MIX Fold 2</h3>
-              <p class="desc">超轻薄折叠机身设计,小米自研微水滴形态转轴</p>
-              <p class="price">
-                <span class="num">8999</span><span>元起</span><del>1099元</del>
-              </p>
-            </li>
-            <li>
-              <img
-                src="./imgs/product_list2.webp"
-                alt=""
-                width="160px"
-                height="160px"
-              />
-              <h3>Xiaomi MIX Fold 2</h3>
-              <p class="desc">超轻薄折叠机身设计,小米自研微水滴形态转轴</p>
-              <p class="price">
-                <span class="num">8999</span><span>元起</span><del>1099元</del>
-              </p>
-            </li>
-            <div>
-              <!-- 小宣传图 -->
-              <li class="small_part">
-                <img
-                  src="./imgs/small_pic.webp"
-                  alt=""
-                  width="80px"
-                  height="80px"
-                />
-                <h3>米家全自动波轮洗衣机8kg</h3>
-                <p class="price">
-                  <span class="num">799</span><span>元起</span>
-                </p>
-              </li>
-              <!-- 浏览更多 -->
-              <li class="see_more">
-                <p>浏览更多</p>
-                <small>热门</small>
-                <i class="fa fa-arrow-right" aria-hidden="true"></i>
-              </li>
-            </div>
-          </ul>
-        </div>
-      </div>
+      <productPublicityCom :data="domestic_appliance_data"></productPublicityCom>
       <!-- 中间宣传广告 -->
       <img src="./imgs/product1.webp" alt="" class="product1" />
       <!-- 厨房电器 -->
@@ -1228,8 +1086,27 @@
 </template>
 
 <script>
+import productPublicityCom from '@/components/productPublicity'
+import { getDomesticApplianceAPI } from "@/api"
 export default {
   name: "ProductsCom",
+  data(){
+    return {
+      domestic_appliance_data:null
+    }
+  },
+  components:{
+    productPublicityCom
+  },
+  methods:{
+    async getData() {
+      const { data } = await getDomesticApplianceAPI();
+      this.domestic_appliance_data = data
+    },
+  },
+  created(){
+    this.getData()
+  }
 };
 </script>
 

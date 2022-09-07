@@ -42,3 +42,9 @@ export const getWebChannelPublicityAPI = ()=>{
         url:"/web_channel_publicity_imgs"
     })
 }
+// 获取 生活电器 组件数据
+export const getDomesticApplianceAPI = ()=>{
+    return axios.request({
+        url:"/domestic_appliance"
+    })
+}
