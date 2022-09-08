@@ -96,3 +96,9 @@ export const getDailyNecessitiesAPI = ()=>{
         url:"/daily_necessities"
     })
 }
+// 获取 广告图片 组件数据
+export const getPublicImgsAPI = ()=>{
+    return axios.request({
+        url:"/public_imgs"
+    })
+}

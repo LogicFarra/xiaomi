@@ -3198,5 +3198,23 @@
         ]
       }
     ]
-  }
+  },
+  "public_imgs":[
+    {
+      "id":"0",
+      "img":"https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/2656295f6c067f48a04a425acf15a096.jpg?thumb=1&w=1839&h=180&f=webp&q=90"
+    },
+    {
+      "id":"1",
+      "img":"https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/642363ea6aea49e08cb73bc69fb4572e.png?thumb=1&w=1839&h=180&f=webp&q=90"
+    },
+    {
+      "id":"2",
+      "img":"https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/88e35cffc82cd98cd53172460067af17.jpg?thumb=1&w=1839&h=180&f=webp&q=90"
+    },
+    {
+      "id":"3",
+      "img":"https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/88e35cffc82cd98cd53172460067af17.jpg?thumb=1&w=1839&h=180&f=webp&q=90"
+    }
+  ]
 }

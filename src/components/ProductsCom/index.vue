@@ -2,23 +2,21 @@
   <div class="product_main">
     <div class="product_main_container">
       <!-- 中间宣传广告 -->
-      <img src="./imgs/product1.webp" alt="" class="product1" />
+      <img :src="publicImgs[0].img" alt="" class="product1" />
       <!-- 手机 -->
       <productPublicityCom :data="mobile_phone_data"></productPublicityCom>
       <!-- 智能穿戴 -->
       <productPublicityCom :data="technology_wear_data"></productPublicityCom>
       <!-- 笔记本 平板 -->
       <productPublicityCom :data="computer_ipad_data"></productPublicityCom>
-      <!-- 中间宣传广告 -->
-      <img src="./imgs/product1.webp" alt="" class="product1" />
       <!-- 家电 -->
       <productPublicityCom :data="home_appliances_data"></productPublicityCom>
       <!-- 中间宣传广告 -->
-      <img src="./imgs/product1.webp" alt="" class="product1" />
+      <img :src="publicImgs[1].img" alt="" class="product1" />
       <!-- 生活电器 -->
       <productPublicityCom :data="domestic_appliance_data"></productPublicityCom>
       <!-- 中间宣传广告 -->
-      <img src="./imgs/product1.webp" alt="" class="product1" />
+      <img :src="publicImgs[2].img" alt="" class="product1" />
       <!-- 厨房电器 -->
       <productPublicityCom :data="kitchen_appliances_data"></productPublicityCom>
       <!-- 智能家居 -->
@@ -26,7 +24,7 @@
       <!-- 运动出行 -->
       <productPublicityCom :data="sport_data"></productPublicityCom>
       <!-- 中间宣传广告 -->
-      <img src="./imgs/product1.webp" alt="" class="product1" />
+      <img :src="publicImgs[3].img" alt="" class="product1" />
       <!-- 日用百货 -->
       <productPublicityCom :data="daily_necessities_data"></productPublicityCom>
       <!-- 视频 -->
@@ -84,7 +82,8 @@ import {
   getKitchenAppliancesAPI,
   getTechnologyHomeAPI,
   getSportAPI,
-  getDailyNecessitiesAPI
+  getDailyNecessitiesAPI,
+  getPublicImgsAPI
 } from "@/api"
 export default {
   name: "ProductsCom",
@@ -99,6 +98,7 @@ export default {
       technology_home_data:null,    //智能家居
       sport_data:null,              //运动出行
       daily_necessities_data:null,    //日用百货
+      publicImgs:[{},{},{},{}]                 //广告图片
     }
   },
   components:{
@@ -111,6 +111,8 @@ export default {
     },
   },
   created(){
+    // 获取商品原始数据
+  //#region 
     // 生活电器
     this.getData(getDomesticApplianceAPI).then((res)=>{
       this.domestic_appliance_data = res
@@ -146,6 +148,11 @@ export default {
     // 日用百货
     this.getData(getDailyNecessitiesAPI).then((res)=>{
       this.daily_necessities_data = res
+    })
+    //#endregion
+    // 获取广告图片
+    this.getData(getPublicImgsAPI).then((res)=>{
+      this.publicImgs = res
     })
   }
 };
