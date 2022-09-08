@@ -32,8 +32,8 @@
           </li>
         </ul>
         <!-- 左侧只有一张图片时 -->
-        <li v-show="leftSize === 1">
-          <img :src="leftProducts.img" alt="" />
+        <li v-show="leftSize === 1" v-for="item in leftProducts" :key="item.id">
+          <img :src="item.img" alt="" />
         </li>
       </ul>
       <ul class="product_container_right">
@@ -47,7 +47,7 @@
             ><del>{{ item.delPrice }}</del>
           </p>
         </li>
-        <div>
+        <div class="more">
           <!-- 小宣传图 -->
           <li class="small_part" v-show="smallProduct.show">
             <img :src="smallProduct.data.img" width="80px" height="80px" />
@@ -99,18 +99,18 @@ export default {
       }
     },
     // 二级菜单的数量
-    titleNum(){
-      if(this.rightProducts.length>1) return false
-      return true
-    }
+    titleNum() {
+      if (this.rightProducts.length > 1) return false;
+      return true;
+    },
   },
   methods: {
     // 初始化数据
-    initData(){
-      this.title = this.data.title
-      this.leftProducts = this.data.firMenu
-      this.rightProducts = this.data.secMenu
-      this.sliceData()
+    initData() {
+      this.title = this.data.title;
+      this.leftProducts = this.data.firMenu;
+      this.rightProducts = this.data.secMenu;
+      this.sliceData();
     },
     // 筛查数据
     sliceData() {
@@ -123,18 +123,22 @@ export default {
       // 如果长度刚好等于8,就全部用大展示框展示,"查看更多"和"小展示框"保持隐藏
       if (length === 8) {
         this.curProducts = message;
+        this.clearsmallProduct();
+        this.clearshowMore();
       }
       // 如果长度小于8,也全部用大展示框展示,获取到当前类型的字符串,赋值给"查看更多",并显示"查看更多"
       else if (length < 8) {
+        this.curProducts = message;
         this.showMore = {
           data: title,
           show: true,
         };
-        this.curProducts = message;
+        this.clearsmallProduct();
       }
       // 如果长度大于8,返回前七条数据用于大展示框,截取第八条赋值给小展示框展示,并获取类型赋值给"查看更多"显示
       else if (length > 8) {
         let last = message[7];
+        this.curProducts = message.slice(0, 7);
         this.smallProduct = {
           data: last,
           show: true,
@@ -143,26 +147,37 @@ export default {
           data: title,
           show: true,
         };
-        this.curProducts = message.slice(0, 7);
       }
     },
     // 分类标签被覆盖回调
     titleHover(index) {
       this.curType = index;
     },
+    // 清空小展示栏
+    clearsmallProduct() {
+      this.smallProduct = {
+        data: "",
+        show: false,
+      };
+    },
+    // 清空"查看更多"
+    clearshowMore() {
+      this.showMore = {
+        data: "",
+        show: false,
+      };
+    },
   },
   watch: {
     curType(newvalue) {
       this.sliceData();
     },
-    data(newvalue,oldvalue){
-      this.initData()
-    }
+    data(newvalue, oldvalue) {
+      this.initData();
+    },
   },
-  props:['data'],
-
-  mounted() {
-  },
+  // 接收原始数据
+  props: ["data"],
 };
 </script>
 
@@ -322,54 +337,58 @@ export default {
           }
         }
       }
-      // 浏览更多
-      .see_more {
-        height: 143px;
-        padding-top: 50px;
-        position: relative;
-        p {
-          font-size: 18px;
-          margin-left: 30px;
+      .more {
+        width: 248px;
+        height: 300px;
+        // 浏览更多
+        .see_more {
+          height: 143px;
+          padding-top: 50px;
+          position: relative;
+          p {
+            font-size: 18px;
+            margin-left: 30px;
+          }
+          small {
+            color: #616161;
+            margin-left: 30px;
+          }
+          i {
+            display: block;
+            position: absolute;
+            right: 30px;
+            top: 45px;
+            width: 48px;
+            height: 48px;
+            border: 3px solid #ff6700;
+            text-align: center;
+            font-size: 25px;
+            padding-top: 7px;
+            border-radius: 100px;
+            color: #ff6700;
+          }
         }
-        small {
-          color: #616161;
-          margin-left: 30px;
-        }
-        i {
-          display: block;
-          position: absolute;
-          right: 30px;
-          top: 45px;
-          width: 48px;
-          height: 48px;
-          border: 3px solid #ff6700;
-          text-align: center;
-          font-size: 25px;
-          padding-top: 7px;
-          border-radius: 100px;
-          color: #ff6700;
-        }
-      }
-      // 小宣传图
-      .small_part {
-        height: 143px;
-        margin-bottom: 15px;
-        padding-top: 40px;
-        padding-left: 15px;
-        position: relative;
-        img {
-          position: absolute;
-          right: -20px;
-          top: 30px;
-        }
-        h3 {
-          width: 94px;
-          margin-bottom: 5px;
-          text-align: left;
-        }
-        .price {
-          text-align: left;
+        // 小宣传图
+        .small_part {
+          height: 143px;
+          margin-bottom: 15px;
+          padding-top: 40px;
           padding-left: 15px;
+          position: relative;
+          img {
+            position: absolute;
+            right: -20px;
+            top: 30px;
+          }
+          h3 {
+            width: 94px;
+            margin-bottom: 5px;
+            text-align: left;
+          }
+          .price {
+            text-align: left;
+            padding-left: 15px;
+          }
         }
       }
     }

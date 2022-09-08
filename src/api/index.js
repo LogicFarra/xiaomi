@@ -48,3 +48,51 @@ export const getDomesticApplianceAPI = ()=>{
         url:"/domestic_appliance"
     })
 }
+// 获取 手机 组件数据
+export const getMobilePhoneAPI = ()=>{
+    return axios.request({
+        url:"/mobile_phone"
+    })
+}
+// 获取 智能穿戴 组件数据
+export const getTechnologyWearAPI = ()=>{
+    return axios.request({
+        url:"/technology_wear"
+    })
+}
+// 获取 笔记本平板 组件数据
+export const getComputerIpadAPI = ()=>{
+    return axios.request({
+        url:"/computer_ipad"
+    })
+}
+// 获取 家电 组件数据
+export const getHomeAppliancesAPI = ()=>{
+    return axios.request({
+        url:"/home_appliances"
+    })
+}
+// 获取 厨房电器 组件数据
+export const getKitchenAppliancesAPI = ()=>{
+    return axios.request({
+        url:"/kitchen_appliances"
+    })
+}
+// 获取 智能家居 组件数据
+export const getTechnologyHomeAPI = ()=>{
+    return axios.request({
+        url:"/technology_home"
+    })
+}
+// 获取 运动出行 组件数据
+export const getSportAPI = ()=>{
+    return axios.request({
+        url:"/sport"
+    })
+}
+// 获取 日用百货 组件数据
+export const getDailyNecessitiesAPI = ()=>{
+    return axios.request({
+        url:"/daily_necessities"
+    })
+}

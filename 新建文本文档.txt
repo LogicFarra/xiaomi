@@ -1,0 +1,26 @@
+"technology_wear":{
+    "id":"0",
+    "title":"智能穿戴",
+    "firMenu":[
+      {
+        "id":"0",
+        "img":"https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/9895c56a7b792fb9053e3085fc261072.jpg?thumb=1&w=351&h=921&f=webp&q=90"
+      }
+    ],
+    "secMenu":[
+      {
+        "id":"",
+        "type":"",
+        "products":[
+          {
+            "id": "",
+            "name": "",
+            "explain": "",
+            "price": "",
+            "delPrice": "",
+            "img": ""
+          }
+        ]
+      }
+    ]
+  }
