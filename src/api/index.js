@@ -102,3 +102,45 @@ export const getPublicImgsAPI = ()=>{
         url:"/public_imgs"
     })
 }
+// 获取 视频封面 数据
+export const getVideoCoverAPI = ()=>{
+    return axios.request({
+        url:"/video_cover"
+    })
+}
+// 获取 售后 数据
+export const getAfterSaleAPI = ()=>{
+    return axios.request({
+        url:"/after_sale"
+    })
+}
+// 获取 详细服务 数据
+export const getServiceAPI = ()=>{
+    return axios.request({
+        url:"/service"
+    })
+}
+// 获取 客服信息 数据
+export const getCallUsAPI = ()=>{
+    return axios.request({
+        url:"/call_us"
+    })
+}
+// 获取 尾部导航 数据
+export const getFooterNavAPI = ()=>{
+    return axios.request({
+        url:"/footer_nav"
+    })
+}
+// 获取 尾部证书 数据
+export const getFooterSitesAPI = ()=>{
+    return axios.request({
+        url:"/footer_sites"
+    })
+}
+// 获取 尾部动态图
+export const getFooterGifsAPI = ()=>{
+    return axios.request({
+        url:"/footer_gifs"
+    })
+}

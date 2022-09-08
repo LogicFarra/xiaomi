@@ -6,105 +6,31 @@
         <!-- 售后 -->
         <nav class="after_sale">
           <ul>
-            <li>
-              <i class="fa fa-wrench" aria-hidden="true"></i>
-              <span>预约维修服务</span>
-            </li>
-            <li>
-              <i class="fa fa-wrench" aria-hidden="true"></i>
-              <span>预约维修服务</span>
-            </li>
-            <li>
-              <i class="fa fa-wrench" aria-hidden="true"></i>
-              <span>预约维修服务</span>
-            </li>
-            <li>
-              <i class="fa fa-wrench" aria-hidden="true"></i>
-              <span>预约维修服务</span>
-            </li>
-            <li>
-              <i class="fa fa-wrench" aria-hidden="true"></i>
-              <span>预约维修服务</span>
+            <li v-for="item in afterSaleData" :key="item.id">
+              <i :class="item.icon" aria-hidden="true"></i>
+              <span>{{ item.title }}</span>
             </li>
           </ul>
         </nav>
         <!-- 其他服务 -->
         <div class="footer_links">
           <ul class="footer_links_navigation">
-            <li>
+            <li v-for="item in serviceData" :key="item.id">
               <ul>
-                <li class="title">选购指南</li>
-                <li><a href="javascript:;">手机</a></li>
-                <li><a href="javascript:;">手机</a></li>
-                <li><a href="javascript:;">手机</a></li>
-                <li><a href="javascript:;">手机</a></li>
-                <li><a href="javascript:;">手机</a></li>
-                <li><a href="javascript:;">手机</a></li>
-                <li><a href="javascript:;">手机</a></li>
-                <li><a href="javascript:;">手机</a></li>
-                <li><a href="javascript:;">手机</a></li>
-              </ul>
-            </li>
-            <li>
-              <ul>
-                <li class="title">选购指南</li>
-                <li><a href="javascript:;">手机</a></li>
-                <li><a href="javascript:;">手机</a></li>
-                <li><a href="javascript:;">手机</a></li>
-                <li><a href="javascript:;">手机</a></li>
-                <li><a href="javascript:;">手机</a></li>
-                <li><a href="javascript:;">手机</a></li>
-                <li><a href="javascript:;">手机</a></li>
-                <li><a href="javascript:;">手机</a></li>
-                <li><a href="javascript:;">手机</a></li>
-              </ul>
-            </li>
-            <li>
-              <ul>
-                <li class="title">选购指南</li>
-                <li><a href="javascript:;">手机</a></li>
-                <li><a href="javascript:;">手机</a></li>
-                <li><a href="javascript:;">手机</a></li>
-                <li><a href="javascript:;">手机</a></li>
-                <li><a href="javascript:;">手机</a></li>
-                <li><a href="javascript:;">手机</a></li>
-                <li><a href="javascript:;">手机</a></li>
-                <li><a href="javascript:;">手机</a></li>
-                <li><a href="javascript:;">手机</a></li>
-              </ul>
-            </li>
-            <li>
-              <ul>
-                <li class="title">选购指南</li>
-                <li><a href="javascript:;">手机</a></li>
-                <li><a href="javascript:;">手机</a></li>
-                <li><a href="javascript:;">手机</a></li>
-                <li><a href="javascript:;">手机</a></li>
-                <li><a href="javascript:;">手机</a></li>
-                <li><a href="javascript:;">手机</a></li>
-                <li><a href="javascript:;">手机</a></li>
-                <li><a href="javascript:;">手机</a></li>
-                <li><a href="javascript:;">手机</a></li>
-              </ul>
-            </li>
-            <li>
-              <ul>
-                <li class="title">选购指南</li>
-                <li><a href="javascript:;">手机</a></li>
-                <li><a href="javascript:;">手机</a></li>
-                <li><a href="javascript:;">手机</a></li>
-                <li><a href="javascript:;">手机</a></li>
-                <li><a href="javascript:;">手机</a></li>
-                <li><a href="javascript:;">手机</a></li>
-                <li><a href="javascript:;">手机</a></li>
-                <li><a href="javascript:;">手机</a></li>
-                <li><a href="javascript:;">手机</a></li>
+                <li class="title">{{ item.title }}</li>
+                <li v-for="item2 in item.services" :key="item2.id">
+                  <a href="javascript:;">{{ item2.text }}</a>
+                </li>
               </ul>
             </li>
           </ul>
           <div class="contact">
-            <p class="phonenumber">400-100-5678</p>
-            <p class="time">8:00-18:00&nbsp;(仅收市话费)</p>
+            <p class="phonenumber">{{ callusData.number }}</p>
+            <p class="time">
+              {{ callusData.from }}-{{ callusData.to }}&nbsp;({{
+                callusData.text
+              }})
+            </p>
             <p class="person">
               <i class="fa fa-commenting" aria-hidden="true"></i>
               <font>人工客服</font>
@@ -119,72 +45,35 @@
         <img src="./imgs/logo-mi2.png" alt="" width="56px" height="56px" />
         <div class="info">
           <ul class="navigation">
-            <li><a href="javascript:;">小米商城</a></li>
-            <li><a href="javascript:;">小米商城</a></li>
-            <li><a href="javascript:;">小米商城</a></li>
-            <li><a href="javascript:;">小米商城</a></li>
-            <li><a href="javascript:;">小米商城</a></li>
-            <li><a href="javascript:;">小米商城</a></li>
-            <li><a href="javascript:;">小米商城</a></li>
-            <li><a href="javascript:;">小米商城</a></li>
-            <li><a href="javascript:;">小米商城</a></li>
-            <li><a href="javascript:;">小米商城</a></li>
-            <li><a href="javascript:;">小米商城</a></li>
-            <li><a href="javascript:;">小米商城</a></li>
-            <li><a href="javascript:;">小米商城</a></li>
-            <li><a href="javascript:;">小米商城</a></li>
+            <li v-for="item in NavRow1" :key="item.id">
+              <a :href="item.path">{{ item.title }}</a>
+            </li>
           </ul>
           <ul class="navigation">
-            <li><a href="javascript:;">小米商城</a></li>
-            <li><a href="javascript:;">小米商城</a></li>
-            <li><a href="javascript:;">小米商城</a></li>
+            <li v-for="item in NavRow2" :key="item.id">
+              <a :href="item.path">{{ item.title }}</a>
+            </li>
           </ul>
           <ul class="detail">
             <li><font>@</font></li>
             <li><a href="javascript:;">mi.com</a></li>
-            <li><a href="javascript:;">范围u发货</a></li>
-            <li><a href="javascript:;">跟我和好</a></li>
-            <li><a href="javascript:;">核问题如果为</a></li>
-            <li><a href="javascript:;">具体如何</a></li>
-            <li><a href="javascript:;">家庭人均合同</a></li>
-            <li><a href="javascript:;">会会5会</a></li>
-            <li><a href="javascript:;">mi.com</a></li>
-            <li><a href="javascript:;">范围u发货</a></li>
-            <li><a href="javascript:;">跟我和好</a></li>
-            <li><a href="javascript:;">核问题如果为</a></li>
-            <li><a href="javascript:;">具体如何</a></li>
-            <li><a href="javascript:;">家庭人均合同</a></li>
-            <li><a href="javascript:;">会会5会</a></li>
-            <li><a href="javascript:;">mi.com</a></li>
-            <li><a href="javascript:;">范围u发货</a></li>
-            <li><a href="javascript:;">跟我和好</a></li>
-            <li><a href="javascript:;">核问题如果为</a></li>
-            <li><a href="javascript:;">具体如何</a></li>
-            <li><a href="javascript:;">家庭人均合同</a></li>
-            <li><a href="javascript:;">会会5会</a></li>
-            <li><a href="javascript:;">会会5会</a></li>
-            <li><a href="javascript:;">mi.com</a></li>
-            <li><a href="javascript:;">范围u发货</a></li>
-            <li><a href="javascript:;">跟我和好</a></li>
-            <li><a href="javascript:;">核问题如果为</a></li>
-            <li><a href="javascript:;">具体如何</a></li>
-            <li><a href="javascript:;">家庭人均合同</a></li>
-            <li><a href="javascript:;">会会5会</a></li>
-            <li><a href="javascript:;">会会5会</a></li>
-            <li><a href="javascript:;">mi.com</a></li>
-            <li><a href="javascript:;">范围u发货</a></li>
-            <li><a href="javascript:;">跟我和好</a></li>
-            <li><a href="javascript:;">核问题如果为</a></li>
-            <li><a href="javascript:;">具体如何</a></li>
-            <li><a href="javascript:;">家庭人均合同</a></li>
-            <li><a href="javascript:;">会会5会</a></li>
+            <li v-for="item in Sites" :key="item.id">
+              <a :href="item.path" v-if="item.path">{{ item.text }}</a>
+              <span v-else>{{ item.text }}</span>
+            </li>
           </ul>
           <ul class="detail">
-            <li><img src="./imgs/a.png" alt="" height="28px" /></li>
-            <li><img src="./imgs/a.png" alt="" height="28px" /></li>
-            <li><img src="./imgs/a.png" alt="" height="28px" /></li>
-            <li><img src="./imgs/a.png" alt="" height="28px" /></li>
-            <li><img src="./imgs/a.png" alt="" height="28px" /></li>
+            <li v-for="item in imgs" :key="item.id">
+              <a :href="item.path">
+                <img :src="item.img" height="28px" />
+              </a>
+            </li>
+            <li>
+              <a :href="gifs[0].path">
+                <img :src="gifs[num].img" height="28px" />
+                <!-- <img :src="gifs[1].img" height="28px"> -->
+              </a>
+            </li>
           </ul>
         </div>
       </div>
@@ -194,8 +83,78 @@
 </template>
 
 <script>
+import {
+  getAfterSaleAPI, //售后接口
+  getServiceAPI, //服务接口
+  getCallUsAPI, //人工客服接口
+  getFooterNavAPI, //尾部导肮
+  getFooterSitesAPI, //尾部证书
+  getFooterGifsAPI, //尾部图片
+} from "@/api";
 export default {
   name: "FooterCom",
+  data() {
+    return {
+      afterSaleData: [],
+      serviceData: [],
+      callusData: {},
+      NavRow1: [],
+      NavRow2: [],
+      Sites: [],
+      imgs: [],
+      gifs: [{}, {}],
+      num: 0,
+      timer: null,
+    };
+  },
+  methods: {
+    async getAfterSaleData() {
+      const { data } = await getAfterSaleAPI();
+      this.afterSaleData = data;
+    },
+    async getServiceData() {
+      const { data } = await getServiceAPI();
+      this.serviceData = data;
+    },
+    async getCallUsData() {
+      const { data } = await getCallUsAPI();
+      this.callusData = data;
+    },
+    async getNavData() {
+      const { data } = await getFooterNavAPI();
+      this.NavRow1 = data.slice(0, -3);
+      this.NavRow2 = data.slice(-3);
+    },
+    async getSitesData() {
+      const { data } = await getFooterSitesAPI();
+      this.Sites = data;
+    },
+    async getFooterGifsAPI() {
+      const { data } = await getFooterGifsAPI();
+      this.imgs = data.slice(0, -2);
+      this.gifs = data.slice(-2);
+    },
+  },
+  created() {
+    this.getAfterSaleData();
+    this.getServiceData();
+    this.getCallUsData();
+    this.getNavData();
+    this.getSitesData();
+    this.getFooterGifsAPI();
+  },
+  mounted() {
+    this.timer = setInterval(() => {
+      if (this.num === 0) {
+        this.num = 1;
+      } else {
+        this.num = 0;
+      }
+    }, 3000);
+  },
+  beforeDestroy() {
+    clearInterval(this.timer);
+  },
 };
 </script>
 
@@ -320,6 +279,7 @@ footer {
         .navigation {
           display: flex;
           margin-bottom: 5px;
+          flex-wrap: wrap;
           li {
             padding: 0 5px;
             border-right: 1px solid #9e9e9e;
@@ -343,6 +303,9 @@ footer {
         li {
           margin-right: 3px;
           font {
+            color: #b0b0b0;
+          }
+          span {
             color: #b0b0b0;
           }
           a {

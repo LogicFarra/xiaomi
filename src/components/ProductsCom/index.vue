@@ -14,7 +14,9 @@
       <!-- 中间宣传广告 -->
       <img :src="publicImgs[1].img" alt="" class="product1" />
       <!-- 生活电器 -->
-      <productPublicityCom :data="domestic_appliance_data"></productPublicityCom>
+      <productPublicityCom
+        :data="domestic_appliance_data"
+      ></productPublicityCom>
       <!-- 中间宣传广告 -->
       <img :src="publicImgs[2].img" alt="" class="product1" />
       <!-- 厨房电器 -->
@@ -28,52 +30,14 @@
       <!-- 日用百货 -->
       <productPublicityCom :data="daily_necessities_data"></productPublicityCom>
       <!-- 视频 -->
-      <div class="product_component">
-        <!-- 标题 -->
-        <div class="title">
-          <span style="font-size: 22px">视频</span>
-          <p class="normal">
-            <font>查看更多</font>
-            <i class="fa fa-chevron-right" aria-hidden="true"></i>
-          </p>
-        </div>
-        <!-- 内容 -->
-        <div class="videos">
-          <ul>
-            <li>
-              <img src="./imgs/video.webp" alt="" width="296px" height="180px" />
-              <p>2021年春季发布会第一场</p>
-              <p class="small_text"></p>
-              <i class="fa fa-play" aria-hidden="true"></i>
-            </li>
-            <li>
-              <img src="./imgs/video.webp" alt="" width="296px" height="180px" />
-              <p>2021年春季发布会第一场</p>
-              <p class="small_text"></p>
-              <i class="fa fa-play" aria-hidden="true"></i>
-            </li>
-            <li>
-              <img src="./imgs/video.webp" alt="" width="296px" height="180px" />
-              <p>2021年春季发布会第一场</p>
-              <p class="small_text"></p>
-              <i class="fa fa-play" aria-hidden="true"></i>
-            </li>
-            <li>
-              <img src="./imgs/video.webp" alt="" width="296px" height="180px" />
-              <p>2021年春季发布会第一场</p>
-              <p class="small_text"></p>
-              <i class="fa fa-play" aria-hidden="true"></i>
-            </li>
-          </ul>
-        </div>
-      </div>
+      <VideoCom></VideoCom>
     </div>
   </div>
 </template>
 
 <script>
-import productPublicityCom from '@/components/productPublicity'
-import { 
+import productPublicityCom from "@/components/productPublicity";
+import {
   getDomesticApplianceAPI,
   getMobilePhoneAPI,
   getTechnologyWearAPI,
@@ -83,78 +47,80 @@ import {
   getTechnologyHomeAPI,
   getSportAPI,
   getDailyNecessitiesAPI,
-  getPublicImgsAPI
-} from "@/api"
+  getPublicImgsAPI,
+} from "@/api";
+import VideoCom from "../videoCom/index.vue";
 export default {
   name: "ProductsCom",
-  data(){
+  data() {
     return {
-      domestic_appliance_data:null, //生活电器
-      mobile_phone_data:null,       //手机
-      technology_wear_data:null,    //智能穿戴
-      computer_ipad_data:null,       //笔记本|平板
-      home_appliances_data:null,    //家电
-      kitchen_appliances_data:null,   //厨房电器
-      technology_home_data:null,    //智能家居
-      sport_data:null,              //运动出行
-      daily_necessities_data:null,    //日用百货
-      publicImgs:[{},{},{},{}]                 //广告图片
-    }
+      domestic_appliance_data: null, //生活电器
+      mobile_phone_data: null, //手机
+      technology_wear_data: null, //智能穿戴
+      computer_ipad_data: null, //笔记本|平板
+      home_appliances_data: null, //家电
+      kitchen_appliances_data: null, //厨房电器
+      technology_home_data: null, //智能家居
+      sport_data: null, //运动出行
+      daily_necessities_data: null, //日用百货
+      publicImgs: [{}, {}, {}, {}], //广告图片
+    };
   },
-  components:{
-    productPublicityCom
-  },
-  methods:{
+  components: {
+    productPublicityCom,
+    VideoCom
+},
+  methods: {
     async getData(API) {
-      const { data } = await API()
-      return data
+      const { data } = await API();
+      return data;
     },
   },
-  created(){
+  created() {
     // 获取商品原始数据
-  //#region 
+    //#region
     // 生活电器
-    this.getData(getDomesticApplianceAPI).then((res)=>{
-      this.domestic_appliance_data = res
-    })
+    this.getData(getDomesticApplianceAPI).then((res) => {
+      this.domestic_appliance_data = res;
+    });
     // 手机
-    this.getData(getMobilePhoneAPI).then((res)=>{
-      this.mobile_phone_data = res
-    })
+    this.getData(getMobilePhoneAPI).then((res) => {
+      this.mobile_phone_data = res;
+    });
     // 智能穿戴
-    this.getData(getTechnologyWearAPI).then((res)=>{
-      this.technology_wear_data = res
-    })
+    this.getData(getTechnologyWearAPI).then((res) => {
+      this.technology_wear_data = res;
+    });
     // 笔记本|平板
-    this.getData(getComputerIpadAPI).then((res)=>{
-      this.computer_ipad_data = res
-    })
+    this.getData(getComputerIpadAPI).then((res) => {
+      this.computer_ipad_data = res;
+    });
     // 家电
-    this.getData(getHomeAppliancesAPI).then((res)=>{
-      this.home_appliances_data = res
-    })
+    this.getData(getHomeAppliancesAPI).then((res) => {
+      this.home_appliances_data = res;
+    });
     // 厨房电器
-    this.getData(getKitchenAppliancesAPI).then((res)=>{
-      this.kitchen_appliances_data = res
-    })
+    this.getData(getKitchenAppliancesAPI).then((res) => {
+      this.kitchen_appliances_data = res;
+    });
     // 智能家居
-    this.getData(getTechnologyHomeAPI).then((res)=>{
-      this.technology_home_data = res
-    })
+    this.getData(getTechnologyHomeAPI).then((res) => {
+      this.technology_home_data = res;
+    });
     // 运动出行
-    this.getData(getSportAPI).then((res)=>{
-      this.sport_data = res
-    })
+    this.getData(getSportAPI).then((res) => {
+      this.sport_data = res;
+    });
     // 日用百货
-    this.getData(getDailyNecessitiesAPI).then((res)=>{
-      this.daily_necessities_data = res
-    })
+    this.getData(getDailyNecessitiesAPI).then((res) => {
+      this.daily_necessities_data = res;
+    });
     //#endregion
     // 获取广告图片
-    this.getData(getPublicImgsAPI).then((res)=>{
-      this.publicImgs = res
-    })
-  }
+    this.getData(getPublicImgsAPI).then((res) => {
+      this.publicImgs = res;
+    });
+  },
 };
 </script>
 
@@ -166,7 +132,7 @@ export default {
     width: 1226px;
     margin: 0 auto;
     padding: 4px 0 12px 0;
-    // 宣传产品1
+    // 广告图片
     .product1 {
       cursor: pointer;
       width: 100%;
@@ -377,62 +343,6 @@ export default {
             .price {
               text-align: left;
               padding-left: 15px;
-            }
-          }
-        }
-      }
-      // 视频
-      .videos {
-        width: 100%;
-        height: 285px;
-        ul {
-          display: flex;
-          justify-content: space-between;
-          li {
-            width: 296px;
-            height: 285px;
-            cursor: pointer;
-            background-color: white;
-            position: relative;
-            transition: 0.4s;
-            &:hover {
-              transform: translateY(-3px);
-              box-shadow: 0 3px 20px silver;
-              i {
-                background-color: #ff6700;
-                border-color: #ff6700;
-              }
-            }
-            p {
-              width: 264px;
-              text-align: center;
-              margin: 30px auto 0 auto;
-              font-size: 14px;
-              text-overflow: ellipsis;
-              white-space: nowrap;
-              overflow: hidden;
-            }
-            .small_text {
-              margin: 5px auto;
-              font-size: 12px;
-              color: #b0b0b0;
-            }
-            i {
-              transition: 0.4s;
-              display: block;
-              position: absolute;
-              top: 145px;
-              left: 20px;
-              width: 40px;
-              height: 25px;
-              text-align: center;
-              padding-top: 4px;
-              padding-left: 2px;
-              border: 2px solid rgb(255, 255, 255);
-              border-radius: 15px;
-              font-size: 12px;
-              color: white;
-              background-color: #2a2a2ac4;
             }
           }
         }
