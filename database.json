@@ -3708,5 +3708,66 @@
       "img": "https://cnbj1.fds.api.xiaomi.com/b2c-misite-activity/5274dd11517601dd2482f4b7eb9dffe1.png",
       "path": "https://webcert.cnmstl.net/cert/grade?sn=3af21034e35011eab3ea00163e068ceb"
     }
+  ],
+  "all_products":[
+    {
+      "product":"Xiaomi 12S Pro",
+      "introduction":"「9月11日，全版本限时优惠100元；购机享24期免息；直播间下单加赠手机壳」骁龙8+ 旗舰处理器 | 徕卡光学镜头 | 徕卡原生双画质 | 徕卡水印、大师镜头包 | 全场景疾速抓拍 | 5000万三主摄 | 小米自研澎湃P1芯片 | 120W小米澎湃秒充 | 4600mAh大电量 | 2K AMOLED屏",
+      "price":"4599元",
+      "oldPrice":"4699元",
+      "version":[
+        {
+          "text":"8GB+128GB",
+          "price":"4599元",
+          "oldPrice":"4699元"
+        },
+        {
+          "text":"8GB+256GB",
+          "price":"4899元",
+          "oldPrice":"4999元"
+        },
+        {
+          "text":"12GB+256GB",
+          "price":"5299元",
+          "oldPrice":"5399元"
+        },
+        {
+          "text":"12GB+512GB",
+          "price":"5799元",
+          "oldPrice":"5899元"
+        }
+      ],
+      "color":["白色","黑色"],
+      "gifs":[
+        "本组赠品可任选1种",
+        "价值109元定制便携咖啡杯x1，赠完即止",
+        "价值99元小米新定制T恤 白色x1，赠完即止",
+        "价值99元小米手机纪念徽章 套装x1，赠完即止",
+        "价值79元致敬大师系列手机支架 互联网x1，赠完即止"
+      ],
+      "img":[
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1656916238.05977286.png",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1656916237.95638090.png",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1656916238.0629960.png",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1656916238.06123122.png",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1656916237.89556976.png"
+      ]
+    },
+    {
+      "product":"",
+      "introduction":"",
+      "price":"",
+      "oldPrice":"",
+      "version":[
+        {
+          "id":"",
+          "text":"",
+          "price":""
+        }
+      ],
+      "color":[],
+      "gifs":[],
+      "img":[]
+    }
   ]
 }

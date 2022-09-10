@@ -50,6 +50,7 @@
                 v-for="item in curProducts"
                 :key="item.id"
                 :class="item.class"
+                @click="productClick(item.product)"
               >
                 <img :src="item.img" alt="" width="160px" height="110px" />
                 <div class="title">{{ item.product }}</div>
@@ -69,7 +70,7 @@
           @blur="showSearhDropdown = false"
         />
         <!-- 搜索框_按钮 -->
-        <div class="search_btn" @click="jump">
+        <div class="search_btn">
           <i class="fa fa-search" aria-hidden="true"></i>
         </div>
         <!-- the dropdown of the search bar -->
@@ -135,8 +136,15 @@ export default {
       const {data} = await getSearchKeywordsAPI()
       this.searchKeywords = data
     },
-    jump(){
-      this.$router.push({path:"/buy",query:{id:"100"}})
+    // 商品点击事件
+    productClick(product){
+      //携带商品名称跳转到buy页面
+      this.$router.push({
+        path:"/buy",
+        query:{
+          product
+        }
+      })
     }
   },
   created() {

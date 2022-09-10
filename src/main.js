@@ -4,11 +4,11 @@ import store from './store'
 import router from './router'
 import 'animate.css';
 Vue.config.productionTip = false
-function throttling(fn, time = 1000){
+function throttling(fn, time = 1000,stats){
   return function () {
     if (fn.timer) return;
     fn.timer = setTimeout(() => {
-      fn();
+      fn(stats);
       fn.timer = null;
     }, time);
   };

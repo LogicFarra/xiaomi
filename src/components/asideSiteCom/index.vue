@@ -328,9 +328,6 @@ export default {
           }
         }
       }
-      // li {
-
-      // }
     }
   }
   .shuffling-enter-active {

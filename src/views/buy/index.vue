@@ -13,12 +13,12 @@
       </div>
     </nav>
     <!-- 登录提醒 -->
-    <div class="login_notis">
+    <div class="login_notis" v-if="login">
       <div class="login_notis_container pabulic_width">
         <p>
           为方便您购买,请提前登录&nbsp;&nbsp;&nbsp;&nbsp;
           <a href="javascript:;">立即登录</a>&nbsp;
-          <i class="fa fa-times" aria-hidden="true"></i>
+          <i class="fa fa-times" aria-hidden="true" @click="login = false"></i>
         </p>
       </div>
     </div>
@@ -26,24 +26,36 @@
     <div class="product">
       <div class="product_container pabulic_width">
         <!-- 左侧轮播图 -->
-        <div class="img_left">
-          <img
-            src="https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1660632574.59773469.png"
-            width="560px"
-          />
+        <div class="img_left" @mouseenter="imgHover(true)" @mouseleave="imgHover(false)">
+          <div class="img_box">
+            <transition-group>
+              <img
+                src="https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1660632574.59773469.png"
+                width="560px"
+                v-if="showImg === 0"
+                key="1"
+              />
+              <img
+                src="https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1660632588.24971475.png"
+                width="560px"
+                v-else-if="showImg === 1"
+                key="2"
+              />
+            </transition-group>
+          </div>
           <!-- 控制轮播图的左侧按钮 -->
-          <div class="switch_btn" style="left: 0">
+          <div class="switch_btn" style="left: 0" @click="throttling(switchImg,1000,'left')">
             <i class="fa fa-chevron-left" aria-hidden="true"></i>
           </div>
           <!-- 控制轮播图的右侧按钮 -->
-          <div class="switch_btn" style="right: 50px">
+          <div class="switch_btn" style="right: 50px" @click="throttling(switchImg,1000,'right')">
             <i class="fa fa-chevron-right" aria-hidden="true"></i>
           </div>
           <!-- 切换图片的方块 -->
           <div class="switch_squear">
             <ul>
-              <li class="cur"></li>
-              <li></li>
+              <li :class="[showImg === 0 ? 'cur' : '']" @click="squearClick(0)"></li>
+              <li :class="[showImg === 1 ? 'cur' : '']" @click="squearClick(1)"></li>
             </ul>
           </div>
         </div>
@@ -158,12 +170,74 @@
 </template>
 
 <script>
+import {getProductInfoAPI} from '@/api'
 export default {
   name: "buy",
   data() {
     return {
-      a: this.$route.query.id,
+      product:this.$route.query.product,
+      login: true, //登录提示框的显示和隐藏
+      showImg: 0, //当前显示哪张图片
+      timer: null,
     };
+  },
+  methods: {
+    // 让轮播图自动播放
+    starTimer() {
+      this.timer = setInterval(() => {
+        this.showImg++
+      }, 5000);
+    },
+    // 节流函数
+    throttling(fn, wait, status) {
+      if (fn.timer !== true) {
+        fn(status);
+        fn.timer = true;
+        setTimeout(() => {
+          fn.timer = null;
+        }, wait);
+      }
+    },
+    // 切换图片按钮点击事件
+    switchImg(status){
+      if(status === 'left'){
+        this.showImg--
+      }else{
+        this.showImg++
+      }
+    },
+    // 图片被覆盖事件
+    imgHover(status){
+      if(status){
+        clearInterval(this.timer)
+      }else{
+        this.starTimer()
+      }
+    },
+    //切图方块被点击事件
+    squearClick(num){
+      this.showImg = num
+    },
+    // 获取原始数据
+    async getInitData(){
+      const {data} = await getProductInfoAPI(this.product)
+      console.log(data)
+    }
+  },
+  watch:{
+    showImg(newvalue){
+      if(newvalue>1){
+        this.showImg = 0
+      }else if(newvalue<0){
+        this.showImg = 1
+      }
+    }
+  },
+  created(){
+    this.getInitData()
+  },
+  mounted() {
+    this.starTimer()
   },
 };
 </script>
@@ -179,7 +253,7 @@ export default {
   .nav_bar {
     border-top: 1px solid rgb(224, 224, 224);
     border-bottom: 1px solid rgb(224, 224, 224);
-    box-shadow: 0 5px 5px rgba(154, 154, 154, 0.511);
+    box-shadow: 0 5px 5px rgba(188, 188, 188, 0.511);
     .nav_bar_container {
       height: 60px;
       display: flex;
@@ -234,6 +308,12 @@ export default {
       .img_left {
         width: 606px;
         position: relative;
+        .img_box {
+          position: relative;
+          img {
+            position: absolute;
+          }
+        }
         // 切换图片按钮
         .switch_btn {
           width: 41px;
@@ -460,13 +540,27 @@ export default {
   .footer {
     background-color: #f7f7f7;
     padding-bottom: 50px;
-    .footer_container{
+    .footer_container {
       width: 1226px;
-      margin:0 auto;
+      margin: 0 auto;
       h2 {
-      font-weight: 400;
-      padding: 20px 0;
+        font-weight: 400;
+        padding: 20px 0;
+      }
     }
+  }
+  .v-enter-active {
+    animation: changeImg 2s;
+  }
+  .v-leave-active {
+    animation: changeImg 2s reverse;
+  }
+  @keyframes changeImg {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
     }
   }
 }

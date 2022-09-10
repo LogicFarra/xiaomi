@@ -144,3 +144,9 @@ export const getFooterGifsAPI = ()=>{
         url:"/footer_gifs"
     })
 }
+// 查询商品信息
+export const getProductInfoAPI = (product)=>{
+    return axios.request({
+        url:"/all_products?product=" + product
+    })
+}
