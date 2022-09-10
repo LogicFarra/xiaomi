@@ -69,7 +69,7 @@
           @blur="showSearhDropdown = false"
         />
         <!-- 搜索框_按钮 -->
-        <div class="search_btn">
+        <div class="search_btn" @click="jump">
           <i class="fa fa-search" aria-hidden="true"></i>
         </div>
         <!-- the dropdown of the search bar -->
@@ -134,6 +134,9 @@ export default {
     async getSearchKeywords(){
       const {data} = await getSearchKeywordsAPI()
       this.searchKeywords = data
+    },
+    jump(){
+      this.$router.push({path:"/buy",query:{id:"100"}})
     }
   },
   created() {

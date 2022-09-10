@@ -1597,20 +1597,20 @@
       }
     ]
   },
-  "computer_ipad":{
-    "id":"0",
-    "title":"笔记本 | 平板",
-    "firMenu":[
+  "computer_ipad": {
+    "id": "0",
+    "title": "笔记本 | 平板",
+    "firMenu": [
       {
-        "id":"0",
-        "img":"https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/e9896934bb657c3dd0c548952eb27481.jpg?thumb=1&w=351&h=921&f=webp&q=90"
+        "id": "0",
+        "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/e9896934bb657c3dd0c548952eb27481.jpg?thumb=1&w=351&h=921&f=webp&q=90"
       }
     ],
-    "secMenu":[
+    "secMenu": [
       {
-        "id":"0",
-        "type":"热门",
-        "products":[
+        "id": "0",
+        "type": "热门",
+        "products": [
           {
             "id": "0",
             "name": "Redmi Book Pro 15 2022",
@@ -1671,24 +1671,24 @@
       }
     ]
   },
-  "home_appliances":{
-    "id":"0",
-    "title":"家电",
-    "firMenu":[
+  "home_appliances": {
+    "id": "0",
+    "title": "家电",
+    "firMenu": [
       {
-        "id":"0",
-        "img":"https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/3d47879ec183e25a36e67e0219636e60.jpg?thumb=1&w=351&h=450&f=webp&q=90"
+        "id": "0",
+        "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/3d47879ec183e25a36e67e0219636e60.jpg?thumb=1&w=351&h=450&f=webp&q=90"
       },
       {
-        "id":"1",
-        "img":"https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/229bbaccda43f32f464c0a810b800106.jpg?thumb=1&w=351&h=450&f=webp&q=90"
+        "id": "1",
+        "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/229bbaccda43f32f464c0a810b800106.jpg?thumb=1&w=351&h=450&f=webp&q=90"
       }
     ],
-    "secMenu":[
+    "secMenu": [
       {
-        "id":"0",
-        "type":"热门",
-        "products":[
+        "id": "0",
+        "type": "热门",
+        "products": [
           {
             "id": "0",
             "name": "小米电视6 65”  OLED",
@@ -1764,9 +1764,9 @@
         ]
       },
       {
-        "id":"1",
-        "type":"电视影音",
-        "products":[
+        "id": "1",
+        "type": "电视影音",
+        "products": [
           {
             "id": "0",
             "name": "小米电视4A 70英寸",
@@ -1827,24 +1827,24 @@
       }
     ]
   },
-  "domestic_appliance":{
-    "id":"0",
-    "title":"生活电器",
-    "firMenu":[
+  "domestic_appliance": {
+    "id": "0",
+    "title": "生活电器",
+    "firMenu": [
       {
-        "id":"0",
-        "img":"https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/37973c4bedc27bae38e1b1758ed4b318.png?thumb=1&w=351&h=450&f=webp&q=90"
+        "id": "0",
+        "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/37973c4bedc27bae38e1b1758ed4b318.png?thumb=1&w=351&h=450&f=webp&q=90"
       },
       {
-        "id":"1",
-        "img":"https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/d51103fe64d90aca747a6d753beae293.jpeg?thumb=1&w=351&h=450&f=webp&q=90"
+        "id": "1",
+        "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/d51103fe64d90aca747a6d753beae293.jpeg?thumb=1&w=351&h=450&f=webp&q=90"
       }
     ],
-    "secMenu":[
+    "secMenu": [
       {
-        "id":"0",
-        "type":"扫地机",
-        "products":[
+        "id": "0",
+        "type": "扫地机",
+        "products": [
           {
             "id": "0",
             "name": "米家全能扫拖机器人",
@@ -1920,9 +1920,9 @@
         ]
       },
       {
-        "id":"1",
-        "type":"空净",
-        "products":[
+        "id": "1",
+        "type": "空净",
+        "products": [
           {
             "id": "0",
             "name": "米家空气净化器 4 Pro",
@@ -1998,9 +1998,9 @@
         ]
       },
       {
-        "id":"2",
-        "type":"清洁",
-        "products":[
+        "id": "2",
+        "type": "清洁",
+        "products": [
           {
             "id": "0",
             "name": "米家无线吸尘器K10 Pro",
@@ -2076,9 +2076,9 @@
         ]
       },
       {
-        "id":"3",
-        "type":"风扇",
-        "products":[
+        "id": "3",
+        "type": "风扇",
+        "products": [
           {
             "id": "0",
             "name": "米家直流变频落地扇1X",
@@ -2086,56 +2086,64 @@
             "price": "329元",
             "delPrice": "",
             "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/16152aed79632c729d5cdb154ed72086.png?thumb=1&w=300&h=300&f=webp&q=90"
-          },{
+          },
+          {
             "id": "1",
             "name": "米家直流变频落地扇1X",
             "explain": "模拟自然风算法",
             "price": "329元",
             "delPrice": "",
             "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/16152aed79632c729d5cdb154ed72086.png?thumb=1&w=300&h=300&f=webp&q=90"
-          },{
+          },
+          {
             "id": "2",
             "name": "米家直流变频落地扇1X",
             "explain": "模拟自然风算法",
             "price": "329元",
             "delPrice": "",
             "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/16152aed79632c729d5cdb154ed72086.png?thumb=1&w=300&h=300&f=webp&q=90"
-          },{
+          },
+          {
             "id": "3",
             "name": "米家直流变频落地扇1X",
             "explain": "模拟自然风算法",
             "price": "329元",
             "delPrice": "",
             "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/16152aed79632c729d5cdb154ed72086.png?thumb=1&w=300&h=300&f=webp&q=90"
-          },{
+          },
+          {
             "id": "4",
             "name": "米家直流变频落地扇1X",
             "explain": "模拟自然风算法",
             "price": "329元",
             "delPrice": "",
             "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/16152aed79632c729d5cdb154ed72086.png?thumb=1&w=300&h=300&f=webp&q=90"
-          },{
+          },
+          {
             "id": "5",
             "name": "米家直流变频落地扇1X",
             "explain": "模拟自然风算法",
             "price": "329元",
             "delPrice": "",
             "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/16152aed79632c729d5cdb154ed72086.png?thumb=1&w=300&h=300&f=webp&q=90"
-          },{
+          },
+          {
             "id": "6",
             "name": "米家直流变频落地扇1X",
             "explain": "模拟自然风算法",
             "price": "329元",
             "delPrice": "",
             "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/16152aed79632c729d5cdb154ed72086.png?thumb=1&w=300&h=300&f=webp&q=90"
-          },{
+          },
+          {
             "id": "7",
             "name": "米家直流变频落地扇1X",
             "explain": "模拟自然风算法",
             "price": "329元",
             "delPrice": "",
             "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/16152aed79632c729d5cdb154ed72086.png?thumb=1&w=300&h=300&f=webp&q=90"
-          },{
+          },
+          {
             "id": "8",
             "name": "米家直流变频落地扇1X",
             "explain": "模拟自然风算法",
@@ -2147,24 +2155,24 @@
       }
     ]
   },
-  "kitchen_appliances":{
-    "id":"0",
-    "title":"厨房电器",
-    "firMenu":[
+  "kitchen_appliances": {
+    "id": "0",
+    "title": "厨房电器",
+    "firMenu": [
       {
-        "id":"0",
-        "img":"https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/d0a92bc19df74c4da59563206321320a.jpg?thumb=1&w=351&h=450&f=webp&q=90"
+        "id": "0",
+        "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/d0a92bc19df74c4da59563206321320a.jpg?thumb=1&w=351&h=450&f=webp&q=90"
       },
       {
-        "id":"1",
-        "img":"https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/00c61477413eb05a67b1ec032a148121.png?thumb=1&w=351&h=450&f=webp&q=90"
+        "id": "1",
+        "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/00c61477413eb05a67b1ec032a148121.png?thumb=1&w=351&h=450&f=webp&q=90"
       }
     ],
-    "secMenu":[
+    "secMenu": [
       {
-        "id":"0",
-        "type":"净水器",
-        "products":[
+        "id": "0",
+        "type": "净水器",
+        "products": [
           {
             "id": "0",
             "name": "小米净水器1200G",
@@ -2224,9 +2232,9 @@
         ]
       },
       {
-        "id":"1",
-        "type":"烟灶",
-        "products":[
+        "id": "1",
+        "type": "烟灶",
+        "products": [
           {
             "id": "0",
             "name": "米家侧吸烟灶套装S1 天然气",
@@ -2234,7 +2242,8 @@
             "price": "1499元",
             "delPrice": "1898元",
             "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/f19bf1611b3a9fe863af68911b769afa.jpg?thumb=1&w=300&h=300&f=webp&q=90"
-          },{
+          },
+          {
             "id": "1",
             "name": "米家侧吸烟灶套装S1 天然气",
             "explain": "挥手即排，洁净烹饪",
@@ -2261,9 +2270,9 @@
         ]
       },
       {
-        "id":"2",
-        "type":"电饭煲",
-        "products":[
+        "id": "2",
+        "type": "电饭煲",
+        "products": [
           {
             "id": "0",
             "name": "米家智能电饭煲 微压版 3L",
@@ -2315,9 +2324,9 @@
         ]
       },
       {
-        "id":"3",
-        "type":"微蒸烤",
-        "products":[
+        "id": "3",
+        "type": "微蒸烤",
+        "products": [
           {
             "id": "0",
             "name": "米家智能蒸烤箱",
@@ -2325,35 +2334,40 @@
             "price": "1199元",
             "delPrice": "1499元",
             "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/0fabb6c16cbadaf300da4a2c2ffb9afa.jpg?thumb=1&w=300&h=300&f=webp&q=90"
-          },{
+          },
+          {
             "id": "1",
             "name": "米家智能蒸烤箱",
             "explain": "30L大容积， 蒸烤烘炸炖一机多用",
             "price": "1199元",
             "delPrice": "1499元",
             "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/0fabb6c16cbadaf300da4a2c2ffb9afa.jpg?thumb=1&w=300&h=300&f=webp&q=90"
-          },{
+          },
+          {
             "id": "2",
             "name": "米家智能蒸烤箱",
             "explain": "30L大容积， 蒸烤烘炸炖一机多用",
             "price": "1199元",
             "delPrice": "1499元",
             "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/0fabb6c16cbadaf300da4a2c2ffb9afa.jpg?thumb=1&w=300&h=300&f=webp&q=90"
-          },{
+          },
+          {
             "id": "3",
             "name": "米家智能蒸烤箱",
             "explain": "30L大容积， 蒸烤烘炸炖一机多用",
             "price": "1199元",
             "delPrice": "1499元",
             "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/0fabb6c16cbadaf300da4a2c2ffb9afa.jpg?thumb=1&w=300&h=300&f=webp&q=90"
-          },{
+          },
+          {
             "id": "4",
             "name": "米家智能蒸烤箱",
             "explain": "30L大容积， 蒸烤烘炸炖一机多用",
             "price": "1199元",
             "delPrice": "1499元",
             "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/0fabb6c16cbadaf300da4a2c2ffb9afa.jpg?thumb=1&w=300&h=300&f=webp&q=90"
-          },{
+          },
+          {
             "id": "5",
             "name": "米家智能蒸烤箱",
             "explain": "30L大容积， 蒸烤烘炸炖一机多用",
@@ -2365,24 +2379,24 @@
       }
     ]
   },
-  "technology_home":{
-    "id":"0",
-    "title":"智能家居",
-    "firMenu":[
+  "technology_home": {
+    "id": "0",
+    "title": "智能家居",
+    "firMenu": [
       {
-        "id":"0",
-        "img":"https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ec383d223d9f38f442268df684c526f6.png?thumb=1&w=351&h=450&f=webp&q=90"
+        "id": "0",
+        "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ec383d223d9f38f442268df684c526f6.png?thumb=1&w=351&h=450&f=webp&q=90"
       },
       {
-        "id":"1",
-        "img":"https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/bb9761c5b49e21b4d5aa03e7ddaf1a09.png?thumb=1&w=351&h=450&f=webp&q=90"
+        "id": "1",
+        "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/bb9761c5b49e21b4d5aa03e7ddaf1a09.png?thumb=1&w=351&h=450&f=webp&q=90"
       }
     ],
-    "secMenu":[
+    "secMenu": [
       {
-        "id":"0",
-        "type":"小爱音箱",
-        "products":[
+        "id": "0",
+        "type": "小爱音箱",
+        "products": [
           {
             "id": "0",
             "name": "Xiaomi智能家庭屏 10",
@@ -2390,56 +2404,64 @@
             "price": "949元",
             "delPrice": "999元",
             "img": "https://cdn.cnbj1.fds.api.mi-img.com/nr-pub/202204191820_88e1f0fded3b4f05c5bdecf433a868cf.png?thumb=1&w=300&h=300&f=webp&q=90"
-          },{
+          },
+          {
             "id": "1",
             "name": "Xiaomi智能家庭屏 10",
             "explain": "MIUI Home｜10.1 高清大屏｜115°超广角摄像头｜儿童模式｜家庭 KTV｜小爱同学",
             "price": "949元",
             "delPrice": "999元",
             "img": "https://cdn.cnbj1.fds.api.mi-img.com/nr-pub/202204191820_88e1f0fded3b4f05c5bdecf433a868cf.png?thumb=1&w=300&h=300&f=webp&q=90"
-          },{
+          },
+          {
             "id": "2",
             "name": "Xiaomi智能家庭屏 10",
             "explain": "MIUI Home｜10.1 高清大屏｜115°超广角摄像头｜儿童模式｜家庭 KTV｜小爱同学",
             "price": "949元",
             "delPrice": "999元",
             "img": "https://cdn.cnbj1.fds.api.mi-img.com/nr-pub/202204191820_88e1f0fded3b4f05c5bdecf433a868cf.png?thumb=1&w=300&h=300&f=webp&q=90"
-          },{
+          },
+          {
             "id": "3",
             "name": "Xiaomi智能家庭屏 10",
             "explain": "MIUI Home｜10.1 高清大屏｜115°超广角摄像头｜儿童模式｜家庭 KTV｜小爱同学",
             "price": "949元",
             "delPrice": "999元",
             "img": "https://cdn.cnbj1.fds.api.mi-img.com/nr-pub/202204191820_88e1f0fded3b4f05c5bdecf433a868cf.png?thumb=1&w=300&h=300&f=webp&q=90"
-          },{
+          },
+          {
             "id": "4",
             "name": "Xiaomi智能家庭屏 10",
             "explain": "MIUI Home｜10.1 高清大屏｜115°超广角摄像头｜儿童模式｜家庭 KTV｜小爱同学",
             "price": "949元",
             "delPrice": "999元",
             "img": "https://cdn.cnbj1.fds.api.mi-img.com/nr-pub/202204191820_88e1f0fded3b4f05c5bdecf433a868cf.png?thumb=1&w=300&h=300&f=webp&q=90"
-          },{
+          },
+          {
             "id": "5",
             "name": "Xiaomi智能家庭屏 10",
             "explain": "MIUI Home｜10.1 高清大屏｜115°超广角摄像头｜儿童模式｜家庭 KTV｜小爱同学",
             "price": "949元",
             "delPrice": "999元",
             "img": "https://cdn.cnbj1.fds.api.mi-img.com/nr-pub/202204191820_88e1f0fded3b4f05c5bdecf433a868cf.png?thumb=1&w=300&h=300&f=webp&q=90"
-          },{
+          },
+          {
             "id": "6",
             "name": "Xiaomi智能家庭屏 10",
             "explain": "MIUI Home｜10.1 高清大屏｜115°超广角摄像头｜儿童模式｜家庭 KTV｜小爱同学",
             "price": "949元",
             "delPrice": "999元",
             "img": "https://cdn.cnbj1.fds.api.mi-img.com/nr-pub/202204191820_88e1f0fded3b4f05c5bdecf433a868cf.png?thumb=1&w=300&h=300&f=webp&q=90"
-          },{
+          },
+          {
             "id": "7",
             "name": "Xiaomi智能家庭屏 10",
             "explain": "MIUI Home｜10.1 高清大屏｜115°超广角摄像头｜儿童模式｜家庭 KTV｜小爱同学",
             "price": "949元",
             "delPrice": "999元",
             "img": "https://cdn.cnbj1.fds.api.mi-img.com/nr-pub/202204191820_88e1f0fded3b4f05c5bdecf433a868cf.png?thumb=1&w=300&h=300&f=webp&q=90"
-          },{
+          },
+          {
             "id": "8",
             "name": "Xiaomi智能家庭屏 10",
             "explain": "MIUI Home｜10.1 高清大屏｜115°超广角摄像头｜儿童模式｜家庭 KTV｜小爱同学",
@@ -2450,9 +2472,9 @@
         ]
       },
       {
-        "id":"1",
-        "type":"门锁",
-        "products":[
+        "id": "1",
+        "type": "门锁",
+        "products": [
           {
             "id": "0",
             "name": "小米智能门锁 1S",
@@ -2460,35 +2482,40 @@
             "price": "1299元",
             "delPrice": "",
             "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/0518e14e0e66f546a76802ebc15953b0.jpg?thumb=1&w=300&h=300&f=webp&q=90"
-          },{
+          },
+          {
             "id": "1",
             "name": "小米智能门锁 1S",
             "explain": "3D半导体指纹识别 | 7种开锁方式 | 蓝宝石防刮指纹区 | 18个月超长续航 ",
             "price": "1299元",
             "delPrice": "",
             "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/0518e14e0e66f546a76802ebc15953b0.jpg?thumb=1&w=300&h=300&f=webp&q=90"
-          },{
+          },
+          {
             "id": "2",
             "name": "小米智能门锁 1S",
             "explain": "3D半导体指纹识别 | 7种开锁方式 | 蓝宝石防刮指纹区 | 18个月超长续航 ",
             "price": "1299元",
             "delPrice": "",
             "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/0518e14e0e66f546a76802ebc15953b0.jpg?thumb=1&w=300&h=300&f=webp&q=90"
-          },{
+          },
+          {
             "id": "3",
             "name": "小米智能门锁 1S",
             "explain": "3D半导体指纹识别 | 7种开锁方式 | 蓝宝石防刮指纹区 | 18个月超长续航 ",
             "price": "1299元",
             "delPrice": "",
             "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/0518e14e0e66f546a76802ebc15953b0.jpg?thumb=1&w=300&h=300&f=webp&q=90"
-          },{
+          },
+          {
             "id": "4",
             "name": "小米智能门锁 1S",
             "explain": "3D半导体指纹识别 | 7种开锁方式 | 蓝宝石防刮指纹区 | 18个月超长续航 ",
             "price": "1299元",
             "delPrice": "",
             "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/0518e14e0e66f546a76802ebc15953b0.jpg?thumb=1&w=300&h=300&f=webp&q=90"
-          },{
+          },
+          {
             "id": "5",
             "name": "小米智能门锁 1S",
             "explain": "3D半导体指纹识别 | 7种开锁方式 | 蓝宝石防刮指纹区 | 18个月超长续航 ",
@@ -2499,9 +2526,9 @@
         ]
       },
       {
-        "id":"2",
-        "type":"路由器",
-        "products":[
+        "id": "2",
+        "type": "路由器",
+        "products": [
           {
             "id": "0",
             "name": "小米路由器AX3000",
@@ -2509,56 +2536,64 @@
             "price": "329元",
             "delPrice": "349元",
             "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/314df4955a5f305de306155078bb103d.jpg?thumb=1&w=300&h=300&f=webp&q=90"
-          },{
+          },
+          {
             "id": "1",
             "name": "小米路由器AX3000",
             "explain": "小米路由器AX3000 小米手机专属加速，四路独立信号放大器，新一代高通芯片，超稳运行不掉线",
             "price": "329元",
             "delPrice": "349元",
             "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/314df4955a5f305de306155078bb103d.jpg?thumb=1&w=300&h=300&f=webp&q=90"
-          },{
+          },
+          {
             "id": "2",
             "name": "小米路由器AX3000",
             "explain": "小米路由器AX3000 小米手机专属加速，四路独立信号放大器，新一代高通芯片，超稳运行不掉线",
             "price": "329元",
             "delPrice": "349元",
             "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/314df4955a5f305de306155078bb103d.jpg?thumb=1&w=300&h=300&f=webp&q=90"
-          },{
+          },
+          {
             "id": "3",
             "name": "小米路由器AX3000",
             "explain": "小米路由器AX3000 小米手机专属加速，四路独立信号放大器，新一代高通芯片，超稳运行不掉线",
             "price": "329元",
             "delPrice": "349元",
             "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/314df4955a5f305de306155078bb103d.jpg?thumb=1&w=300&h=300&f=webp&q=90"
-          },{
+          },
+          {
             "id": "4",
             "name": "小米路由器AX3000",
             "explain": "小米路由器AX3000 小米手机专属加速，四路独立信号放大器，新一代高通芯片，超稳运行不掉线",
             "price": "329元",
             "delPrice": "349元",
             "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/314df4955a5f305de306155078bb103d.jpg?thumb=1&w=300&h=300&f=webp&q=90"
-          },{
+          },
+          {
             "id": "5",
             "name": "小米路由器AX3000",
             "explain": "小米路由器AX3000 小米手机专属加速，四路独立信号放大器，新一代高通芯片，超稳运行不掉线",
             "price": "329元",
             "delPrice": "349元",
             "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/314df4955a5f305de306155078bb103d.jpg?thumb=1&w=300&h=300&f=webp&q=90"
-          },{
+          },
+          {
             "id": "6",
             "name": "小米路由器AX3000",
             "explain": "小米路由器AX3000 小米手机专属加速，四路独立信号放大器，新一代高通芯片，超稳运行不掉线",
             "price": "329元",
             "delPrice": "349元",
             "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/314df4955a5f305de306155078bb103d.jpg?thumb=1&w=300&h=300&f=webp&q=90"
-          },{
+          },
+          {
             "id": "7",
             "name": "小米路由器AX3000",
             "explain": "小米路由器AX3000 小米手机专属加速，四路独立信号放大器，新一代高通芯片，超稳运行不掉线",
             "price": "329元",
             "delPrice": "349元",
             "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/314df4955a5f305de306155078bb103d.jpg?thumb=1&w=300&h=300&f=webp&q=90"
-          },{
+          },
+          {
             "id": "8",
             "name": "小米路由器AX3000",
             "explain": "小米路由器AX3000 小米手机专属加速，四路独立信号放大器，新一代高通芯片，超稳运行不掉线",
@@ -2569,9 +2604,9 @@
         ]
       },
       {
-        "id":"3",
-        "type":"智能设备",
-        "products":[
+        "id": "3",
+        "type": "智能设备",
+        "products": [
           {
             "id": "0",
             "name": "米家空调伴侣2",
@@ -2579,56 +2614,64 @@
             "price": "79元",
             "delPrice": "",
             "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/74f5975a77c6d9fcf67e294c47561994.jpg?thumb=1&w=300&h=300&f=webp&q=90"
-          },{
+          },
+          {
             "id": "1",
             "name": "米家空调伴侣2",
             "explain": "传统空调轻松智能化",
             "price": "79元",
             "delPrice": "",
             "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/74f5975a77c6d9fcf67e294c47561994.jpg?thumb=1&w=300&h=300&f=webp&q=90"
-          },{
+          },
+          {
             "id": "2",
             "name": "米家空调伴侣2",
             "explain": "传统空调轻松智能化",
             "price": "79元",
             "delPrice": "",
             "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/74f5975a77c6d9fcf67e294c47561994.jpg?thumb=1&w=300&h=300&f=webp&q=90"
-          },{
+          },
+          {
             "id": "3",
             "name": "米家空调伴侣2",
             "explain": "传统空调轻松智能化",
             "price": "79元",
             "delPrice": "",
             "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/74f5975a77c6d9fcf67e294c47561994.jpg?thumb=1&w=300&h=300&f=webp&q=90"
-          },{
+          },
+          {
             "id": "4",
             "name": "米家空调伴侣2",
             "explain": "传统空调轻松智能化",
             "price": "79元",
             "delPrice": "",
             "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/74f5975a77c6d9fcf67e294c47561994.jpg?thumb=1&w=300&h=300&f=webp&q=90"
-          },{
+          },
+          {
             "id": "5",
             "name": "米家空调伴侣2",
             "explain": "传统空调轻松智能化",
             "price": "79元",
             "delPrice": "",
             "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/74f5975a77c6d9fcf67e294c47561994.jpg?thumb=1&w=300&h=300&f=webp&q=90"
-          },{
+          },
+          {
             "id": "6",
             "name": "米家空调伴侣2",
             "explain": "传统空调轻松智能化",
             "price": "79元",
             "delPrice": "",
             "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/74f5975a77c6d9fcf67e294c47561994.jpg?thumb=1&w=300&h=300&f=webp&q=90"
-          },{
+          },
+          {
             "id": "7",
             "name": "米家空调伴侣2",
             "explain": "传统空调轻松智能化",
             "price": "79元",
             "delPrice": "",
             "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/74f5975a77c6d9fcf67e294c47561994.jpg?thumb=1&w=300&h=300&f=webp&q=90"
-          },{
+          },
+          {
             "id": "8",
             "name": "米家空调伴侣2",
             "explain": "传统空调轻松智能化",
@@ -2640,24 +2683,24 @@
       }
     ]
   },
-  "sport":{
-    "id":"0",
-    "title":"运动出行",
-    "firMenu":[
+  "sport": {
+    "id": "0",
+    "title": "运动出行",
+    "firMenu": [
       {
-        "id":"0",
-        "img":"https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/84fef78042e4056ea589474196780d4e.jpg?thumb=1&w=351&h=450&f=webp&q=90"
+        "id": "0",
+        "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/84fef78042e4056ea589474196780d4e.jpg?thumb=1&w=351&h=450&f=webp&q=90"
       },
       {
-        "id":"1",
-        "img":"https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ecce1c0d981037e58cfa281a06122249.jpg?thumb=1&w=351&h=450&f=webp&q=90"
+        "id": "1",
+        "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ecce1c0d981037e58cfa281a06122249.jpg?thumb=1&w=351&h=450&f=webp&q=90"
       }
     ],
-    "secMenu":[
+    "secMenu": [
       {
-        "id":"0",
-        "type":"平衡车|滑板车",
-        "products":[
+        "id": "0",
+        "type": "平衡车|滑板车",
+        "products": [
           {
             "id": "0",
             "name": "九号平衡车",
@@ -2673,35 +2716,40 @@
             "price": "1899元",
             "delPrice": "2199元",
             "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-miapp-a1/T1r_x_BgLT1RXrhCrK.jpg?thumb=1&w=300&h=300"
-          },{
+          },
+          {
             "id": "2",
             "name": "九号平衡车",
             "explain": "年轻人的酷玩具",
             "price": "1899元",
             "delPrice": "2199元",
             "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-miapp-a1/T1r_x_BgLT1RXrhCrK.jpg?thumb=1&w=300&h=300"
-          },{
+          },
+          {
             "id": "3",
             "name": "九号平衡车",
             "explain": "年轻人的酷玩具",
             "price": "1899元",
             "delPrice": "2199元",
             "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-miapp-a1/T1r_x_BgLT1RXrhCrK.jpg?thumb=1&w=300&h=300"
-          },{
+          },
+          {
             "id": "4",
             "name": "九号平衡车",
             "explain": "年轻人的酷玩具",
             "price": "1899元",
             "delPrice": "2199元",
             "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-miapp-a1/T1r_x_BgLT1RXrhCrK.jpg?thumb=1&w=300&h=300"
-          },{
+          },
+          {
             "id": "5",
             "name": "九号平衡车",
             "explain": "年轻人的酷玩具",
             "price": "1899元",
             "delPrice": "2199元",
             "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-miapp-a1/T1r_x_BgLT1RXrhCrK.jpg?thumb=1&w=300&h=300"
-          },{
+          },
+          {
             "id": "6",
             "name": "九号平衡车",
             "explain": "年轻人的酷玩具",
@@ -2712,9 +2760,9 @@
         ]
       },
       {
-        "id":"1",
-        "type":"运动健身",
-        "products":[
+        "id": "1",
+        "type": "运动健身",
+        "products": [
           {
             "id": "0",
             "name": "小米体脂秤2",
@@ -2774,9 +2822,9 @@
         ]
       },
       {
-        "id":"2",
-        "type":"箱包配饰",
-        "products":[
+        "id": "2",
+        "type": "箱包配饰",
+        "products": [
           {
             "id": "0",
             "name": "小米旅行箱 20英寸",
@@ -2784,56 +2832,64 @@
             "price": "249元",
             "delPrice": "349元",
             "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/a0ca95bc1de606c2d6a3a44cd28b3490.jpg?thumb=1&w=300&h=300&f=webp&q=90"
-          },{
+          },
+          {
             "id": "1",
             "name": "小米旅行箱 20英寸",
             "explain": "一款坚固的旅行箱伴您左右",
             "price": "249元",
             "delPrice": "349元",
             "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/a0ca95bc1de606c2d6a3a44cd28b3490.jpg?thumb=1&w=300&h=300&f=webp&q=90"
-          },{
+          },
+          {
             "id": "2",
             "name": "小米旅行箱 20英寸",
             "explain": "一款坚固的旅行箱伴您左右",
             "price": "249元",
             "delPrice": "349元",
             "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/a0ca95bc1de606c2d6a3a44cd28b3490.jpg?thumb=1&w=300&h=300&f=webp&q=90"
-          },{
+          },
+          {
             "id": "3",
             "name": "小米旅行箱 20英寸",
             "explain": "一款坚固的旅行箱伴您左右",
             "price": "249元",
             "delPrice": "349元",
             "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/a0ca95bc1de606c2d6a3a44cd28b3490.jpg?thumb=1&w=300&h=300&f=webp&q=90"
-          },{
+          },
+          {
             "id": "4",
             "name": "小米旅行箱 20英寸",
             "explain": "一款坚固的旅行箱伴您左右",
             "price": "249元",
             "delPrice": "349元",
             "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/a0ca95bc1de606c2d6a3a44cd28b3490.jpg?thumb=1&w=300&h=300&f=webp&q=90"
-          },{
+          },
+          {
             "id": "5",
             "name": "小米旅行箱 20英寸",
             "explain": "一款坚固的旅行箱伴您左右",
             "price": "249元",
             "delPrice": "349元",
             "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/a0ca95bc1de606c2d6a3a44cd28b3490.jpg?thumb=1&w=300&h=300&f=webp&q=90"
-          },{
+          },
+          {
             "id": "6",
             "name": "小米旅行箱 20英寸",
             "explain": "一款坚固的旅行箱伴您左右",
             "price": "249元",
             "delPrice": "349元",
             "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/a0ca95bc1de606c2d6a3a44cd28b3490.jpg?thumb=1&w=300&h=300&f=webp&q=90"
-          },{
+          },
+          {
             "id": "7",
             "name": "小米旅行箱 20英寸",
             "explain": "一款坚固的旅行箱伴您左右",
             "price": "249元",
             "delPrice": "349元",
             "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/a0ca95bc1de606c2d6a3a44cd28b3490.jpg?thumb=1&w=300&h=300&f=webp&q=90"
-          },{
+          },
+          {
             "id": "8",
             "name": "小米旅行箱 20英寸",
             "explain": "一款坚固的旅行箱伴您左右",
@@ -2844,9 +2900,9 @@
         ]
       },
       {
-        "id":"3",
-        "type":"出行工具",
-        "products":[
+        "id": "3",
+        "type": "出行工具",
+        "products": [
           {
             "id": "0",
             "name": "米家充气宝1S",
@@ -2854,56 +2910,64 @@
             "price": "189元",
             "delPrice": "199元",
             "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/3fe46e9ba1bf939713b0c3c55bf6776b.jpg?thumb=1&w=300&h=300&f=webp&q=90"
-          },{
+          },
+          {
             "id": "1",
             "name": "米家充气宝1S",
             "explain": "米家充气宝1S",
             "price": "189元",
             "delPrice": "199元",
             "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/3fe46e9ba1bf939713b0c3c55bf6776b.jpg?thumb=1&w=300&h=300&f=webp&q=90"
-          },{
+          },
+          {
             "id": "2",
             "name": "米家充气宝1S",
             "explain": "米家充气宝1S",
             "price": "189元",
             "delPrice": "199元",
             "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/3fe46e9ba1bf939713b0c3c55bf6776b.jpg?thumb=1&w=300&h=300&f=webp&q=90"
-          },{
+          },
+          {
             "id": "3",
             "name": "米家充气宝1S",
             "explain": "米家充气宝1S",
             "price": "189元",
             "delPrice": "199元",
             "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/3fe46e9ba1bf939713b0c3c55bf6776b.jpg?thumb=1&w=300&h=300&f=webp&q=90"
-          },{
+          },
+          {
             "id": "4",
             "name": "米家充气宝1S",
             "explain": "米家充气宝1S",
             "price": "189元",
             "delPrice": "199元",
             "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/3fe46e9ba1bf939713b0c3c55bf6776b.jpg?thumb=1&w=300&h=300&f=webp&q=90"
-          },{
+          },
+          {
             "id": "5",
             "name": "米家充气宝1S",
             "explain": "米家充气宝1S",
             "price": "189元",
             "delPrice": "199元",
             "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/3fe46e9ba1bf939713b0c3c55bf6776b.jpg?thumb=1&w=300&h=300&f=webp&q=90"
-          },{
+          },
+          {
             "id": "6",
             "name": "米家充气宝1S",
             "explain": "米家充气宝1S",
             "price": "189元",
             "delPrice": "199元",
             "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/3fe46e9ba1bf939713b0c3c55bf6776b.jpg?thumb=1&w=300&h=300&f=webp&q=90"
-          },{
+          },
+          {
             "id": "7",
             "name": "米家充气宝1S",
             "explain": "米家充气宝1S",
             "price": "189元",
             "delPrice": "199元",
             "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/3fe46e9ba1bf939713b0c3c55bf6776b.jpg?thumb=1&w=300&h=300&f=webp&q=90"
-          },{
+          },
+          {
             "id": "8",
             "name": "米家充气宝1S",
             "explain": "米家充气宝1S",
@@ -2915,24 +2979,24 @@
       }
     ]
   },
-  "daily_necessities":{
-    "id":"0",
-    "title":"日用百货",
-    "firMenu":[
+  "daily_necessities": {
+    "id": "0",
+    "title": "日用百货",
+    "firMenu": [
       {
-        "id":"0",
-        "img":"https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/c5769bd53177a9301113f799fdc8511d.jpg?thumb=1&w=351&h=450&f=webp&q=90"
+        "id": "0",
+        "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/c5769bd53177a9301113f799fdc8511d.jpg?thumb=1&w=351&h=450&f=webp&q=90"
       },
       {
-        "id":"1",
-        "img":"https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/65950f83f429f2a05125bea297d8df6b.jpg?thumb=1&w=351&h=450&f=webp&q=90"
+        "id": "1",
+        "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/65950f83f429f2a05125bea297d8df6b.jpg?thumb=1&w=351&h=450&f=webp&q=90"
       }
     ],
-    "secMenu":[
+    "secMenu": [
       {
-        "id":"0",
-        "type":"个护健康",
-        "products":[
+        "id": "0",
+        "type": "个护健康",
+        "products": [
           {
             "id": "0",
             "name": "米家声波电动牙刷T700",
@@ -2940,56 +3004,64 @@
             "price": "299元",
             "delPrice": "349元",
             "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/e2ad7080408a1434b90f824f50293b89.jpg?thumb=1&w=300&h=300&f=webp&q=90"
-          },{
+          },
+          {
             "id": "1",
             "name": "米家声波电动牙刷T700",
             "explain": "智能洁齿丨强劲动力",
             "price": "299元",
             "delPrice": "349元",
             "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/e2ad7080408a1434b90f824f50293b89.jpg?thumb=1&w=300&h=300&f=webp&q=90"
-          },{
+          },
+          {
             "id": "2",
             "name": "米家声波电动牙刷T700",
             "explain": "智能洁齿丨强劲动力",
             "price": "299元",
             "delPrice": "349元",
             "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/e2ad7080408a1434b90f824f50293b89.jpg?thumb=1&w=300&h=300&f=webp&q=90"
-          },{
+          },
+          {
             "id": "3",
             "name": "米家声波电动牙刷T700",
             "explain": "智能洁齿丨强劲动力",
             "price": "299元",
             "delPrice": "349元",
             "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/e2ad7080408a1434b90f824f50293b89.jpg?thumb=1&w=300&h=300&f=webp&q=90"
-          },{
+          },
+          {
             "id": "4",
             "name": "米家声波电动牙刷T700",
             "explain": "智能洁齿丨强劲动力",
             "price": "299元",
             "delPrice": "349元",
             "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/e2ad7080408a1434b90f824f50293b89.jpg?thumb=1&w=300&h=300&f=webp&q=90"
-          },{
+          },
+          {
             "id": "5",
             "name": "米家声波电动牙刷T700",
             "explain": "智能洁齿丨强劲动力",
             "price": "299元",
             "delPrice": "349元",
             "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/e2ad7080408a1434b90f824f50293b89.jpg?thumb=1&w=300&h=300&f=webp&q=90"
-          },{
+          },
+          {
             "id": "6",
             "name": "米家声波电动牙刷T700",
             "explain": "智能洁齿丨强劲动力",
             "price": "299元",
             "delPrice": "349元",
             "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/e2ad7080408a1434b90f824f50293b89.jpg?thumb=1&w=300&h=300&f=webp&q=90"
-          },{
+          },
+          {
             "id": "7",
             "name": "米家声波电动牙刷T700",
             "explain": "智能洁齿丨强劲动力",
             "price": "299元",
             "delPrice": "349元",
             "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/e2ad7080408a1434b90f824f50293b89.jpg?thumb=1&w=300&h=300&f=webp&q=90"
-          },{
+          },
+          {
             "id": "8",
             "name": "米家声波电动牙刷T700",
             "explain": "智能洁齿丨强劲动力",
@@ -3000,9 +3072,9 @@
         ]
       },
       {
-        "id":"1",
-        "type":"电源线材",
-        "products":[
+        "id": "1",
+        "type": "电源线材",
+        "products": [
           {
             "id": "0",
             "name": "小米充电宝10000mAh 33W口袋版Pro",
@@ -3078,9 +3150,9 @@
         ]
       },
       {
-        "id":"2",
-        "type":"儿童用品",
-        "products":[
+        "id": "2",
+        "type": "儿童用品",
+        "products": [
           {
             "id": "0",
             "name": "米兔儿童电话手表5C",
@@ -3096,28 +3168,32 @@
             "price": "349元",
             "delPrice": "399元",
             "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/2562c4a892f018a979ff0cd8b992251f.jpg?thumb=1&w=300&h=300&f=webp&q=90"
-          },{
+          },
+          {
             "id": "2",
             "name": "米兔儿童电话手表5C",
             "explain": "视频通话，守护孩子“看得见”",
             "price": "349元",
             "delPrice": "399元",
             "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/2562c4a892f018a979ff0cd8b992251f.jpg?thumb=1&w=300&h=300&f=webp&q=90"
-          },{
+          },
+          {
             "id": "3",
             "name": "米兔儿童电话手表5C",
             "explain": "视频通话，守护孩子“看得见”",
             "price": "349元",
             "delPrice": "399元",
             "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/2562c4a892f018a979ff0cd8b992251f.jpg?thumb=1&w=300&h=300&f=webp&q=90"
-          },{
+          },
+          {
             "id": "4",
             "name": "米兔儿童电话手表5C",
             "explain": "视频通话，守护孩子“看得见”",
             "price": "349元",
             "delPrice": "399元",
             "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/2562c4a892f018a979ff0cd8b992251f.jpg?thumb=1&w=300&h=300&f=webp&q=90"
-          },{
+          },
+          {
             "id": "5",
             "name": "米兔儿童电话手表5C",
             "explain": "视频通话，守护孩子“看得见”",
@@ -3128,9 +3204,9 @@
         ]
       },
       {
-        "id":"3",
-        "type":"家居床品",
-        "products":[
+        "id": "3",
+        "type": "家居床品",
+        "products": [
           {
             "id": "0",
             "name": "8H释压舒弹纤维枕 抗菌对装",
@@ -3138,56 +3214,64 @@
             "price": "99元",
             "delPrice": "129元",
             "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/1db0bdebf7a991abf8a307f289491a37.jpg?thumb=1&w=300&h=300&f=webp&q=90"
-          },{
+          },
+          {
             "id": "1",
             "name": "8H释压舒弹纤维枕 抗菌对装",
             "explain": "8H释压舒弹纤维枕 抗菌对装",
             "price": "99元",
             "delPrice": "129元",
             "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/1db0bdebf7a991abf8a307f289491a37.jpg?thumb=1&w=300&h=300&f=webp&q=90"
-          },{
+          },
+          {
             "id": "2",
             "name": "8H释压舒弹纤维枕 抗菌对装",
             "explain": "8H释压舒弹纤维枕 抗菌对装",
             "price": "99元",
             "delPrice": "129元",
             "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/1db0bdebf7a991abf8a307f289491a37.jpg?thumb=1&w=300&h=300&f=webp&q=90"
-          },{
+          },
+          {
             "id": "3",
             "name": "8H释压舒弹纤维枕 抗菌对装",
             "explain": "8H释压舒弹纤维枕 抗菌对装",
             "price": "99元",
             "delPrice": "129元",
             "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/1db0bdebf7a991abf8a307f289491a37.jpg?thumb=1&w=300&h=300&f=webp&q=90"
-          },{
+          },
+          {
             "id": "4",
             "name": "8H释压舒弹纤维枕 抗菌对装",
             "explain": "8H释压舒弹纤维枕 抗菌对装",
             "price": "99元",
             "delPrice": "129元",
             "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/1db0bdebf7a991abf8a307f289491a37.jpg?thumb=1&w=300&h=300&f=webp&q=90"
-          },{
+          },
+          {
             "id": "5",
             "name": "8H释压舒弹纤维枕 抗菌对装",
             "explain": "8H释压舒弹纤维枕 抗菌对装",
             "price": "99元",
             "delPrice": "129元",
             "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/1db0bdebf7a991abf8a307f289491a37.jpg?thumb=1&w=300&h=300&f=webp&q=90"
-          },{
+          },
+          {
             "id": "6",
             "name": "8H释压舒弹纤维枕 抗菌对装",
             "explain": "8H释压舒弹纤维枕 抗菌对装",
             "price": "99元",
             "delPrice": "129元",
             "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/1db0bdebf7a991abf8a307f289491a37.jpg?thumb=1&w=300&h=300&f=webp&q=90"
-          },{
+          },
+          {
             "id": "7",
             "name": "8H释压舒弹纤维枕 抗菌对装",
             "explain": "8H释压舒弹纤维枕 抗菌对装",
             "price": "99元",
             "delPrice": "129元",
             "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/1db0bdebf7a991abf8a307f289491a37.jpg?thumb=1&w=300&h=300&f=webp&q=90"
-          },{
+          },
+          {
             "id": "8",
             "name": "8H释压舒弹纤维枕 抗菌对装",
             "explain": "8H释压舒弹纤维枕 抗菌对装",
@@ -3199,430 +3283,430 @@
       }
     ]
   },
-  "public_imgs":[
+  "public_imgs": [
     {
-      "id":"0",
-      "img":"https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/2656295f6c067f48a04a425acf15a096.jpg?thumb=1&w=1839&h=180&f=webp&q=90"
+      "id": "0",
+      "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/2656295f6c067f48a04a425acf15a096.jpg?thumb=1&w=1839&h=180&f=webp&q=90"
     },
     {
-      "id":"1",
-      "img":"https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/642363ea6aea49e08cb73bc69fb4572e.png?thumb=1&w=1839&h=180&f=webp&q=90"
+      "id": "1",
+      "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/642363ea6aea49e08cb73bc69fb4572e.png?thumb=1&w=1839&h=180&f=webp&q=90"
     },
     {
-      "id":"2",
-      "img":"https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/88e35cffc82cd98cd53172460067af17.jpg?thumb=1&w=1839&h=180&f=webp&q=90"
+      "id": "2",
+      "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/88e35cffc82cd98cd53172460067af17.jpg?thumb=1&w=1839&h=180&f=webp&q=90"
     },
     {
-      "id":"3",
-      "img":"https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/88e35cffc82cd98cd53172460067af17.jpg?thumb=1&w=1839&h=180&f=webp&q=90"
+      "id": "3",
+      "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/88e35cffc82cd98cd53172460067af17.jpg?thumb=1&w=1839&h=180&f=webp&q=90"
     }
   ],
-  "video_cover":[
+  "video_cover": [
     {
-      "id":"0",
-      "cover":"https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/e74c4ff741bcdfc5b28a48a43e4edc6d.jpg?thumb=1&w=444&h=270&f=webp&q=90",
-      "title":"2021年春季新品发布会第一场",
-      "text":""
+      "id": "0",
+      "cover": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/e74c4ff741bcdfc5b28a48a43e4edc6d.jpg?thumb=1&w=444&h=270&f=webp&q=90",
+      "title": "2021年春季新品发布会第一场",
+      "text": ""
     },
     {
-      "id":"1",
-      "cover":"https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/101b19aca4bb489bcef0f503e44ec866.jpg?thumb=1&w=444&h=270&f=webp&q=90",
-      "title":"Redmi 10X系列发布会",
-      "text":"Redmi 10X系列发布会"
+      "id": "1",
+      "cover": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/101b19aca4bb489bcef0f503e44ec866.jpg?thumb=1&w=444&h=270&f=webp&q=90",
+      "title": "Redmi 10X系列发布会",
+      "text": "Redmi 10X系列发布会"
     },
     {
-      "id":"2",
-      "cover":"https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/96563e75833ba4563bd469dd28203b09.jpg?thumb=1&w=444&h=270&f=webp&q=90",
-      "title":"小米10 青春版 发布会",
-      "text":""
+      "id": "2",
+      "cover": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/96563e75833ba4563bd469dd28203b09.jpg?thumb=1&w=444&h=270&f=webp&q=90",
+      "title": "小米10 青春版 发布会",
+      "text": ""
     },
     {
-      "id":"3",
-      "cover":"https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/2fd26bb99b723337a2f8eaba84f7d5bb.jpg?thumb=1&w=444&h=270&f=webp&q=90",
-      "title":"小米10 8K手机拍大片",
-      "text":""
+      "id": "3",
+      "cover": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/2fd26bb99b723337a2f8eaba84f7d5bb.jpg?thumb=1&w=444&h=270&f=webp&q=90",
+      "title": "小米10 8K手机拍大片",
+      "text": ""
     }
   ],
-  "after_sale":[
+  "after_sale": [
     {
-      "id":"0",
-      "title":"预约维修服务",
-      "icon":"fa fa-wrench"
+      "id": "0",
+      "title": "预约维修服务",
+      "icon": "fa fa-wrench"
     },
     {
-      "id":"1",
-      "title":"7天无理由退货",
-      "icon":"fa fa-reply-all"
+      "id": "1",
+      "title": "7天无理由退货",
+      "icon": "fa fa-reply-all"
     },
     {
-      "id":"2",
-      "title":"15天免费换货",
-      "icon":"fa fa-retweet"
+      "id": "2",
+      "title": "15天免费换货",
+      "icon": "fa fa-retweet"
     },
     {
-      "id":"3",
-      "title":"满69元包邮",
-      "icon":"fa fa-gift"
+      "id": "3",
+      "title": "满69元包邮",
+      "icon": "fa fa-gift"
     },
     {
-      "id":"4",
-      "title":"1100余家售后网点",
-      "icon":"fa fa-map-marker"
+      "id": "4",
+      "title": "1100余家售后网点",
+      "icon": "fa fa-map-marker"
     }
   ],
-  "service":[
+  "service": [
     {
-      "id":"0",
-      "title":"选购指南",
-      "services":[
+      "id": "0",
+      "title": "选购指南",
+      "services": [
         {
-          "id":"0",
-          "text":"手机"
+          "id": "0",
+          "text": "手机"
         },
         {
-          "id":"1",
-          "text":"电视"
+          "id": "1",
+          "text": "电视"
         },
         {
-          "id":"2",
-          "text":"笔记本"
+          "id": "2",
+          "text": "笔记本"
         },
         {
-          "id":"3",
-          "text":"平板"
+          "id": "3",
+          "text": "平板"
         },
         {
-          "id":"4",
-          "text":"穿戴"
+          "id": "4",
+          "text": "穿戴"
         },
         {
-          "id":"5",
-          "text":"耳机"
+          "id": "5",
+          "text": "耳机"
         },
         {
-          "id":"6",
-          "text":"家电"
+          "id": "6",
+          "text": "家电"
         },
         {
-          "id":"7",
-          "text":"路由器"
+          "id": "7",
+          "text": "路由器"
         },
         {
-          "id":"8",
-          "text":"音箱"
+          "id": "8",
+          "text": "音箱"
         },
         {
-          "id":"9",
-          "text":"配件"
+          "id": "9",
+          "text": "配件"
         }
       ]
     },
     {
-      "id":"1",
-      "title":"服务中心",
-      "services":[
+      "id": "1",
+      "title": "服务中心",
+      "services": [
         {
-          "id":"0",
-          "text":"申请售后"
+          "id": "0",
+          "text": "申请售后"
         },
         {
-          "id":"1",
-          "text":"售后政策"
+          "id": "1",
+          "text": "售后政策"
         },
         {
-          "id":"2",
-          "text":"维修服务价格"
+          "id": "2",
+          "text": "维修服务价格"
         },
         {
-          "id":"3",
-          "text":"订单查询"
+          "id": "3",
+          "text": "订单查询"
         },
         {
-          "id":"4",
-          "text":"以旧换新"
+          "id": "4",
+          "text": "以旧换新"
         },
         {
-          "id":"5",
-          "text":"保障服务"
+          "id": "5",
+          "text": "保障服务"
         },
         {
-          "id":"6",
-          "text":"防伪查询"
+          "id": "6",
+          "text": "防伪查询"
         },
         {
-          "id":"7",
-          "text":"F码通道"
+          "id": "7",
+          "text": "F码通道"
         }
       ]
     },
     {
-      "id":"2",
-      "title":"线下门店",
-      "services":[
+      "id": "2",
+      "title": "线下门店",
+      "services": [
         {
-          "id":"0",
-          "text":"小米之家"
+          "id": "0",
+          "text": "小米之家"
         },
         {
-          "id":"1",
-          "text":"服务网点"
+          "id": "1",
+          "text": "服务网点"
         },
         {
-          "id":"2",
-          "text":"授权体验店/专区"
+          "id": "2",
+          "text": "授权体验店/专区"
         }
       ]
     },
     {
-      "id":"3",
-      "title":"关于小米",
-      "services":[
+      "id": "3",
+      "title": "关于小米",
+      "services": [
         {
-          "id":"0",
-          "text":"了解小米"
+          "id": "0",
+          "text": "了解小米"
         },
         {
-          "id":"1",
-          "text":"加入小米"
+          "id": "1",
+          "text": "加入小米"
         },
         {
-          "id":"2",
-          "text":"投资者关系"
+          "id": "2",
+          "text": "投资者关系"
         },
         {
-          "id":"3",
-          "text":"环境，社会及管治"
+          "id": "3",
+          "text": "环境，社会及管治"
         },
         {
-          "id":"4",
-          "text":"廉洁举报"
+          "id": "4",
+          "text": "廉洁举报"
         }
       ]
     },
     {
-      "id":"4",
-      "title":"关注我们",
-      "services":[
+      "id": "4",
+      "title": "关注我们",
+      "services": [
         {
-          "id":"0",
-          "text":"新浪微博"
+          "id": "0",
+          "text": "新浪微博"
         },
         {
-          "id":"1",
-          "text":"官方微信"
+          "id": "1",
+          "text": "官方微信"
         },
         {
-          "id":"2",
-          "text":"联系我们"
+          "id": "2",
+          "text": "联系我们"
         },
         {
-          "id":"3",
-          "text":"公益基金会"
+          "id": "3",
+          "text": "公益基金会"
         }
       ]
     }
   ],
-  "call_us":{
-    "id":"0",
-    "number":"400-100-5678",
-    "from":"8:00",
-    "to":"18:00",
-    "text":"仅收市话费"
+  "call_us": {
+    "id": "0",
+    "number": "400-100-5678",
+    "from": "8:00",
+    "to": "18:00",
+    "text": "仅收市话费"
   },
-  "footer_nav":[
+  "footer_nav": [
     {
-      "id":"0",
-      "title":"小米商城",
-      "path":""
+      "id": "0",
+      "title": "小米商城",
+      "path": ""
     },
     {
-      "id":"1",
-      "title":"MIUI",
-      "path":""
+      "id": "1",
+      "title": "MIUI",
+      "path": ""
     },
     {
-      "id":"2",
-      "title":" 米家",
-      "path":""
+      "id": "2",
+      "title": " 米家",
+      "path": ""
     },
     {
-      "id":"3",
-      "title":" 米聊",
-      "path":""
+      "id": "3",
+      "title": " 米聊",
+      "path": ""
     },
     {
-      "id":"4",
-      "title":" 多看",
-      "path":""
+      "id": "4",
+      "title": " 多看",
+      "path": ""
     },
     {
-      "id":"5",
-      "title":"游戏",
-      "path":""
+      "id": "5",
+      "title": "游戏",
+      "path": ""
     },
     {
-      "id":"6",
-      "title":" 政企服务",
-      "path":""
+      "id": "6",
+      "title": " 政企服务",
+      "path": ""
     },
     {
-      "id":"7",
-      "title":"小米天猫店",
-      "path":""
+      "id": "7",
+      "title": "小米天猫店",
+      "path": ""
     },
     {
-      "id":"8",
-      "title":"小米集团隐私政策",
-      "path":""
+      "id": "8",
+      "title": "小米集团隐私政策",
+      "path": ""
     },
     {
-      "id":"9",
-      "title":"小米公司儿童信息保护规则",
-      "path":""
+      "id": "9",
+      "title": "小米公司儿童信息保护规则",
+      "path": ""
     },
     {
-      "id":"10",
-      "title":"小米商城隐私政策",
-      "path":""
+      "id": "10",
+      "title": "小米商城隐私政策",
+      "path": ""
     },
     {
-      "id":"11",
-      "title":"小米商城用户协议",
-      "path":""
+      "id": "11",
+      "title": "小米商城用户协议",
+      "path": ""
     },
     {
-      "id":"12",
-      "title":"小米商城用户协议 ",
-      "path":""
+      "id": "12",
+      "title": "小米商城用户协议 ",
+      "path": ""
     },
     {
-      "id":"13",
-      "title":"Select Location",
-      "path":""
+      "id": "13",
+      "title": "Select Location",
+      "path": ""
     },
     {
-      "id":"14",
-      "title":"北京互联网法院法律服务工作站",
-      "path":""
+      "id": "14",
+      "title": "北京互联网法院法律服务工作站",
+      "path": ""
     },
     {
-      "id":"15",
-      "title":"中国消费者协会",
-      "path":""
+      "id": "15",
+      "title": "中国消费者协会",
+      "path": ""
     },
     {
-      "id":"16",
-      "title":"北京市消费者协会",
-      "path":""
+      "id": "16",
+      "title": "北京市消费者协会",
+      "path": ""
     }
   ],
-  "footer_sites":[
+  "footer_sites": [
     {
-      "id":"0",
-      "text":"京ICP证110507号",
-      "path":""
+      "id": "0",
+      "text": "京ICP证110507号",
+      "path": ""
     },
     {
-      "id":"1",
-      "text":" 京ICP备10046444号",
-      "path":"https://beian.miit.gov.cn/#/Integrated/index"
+      "id": "1",
+      "text": " 京ICP备10046444号",
+      "path": "https://beian.miit.gov.cn/#/Integrated/index"
     },
     {
-      "id":"2",
-      "text":" 京公网安备11010802020134号",
-      "path":"http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802020134"
+      "id": "2",
+      "text": " 京公网安备11010802020134号",
+      "path": "http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802020134"
     },
     {
-      "id":"3",
-      "text":"京网文[2020]0276-042号",
-      "path":"https://www.mi.com/culture-license"
+      "id": "3",
+      "text": "京网文[2020]0276-042号",
+      "path": "https://www.mi.com/culture-license"
     },
     {
-      "id":"4",
-      "text":"（京）网械平台备字（2018）第00005号 ",
-      "path":"https://www.mi.com/shop/medical/record"
+      "id": "4",
+      "text": "（京）网械平台备字（2018）第00005号 ",
+      "path": "https://www.mi.com/shop/medical/record"
     },
     {
-      "id":"5",
-      "text":"互联网药品信息服务资格证 (京)-非经营性-2014-0090",
-      "path":"https://www.mi.com/shop/medical/qualification"
+      "id": "5",
+      "text": "互联网药品信息服务资格证 (京)-非经营性-2014-0090",
+      "path": "https://www.mi.com/shop/medical/qualification"
     },
     {
-      "id":"6",
-      "text":"营业执照",
-      "path":"https://www.mi.com/shop/business-license"
+      "id": "6",
+      "text": "营业执照",
+      "path": "https://www.mi.com/shop/business-license"
     },
     {
-      "id":"7",
-      "text":"医疗器械质量公告",
-      "path":"https://www.mi.com/shop/medical/list"
+      "id": "7",
+      "text": "医疗器械质量公告",
+      "path": "https://www.mi.com/shop/medical/list"
     },
     {
-      "id":"8",
-      "text":"增值电信业务许可证",
-      "path":"https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/e0c7d4cf3b7cd88de10196e30c92e020.png"
+      "id": "8",
+      "text": "增值电信业务许可证",
+      "path": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/e0c7d4cf3b7cd88de10196e30c92e020.png"
     },
     {
-      "id":"9",
-      "text":"网络食品经营备案",
-      "path":""
+      "id": "9",
+      "text": "网络食品经营备案",
+      "path": ""
     },
     {
-      "id":"10",
-      "text":"京食药网食备202010048",
-      "path":""
+      "id": "10",
+      "text": "京食药网食备202010048",
+      "path": ""
     },
     {
-      "id":"11",
-      "text":"食品经营许可证",
-      "path":"https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/c6859168166651511897f54fa1047fe3.png"
+      "id": "11",
+      "text": "食品经营许可证",
+      "path": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/c6859168166651511897f54fa1047fe3.png"
     },
     {
-      "id":"12",
-      "text":"违法和不良信息举报电话：171-5104-4404",
-      "path":""
+      "id": "12",
+      "text": "违法和不良信息举报电话：171-5104-4404",
+      "path": ""
     },
     {
-      "id":"13",
-      "text":" 知识产权侵权投诉",
-      "path":"https://www.mi.com/intellectual"
+      "id": "13",
+      "text": " 知识产权侵权投诉",
+      "path": "https://www.mi.com/intellectual"
     },
     {
-      "id":"14",
-      "text":"本网站所列数据，除特殊说明，所有数据均出自我司实验室测试",
-      "path":""
+      "id": "14",
+      "text": "本网站所列数据，除特殊说明，所有数据均出自我司实验室测试",
+      "path": ""
     }
   ],
-  "footer_gifs":[
+  "footer_gifs": [
     {
-      "id":"0",
-      "img":"https://i1.mifile.cn/f/i/17/site/truste.png",
-      "path":"https://privacy.truste.com/privacy-seal/validation?rid=4fc28a8c-6822-4980-9c4b-9fdc69b94eb8&lang=zh-cn"
+      "id": "0",
+      "img": "https://i1.mifile.cn/f/i/17/site/truste.png",
+      "path": "https://privacy.truste.com/privacy-seal/validation?rid=4fc28a8c-6822-4980-9c4b-9fdc69b94eb8&lang=zh-cn"
     },
     {
-      "id":"1",
-      "img":"https://s01.mifile.cn/i/v-logo-2.png",
-      "path":"https://credit.cecdc.com/CX20120926001783002010.html"
+      "id": "1",
+      "img": "https://s01.mifile.cn/i/v-logo-2.png",
+      "path": "https://credit.cecdc.com/CX20120926001783002010.html"
     },
     {
-      "id":"2",
-      "img":"https://xyt.xcc.cn/img/icon/icon3.png",
-      "path":"https://kx.xcc.cn/newCan/2021122904514041324"
+      "id": "2",
+      "img": "https://xyt.xcc.cn/img/icon/icon3.png",
+      "path": "https://kx.xcc.cn/newCan/2021122904514041324"
     },
     {
-      "id":"3",
-      "img":"https://i8.mifile.cn/b2c-mimall-media/ba10428a4f9495ac310fd0b5e0cf8370.png",
-      "path":"https://www.mi.com/service/buy/commitment"
+      "id": "3",
+      "img": "https://i8.mifile.cn/b2c-mimall-media/ba10428a4f9495ac310fd0b5e0cf8370.png",
+      "path": "https://www.mi.com/service/buy/commitment"
     },
     {
-      "id":"4",
-      "img":"https://cnbj1.fds.api.xiaomi.com/b2c-misite-activity/f1ee261b96ae71e845efba398efeca02.png",
-      "path":"https://webcert.cnmstl.net/cert/grade?sn=3af21034e35011eab3ea00163e068ceb"
+      "id": "4",
+      "img": "https://cnbj1.fds.api.xiaomi.com/b2c-misite-activity/f1ee261b96ae71e845efba398efeca02.png",
+      "path": "https://webcert.cnmstl.net/cert/grade?sn=3af21034e35011eab3ea00163e068ceb"
     },
     {
-      "id":"5",
-      "img":"https://cnbj1.fds.api.xiaomi.com/b2c-misite-activity/5274dd11517601dd2482f4b7eb9dffe1.png",
-      "path":"https://webcert.cnmstl.net/cert/grade?sn=3af21034e35011eab3ea00163e068ceb"
+      "id": "5",
+      "img": "https://cnbj1.fds.api.xiaomi.com/b2c-misite-activity/5274dd11517601dd2482f4b7eb9dffe1.png",
+      "path": "https://webcert.cnmstl.net/cert/grade?sn=3af21034e35011eab3ea00163e068ceb"
     }
   ]
 }
