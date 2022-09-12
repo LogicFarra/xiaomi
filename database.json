@@ -3717,28 +3717,36 @@
       "oldPrice":"4699元",
       "version":[
         {
+          "index":0,
           "text":"8GB+128GB",
           "price":"4599元",
           "oldPrice":"4699元"
         },
         {
+          "index":1,
           "text":"8GB+256GB",
           "price":"4899元",
           "oldPrice":"4999元"
         },
         {
+          "index":2,
           "text":"12GB+256GB",
           "price":"5299元",
           "oldPrice":"5399元"
         },
         {
+          "index":3,
           "text":"12GB+512GB",
           "price":"5799元",
           "oldPrice":"5899元"
         }
       ],
-      "color":["白色","黑色"],
-      "gifs":[
+      "disposition":[],
+      "color":[
+        {"index":0,"color":"白色"},
+        {"index":1,"color":"黑色"}
+      ],
+      "gifts":[
         "本组赠品可任选1种",
         "价值109元定制便携咖啡杯x1，赠完即止",
         "价值99元小米新定制T恤 白色x1，赠完即止",

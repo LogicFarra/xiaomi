@@ -294,6 +294,7 @@ export default {
         margin-left: 14px;
         background-color: white;
         transition: 0.5s;
+        margin-bottom: 14px;
         &:hover {
           transform: translateY(-3px);
           box-shadow: 0 3px 20px silver;
@@ -389,62 +390,6 @@ export default {
             text-align: left;
             padding-left: 15px;
           }
-        }
-      }
-    }
-  }
-  // 视频
-  .videos {
-    width: 100%;
-    height: 285px;
-    ul {
-      display: flex;
-      justify-content: space-between;
-      li {
-        width: 296px;
-        height: 285px;
-        cursor: pointer;
-        background-color: white;
-        position: relative;
-        transition: 0.4s;
-        &:hover {
-          transform: translateY(-3px);
-          box-shadow: 0 3px 20px silver;
-          i {
-            background-color: #ff6700;
-            border-color: #ff6700;
-          }
-        }
-        p {
-          width: 264px;
-          text-align: center;
-          margin: 30px auto 0 auto;
-          font-size: 14px;
-          text-overflow: ellipsis;
-          white-space: nowrap;
-          overflow: hidden;
-        }
-        .small_text {
-          margin: 5px auto;
-          font-size: 12px;
-          color: #b0b0b0;
-        }
-        i {
-          transition: 0.4s;
-          display: block;
-          position: absolute;
-          top: 145px;
-          left: 20px;
-          width: 40px;
-          height: 25px;
-          text-align: center;
-          padding-top: 4px;
-          padding-left: 2px;
-          border: 2px solid rgb(255, 255, 255);
-          border-radius: 15px;
-          font-size: 12px;
-          color: white;
-          background-color: #2a2a2ac4;
         }
       }
     }

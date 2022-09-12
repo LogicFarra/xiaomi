@@ -3,7 +3,7 @@
     <!-- 导航栏 -->
     <nav class="nav_bar">
       <div class="nav_bar_container pabulic_width">
-        <h2>Xiaomi Watch S1</h2>
+        <h2>{{ initData.product }}</h2>
         <ul>
           <li><a href="javascript:;">参数页</a></li>
           <li><a href="javascript:;">F码通道</a></li>
@@ -26,36 +26,45 @@
     <div class="product">
       <div class="product_container pabulic_width">
         <!-- 左侧轮播图 -->
-        <div class="img_left" @mouseenter="imgHover(true)" @mouseleave="imgHover(false)">
+        <div
+          class="img_left"
+          @mouseenter="imgHover(true)"
+          @mouseleave="imgHover(false)"
+        >
           <div class="img_box">
             <transition-group>
-              <img
-                src="https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1660632574.59773469.png"
-                width="560px"
-                v-if="showImg === 0"
-                key="1"
-              />
-              <img
-                src="https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1660632588.24971475.png"
-                width="560px"
-                v-else-if="showImg === 1"
-                key="2"
-              />
+              <img :src="imgs[0].url" v-show="showImg === 0" key="0" />
+              <img :src="imgs[1].url" v-show="showImg === 1" key="1" />
+              <img :src="imgs[2].url" v-show="showImg === 2" key="2" />
+              <img :src="imgs[3].url" v-show="showImg === 3" key="3" />
+              <img :src="imgs[4].url" v-show="showImg === 4" key="4" />
             </transition-group>
           </div>
           <!-- 控制轮播图的左侧按钮 -->
-          <div class="switch_btn" style="left: 0" @click="throttling(switchImg,1000,'left')">
+          <div
+            class="switch_btn"
+            style="left: 0"
+            @click="throttling(switchImg, 1000, 'left')"
+          >
             <i class="fa fa-chevron-left" aria-hidden="true"></i>
           </div>
           <!-- 控制轮播图的右侧按钮 -->
-          <div class="switch_btn" style="right: 50px" @click="throttling(switchImg,1000,'right')">
+          <div
+            class="switch_btn"
+            style="right: 50px"
+            @click="throttling(switchImg, 1000, 'right')"
+          >
             <i class="fa fa-chevron-right" aria-hidden="true"></i>
           </div>
           <!-- 切换图片的方块 -->
           <div class="switch_squear">
             <ul>
-              <li :class="[showImg === 0 ? 'cur' : '']" @click="squearClick(0)"></li>
-              <li :class="[showImg === 1 ? 'cur' : '']" @click="squearClick(1)"></li>
+              <li
+                v-for="item in imgs"
+                :key="item.index"
+                :class="[showImg === item.index ? 'cur' : '']"
+                @click="squearClick(item.index)"
+              ></li>
             </ul>
           </div>
         </div>
@@ -63,20 +72,24 @@
         <div class="message_right">
           <!-- 简介 -->
           <div class="title">
-            <h2 class="title_name">Redmi Note 11 Pro</h2>
+            <h2 class="title_name">{{ initData.product }}</h2>
             <p class="title_explain">
-              天玑8100｜144Hz高配LCD屏幕｜6400万像素｜VC液冷散热
+              {{ initData.introduction }}
             </p>
             <p class="title_sale">小米自营</p>
             <p class="title_price">
-              <font class="cur_price">1899元</font>
-              <del>1999元</del>
+              <font class="cur_price">{{ initData.price }}</font>
+              <del>{{ initData.oldPrice }}</del>
             </p>
           </div>
           <!-- 赠品 -->
           <div class="gifts">
             <span>赠品</span>
-            <font>价值99元Xiaomi 胶囊耳机x1，赠完即止</font>
+            <ul>
+              <li v-for="item in initData.gifts" :key="item.index">
+                {{ item }}
+              </li>
+            </ul>
           </div>
           <!-- 位置 -->
           <div class="location">
@@ -92,31 +105,54 @@
             </p>
           </div>
           <!-- 版本 -->
-          <div class="version">
+          <div class="version" v-if="disposition.version !== 0">
             <p>选择版本</p>
             <ul>
-              <li class="cur">8GB+128GB</li>
-              <li>8GB+128GB</li>
-              <li>8GB+128GB</li>
+              <li
+                :class="[item.index === curClass[0].ver ? 'cur' : '']"
+                v-for="item in initData.version"
+                :key="item.text"
+                @click="configClick(item,'ver')"
+              >
+                {{ item.text }}
+              </li>
+            </ul>
+          </div>
+          <!-- 配置 -->
+          <div class="version" v-if="disposition.disposition !== 0">
+            <p>选择配置</p>
+            <ul>
+              <li
+                :class="[item.index === curClass[2].col ? 'cur' : '']"
+                v-for="item in initData.disposition"
+                :key="item.text"
+                @click="configClick(item,'dis')"
+              >
+                {{ item.text }}
+              </li>
             </ul>
           </div>
           <!-- 颜色 -->
-          <div class="color">
+          <div class="color" v-if="disposition.color !== 0">
             <p>选择颜色</p>
             <ul>
-              <li class="cur">奶盐白</li>
-              <li>奶盐白</li>
-              <li>奶盐白</li>
-              <li>奶盐白</li>
+              <li
+                :class="[item.index === curClass[2].col ? 'cur' : '']"
+                v-for="item in initData.color"
+                :key="item.index"
+                @click="configClick(item,'col')"
+              >
+                {{ item.color }}
+              </li>
             </ul>
           </div>
           <!-- 结算 -->
           <div class="all">
             <p>
-              <font>Redmi Note 11 Pro</font>
-              <font>1899元</font>
+              <font>{{configs.product}}&nbsp;{{configs.version}}&nbsp;{{configs.disposition}}&nbsp;{{configs.color}}</font>
+              <font>{{configs.price}}</font>
             </p>
-            <h2>总计: 99元</h2>
+            <h2>总计: {{configs.price}}</h2>
           </div>
           <!-- 操作 -->
           <div class="opration">
@@ -170,22 +206,39 @@
 </template>
 
 <script>
-import {getProductInfoAPI} from '@/api'
+import { getProductInfoAPI } from "@/api";
 export default {
   name: "buy",
   data() {
     return {
-      product:this.$route.query.product,
+      product: this.$route.query.product,
       login: true, //登录提示框的显示和隐藏
       showImg: 0, //当前显示哪张图片
       timer: null,
+      initData: [], //商品的所有数据
+      disposition: {}, //版本,配置,颜色
+      imgs: [
+        { index: 0, url: "" },
+        { index: 1, url: "" },
+        { index: 2, url: "" },
+        { index: 3, url: "" },
+        { index: 4, url: "" },
+      ],
+      curClass: [{ ver: 0 }, { dis: 0 }, { col: 0 }],
+      configs:{
+        product:'',
+        version:'',
+        disposition:'',
+        color:'',
+        price:''
+      }
     };
   },
   methods: {
-    // 让轮播图自动播放
+    // 轮播图自动播放方法
     starTimer() {
       this.timer = setInterval(() => {
-        this.showImg++
+        this.showImg++;
       }, 5000);
     },
     // 节流函数
@@ -199,45 +252,86 @@ export default {
       }
     },
     // 切换图片按钮点击事件
-    switchImg(status){
-      if(status === 'left'){
-        this.showImg--
-      }else{
-        this.showImg++
+    switchImg(status) {
+      if (status === "left") {
+        this.showImg--;
+      } else {
+        this.showImg++;
       }
     },
     // 图片被覆盖事件
-    imgHover(status){
-      if(status){
-        clearInterval(this.timer)
-      }else{
-        this.starTimer()
+    imgHover(status) {
+      if (status) {
+        clearInterval(this.timer);
+      } else {
+        this.starTimer();
       }
     },
     //切图方块被点击事件
-    squearClick(num){
-      this.showImg = num
+    squearClick(num) {
+      this.showImg = num;
+      console.log(num);
     },
-    // 获取原始数据
-    async getInitData(){
-      const {data} = await getProductInfoAPI(this.product)
-      console.log(data)
-    }
-  },
-  watch:{
-    showImg(newvalue){
-      if(newvalue>1){
-        this.showImg = 0
-      }else if(newvalue<0){
-        this.showImg = 1
+    // 获取原始数据,并筛选
+    async getInitData() {
+      const { data } = await getProductInfoAPI(this.product);
+      this.initData = data[0];
+      // 控制规格,配置,颜色模块的显示和隐藏
+      this.disposition = {
+        version: this.initData.version.length,
+        disposition: this.initData.disposition.length,
+        color: this.initData.color.length,
+      }
+      // 筛选出图片
+      for (let i = 0; i < 5; i++) {
+        this.imgs[i] = {
+          index: i,
+          url: this.initData.img[i],
+        };
+      }
+      // 初始化已选配置
+      this.configs={
+        product : this.initData.product,
+        version : this.initData.version.length !== 0 ? this.initData.version[0].text : '',
+        disposition : this.initData.disposition.length !== 0 ? this.initData.disposition[0].text : '',
+        color : this.initData.color.length !== 0 ? this.initData.color[0].color : '',
+        price : this.initData.version.length !== 0 ? this.initData.version[0].price : this.initData.disposition[0].price
+      }
+    },
+    // 商品配置点击事件
+    configClick(config,key){
+      switch (key){
+        case 'ver' :
+          this.curClass[0].ver = config.index
+          this.configs.version = config.text
+          this.configs.price = config.price
+          break;
+        case 'dis' :
+          this.curClass[1].dis = config.index
+          this.configs.disposition = config.text
+          this.configs.price = config.price
+          break;
+        case 'col' :
+          this.curClass[2].col = config.index
+          this.configs.color = config.color
+          break;
       }
     }
   },
-  created(){
-    this.getInitData()
+  watch: {
+    showImg(newvalue) {
+      if (newvalue > this.imgs.length - 1) {
+        this.showImg = 0;
+      } else if (newvalue < 0) {
+        this.showImg = this.imgs.length - 1;
+      }
+    },
+  },
+  created() {
+    this.getInitData();
   },
   mounted() {
-    this.starTimer()
+    this.starTimer();
   },
 };
 </script>
@@ -312,6 +406,7 @@ export default {
           position: relative;
           img {
             position: absolute;
+            width: 560px;
           }
         }
         // 切换图片按钮
@@ -402,15 +497,22 @@ export default {
         .gifts {
           padding: 30px 0;
           border-bottom: 1px solid #e0e0e0;
+          display: flex;
+          align-items: baseline;
           span {
             padding: 3px 25px;
             background-color: #ff6700;
             font-size: 14px;
             color: white;
           }
-          font {
-            font-size: 14px;
-            margin-left: 10px;
+          ul {
+            li {
+              font-size: 14px;
+              margin-left: 10px;
+              &:first-of-type {
+                margin-bottom: 10px;
+              }
+            }
           }
         }
         // 位置
