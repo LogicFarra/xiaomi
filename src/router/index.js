@@ -13,42 +13,59 @@ let originReplace = VueRouter.prototype.replace;
 // location:告诉原来的push方法往哪里跳转，传递什么参数
 // resolve:成功的回调
 // reject:失败的回调
-VueRouter.prototype.push = function(location,resolve,reject) {
-  if(resolve && reject) {
-    originPush.call(this,location,resolve,reject)
-  }else { // 不管你点多少次，每次就覆盖之前的，相当于传了一次一模一样的路径
-    originPush.call(this,location,()=>{},()=>{})
+VueRouter.prototype.push = function (location, resolve, reject) {
+  if (resolve && reject) {
+    originPush.call(this, location, resolve, reject)
+  } else { // 不管你点多少次，每次就覆盖之前的，相当于传了一次一模一样的路径
+    originPush.call(this, location, () => { }, () => { })
   }
 }
-VueRouter.prototype.replace = function(location,resolve,reject) {
-  if(resolve && reject) {
-    originReplace.call(this,location,resolve,reject)
-  }else {
-    originReplace.call(this,location,()=>{},()=>{})
+VueRouter.prototype.replace = function (location, resolve, reject) {
+  if (resolve && reject) {
+    originReplace.call(this, location, resolve, reject)
+  } else {
+    originReplace.call(this, location, () => { }, () => { })
   }
 }
 //#endregion
 
 const routes = [
-    {
-        path:"/",
-        component:()=>import('@/views/layout'),
-        redirect:"/shop",
-        children:[
-            {
-                path:'shop',
-                component:()=>import('@/views/shop')
-            },
-            {
-                path:"buy",
-                component:()=>import('@/views/buy')
-            }
-        ]
-    }
+  {
+    path: "/",
+    component: () => import('@/views/layout'),
+    redirect: "/shop",
+    children: [
+      {
+        path: 'shop',
+        component: () => import('@/views/shop')
+      },
+      {
+        path: "shop/buy",
+        component: () => import('@/views/buy')
+      }
+    ]
+  },
+  {
+    path: '/login',
+    component: () => import('@/views/login'),
+    redirect:'/login/signin',
+    children:[
+      {
+        path:'/login/signin',
+        name:'signin',
+        component:()=>import('@/views/login/loginComtainer')
+      },
+      {
+        path:'/login/register',
+        name:'register',
+        component:()=>import('@/views/login/registerComtainer')
+      }
+    ]
+  }
 ]
 
 const router = new VueRouter({
-    routes
+  routes
 })
 
 export default router

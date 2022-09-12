@@ -11,7 +11,7 @@
       <!-- 右侧 -->
       <aside>
         <ul>
-          <li><a href="javascript:;">登录</a></li>
+          <li><a href="javascript:;" @click="loginClick">登录</a></li>
           <li><span></span></li>
           <li><a href="javascript:;">注册</a></li>
           <li><span></span></li>
@@ -87,6 +87,10 @@ export default {
         },400)
       }
     },
+    // 登录按钮点击事件
+    loginClick(){
+      this.$router.push('/login')
+    }
   },
   created() {
     this.getHeaderNavAPI();
