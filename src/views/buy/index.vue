@@ -17,7 +17,7 @@
       <div class="login_notis_container pabulic_width">
         <p>
           为方便您购买,请提前登录&nbsp;&nbsp;&nbsp;&nbsp;
-          <a href="javascript:;">立即登录</a>&nbsp;
+          <a href="javascript:;" @click="goLogin">立即登录</a>&nbsp;
           <i class="fa fa-times" aria-hidden="true" @click="login = false"></i>
         </p>
       </div>
@@ -156,7 +156,7 @@
           </div>
           <!-- 操作 -->
           <div class="opration">
-            <div class="o1">加入购物车</div>
+            <div class="o1" @click="addShopCar">加入购物车</div>
             <div class="o2">喜欢</div>
           </div>
           <!-- 承诺 -->
@@ -231,7 +231,7 @@ export default {
         disposition:'',
         color:'',
         price:''
-      }
+      },
     };
   },
   methods: {
@@ -316,6 +316,20 @@ export default {
           this.configs.color = config.color
           break;
       }
+    },
+    // 跳转至登录界面
+    goLogin(){
+      this.$router.push('/login/signin')
+    },
+    // 加入购物车
+    addShopCar(){
+      sessionStorage.setItem('curitem',JSON.stringify(this.configs))
+      this.$router.push({
+        name:'succeed',
+        params:{
+          data:this.configs
+        }
+      })
     }
   },
   watch: {
@@ -328,7 +342,9 @@ export default {
     },
   },
   created() {
-    this.getInitData();
+    this.getInitData()
+    let a = sessionStorage.getItem('logeed')
+    this.login = !a
   },
   mounted() {
     this.starTimer();

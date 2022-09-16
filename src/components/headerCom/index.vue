@@ -13,13 +13,14 @@
         <ul>
           <li><a href="javascript:;" @click="loginClick">登录</a></li>
           <li><span></span></li>
-          <li><a href="javascript:;">注册</a></li>
+          <li><a href="javascript:;" @click="registerClick">注册</a></li>
           <li><span></span></li>
           <li><a href="javascript:;">消息通知</a></li>
           <li class="shoping_car"
           :style="{'background-color':bgColor}"
           @mouseenter= "throttling(showDropdown,300,true)"
-          @mouseleave="throttling(showDropdown,300,false)">
+          @mouseleave="throttling(showDropdown,300,false)"
+          @click="goCart">
             <!-- 购物车图标 -->
             <i class="fa fa-shopping-cart" aria-hidden="true" :style="{color:fontColor}"></i>
             <font :style="{color:fontColor}">购物车<font style="margin-left: 5px">(0)</font></font>
@@ -90,6 +91,14 @@ export default {
     // 登录按钮点击事件
     loginClick(){
       this.$router.push('/login')
+    },
+    // 注册按钮点击事件
+    registerClick(){
+      this.$router.push('/login/register')
+    },
+    // 购物车图标点击事件
+    goCart(){
+      this.$router.push('/cart')
     }
   },
   created() {

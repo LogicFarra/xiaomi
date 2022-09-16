@@ -5,9 +5,12 @@ Vue.use(Vuex)
 
 const actions = {}
 
-const mutations = {}
+const mutations = {
+    
+}
 
-const state = {}
+const state = {
+}
 
 const getters = {}
 

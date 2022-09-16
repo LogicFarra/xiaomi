@@ -150,3 +150,28 @@ export const getProductInfoAPI = (product)=>{
         url:"/all_products?product=" + product
     })
 }
+// 查询某个人的账户信息
+export const getAccountInfoAPI = (account)=>{
+    return axios.request({
+        url:"/user_database",
+        params:{account : account}
+    })
+}
+// 添加账户信息
+export const addPersonAPI = ({id,account,password})=>{
+    return axios.request({
+        method:"POST",
+        url:'/user_database',
+        data:{
+            id:id,
+            account:account,
+            password:password
+        }
+    })
+}
+// 获取购物车中商品
+export const getShopCarAPI = ()=>{
+    return axios.request({
+        url:"shop_car"
+    })
+}

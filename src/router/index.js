@@ -42,6 +42,11 @@ const routes = [
       {
         path: "shop/buy",
         component: () => import('@/views/buy')
+      },
+      {
+        path:"shop/succeed",
+        component:() => import('@/views/buy/succeed'),
+        name:"succeed"
       }
     ]
   },
@@ -61,6 +66,10 @@ const routes = [
         component:()=>import('@/views/login/registerComtainer')
       }
     ]
+  },
+  {
+    path:'/cart',
+    component:()=>import('@/views/cart')
   }
 ]
 

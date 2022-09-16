@@ -140,7 +140,7 @@ export default {
     productClick(product){
       //携带商品名称跳转到buy页面
       this.$router.push({
-        path:"shop/buy",
+        path:"/shop/buy",
         query:{
           product
         }
