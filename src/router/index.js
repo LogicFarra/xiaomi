@@ -31,19 +31,23 @@ VueRouter.prototype.replace = function (location, resolve, reject) {
 
 const routes = [
   {
+    // 主页
     path: "/",
     component: () => import('@/views/layout'),
     redirect: "/shop",
     children: [
       {
+        // 主页商城
         path: 'shop',
         component: () => import('@/views/shop')
       },
       {
+        // 商品详情页面
         path: "shop/buy",
         component: () => import('@/views/buy')
       },
       {
+        // 添加购物车成功页面
         path:"shop/succeed",
         component:() => import('@/views/buy/succeed'),
         name:"succeed"
@@ -51,22 +55,26 @@ const routes = [
     ]
   },
   {
+    // 登录和注册
     path: '/login',
     component: () => import('@/views/login'),
     redirect:'/login/signin',
     children:[
       {
+        // 登录页面
         path:'/login/signin',
         name:'signin',
         component:()=>import('@/views/login/loginComtainer')
       },
       {
+        // 注册页面
         path:'/login/register',
         name:'register',
         component:()=>import('@/views/login/registerComtainer')
       }
     ]
   },
+  // 购物车页面
   {
     path:'/cart',
     component:()=>import('@/views/cart')

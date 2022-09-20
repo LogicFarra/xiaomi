@@ -6,9 +6,9 @@
         <h2>我的购物车</h2>
         <small>温馨提示：产品是否购买成功，以最终下单为准哦，请尽快结算</small>
         <ul>
-          <li>登录</li>
+          <li @click="jumpPage(true)" class="login">登录</li>
           <li>|</li>
-          <li>注册</li>
+          <li @click="jumpPage(false)" class="login">注册</li>
         </ul>
       </div>
     </header>
@@ -52,7 +52,7 @@
                 </div>
               </div>
               <div class="col5">{{ item.price * item.count }}元</div>
-              <div class="col6">
+              <div class="col6" @click="deleteFn(item)">
                 <i class="fa fa-times" aria-hidden="true"></i>
               </div>
             </li>
@@ -60,9 +60,14 @@
         </div>
         <div class="settlement">
           <ul>
-            <li>继续购物</li>
+            <li @click="continueShopping" class="continue_shopping">
+              继续购物
+            </li>
             <li>|</li>
-            <li>已选择<font>0</font>件</li>
+            <li>
+              已选择<font>{{ productNum }}</font
+              >件
+            </li>
           </ul>
           <div class="purchase" :style="{ background: bgColor, color: color }">
             <font>去结算</font>
@@ -83,7 +88,12 @@
 <script>
 import RecommendCom from "@/components/recommendCom/index.vue";
 import FooterCom from "@/components/footerCom/index.vue";
-import { getShopCarAPI } from "@/api";
+import {
+  getShopCarAPI,
+  deleteShopCarAPI,
+  searchShopCarAPI,
+  addProductAPI,
+} from "@/api";
 export default {
   name: "cart",
   components: { RecommendCom, FooterCom },
@@ -107,17 +117,32 @@ export default {
       notis: true,
     };
   },
+  computed: {
+    productNum() {
+      let newData = this.initData.filter((v) => {
+        return v.chose === true;
+      });
+      let a = 0;
+      newData.forEach((element) => {
+        a += element.count;
+      });
+      return a;
+    },
+  },
   methods: {
+    // 向服务器获取初始数据
     async getShopCarData() {
       const { data } = await getShopCarAPI();
       this.initData = this.filterData(data);
     },
+    // 初始化初始数据
     filterData(data) {
       for (let i = 0; i < data.length; i++) {
         let { product, disposition, version, color } = data[i];
         data[i].count = 1;
         data[i].index = i;
         data[i].chose = false;
+        data[i].price = parseInt(data[i].price);
         for (let j = i + 1; j < data.length; j++) {
           let {
             product: p2,
@@ -139,10 +164,33 @@ export default {
       }
       return data;
     },
-    operat(status, index) {
-      let a = this.initData[index];
+    // 商品数量的加减
+    async operat(status, index) {
+      let a = this.initData[index]
+      let addData = {}
       if (a.count >= 1) {
-        status ? a.count-- : a.count++;
+        if (status) {
+          a.count--
+          if(a.count >= 1){
+            let choseStatus = a.chose
+            await deleteShopCarAPI(a.id)
+            await this.getShopCarData()
+            this.initData[index].chose = choseStatus
+
+          }
+        }else{
+          a.count++
+          addData = {
+            id:Math.random(),
+            product:a.product,
+            disposition:a.disposition,
+            version:a.version,
+            color:a.color,
+            price:a.price,
+            img:a.img
+          }
+          await addProductAPI(addData)
+        }
         if (a.chose) {
           status ? (this.totle -= a.price) : (this.totle += a.price);
         }
@@ -152,6 +200,7 @@ export default {
         }
       }
     },
+    // 商品选择框点击事件
     itemChange(index) {
       let a = this.initData[index];
       a.chose = !a.chose;
@@ -166,6 +215,7 @@ export default {
         a.length === this.initData.length ? (this.all = true) : false;
       }
     },
+    // 全选框点击事件
     allChange() {
       this.all = !this.all;
       if (this.all === false) {
@@ -181,6 +231,27 @@ export default {
           }
         });
       }
+    },
+    // 删除按钮点击事件
+    async deleteFn(item) {
+      let { data } = await searchShopCarAPI(item)
+      let newData = data.map((v) => {
+        return v.id;
+      })
+      for (let i = 0; i < newData.length; i++) {
+        deleteShopCarAPI(newData[i]);
+      }
+      this.getShopCarData();
+    },
+    // 登录和注册按钮点击事件
+    jumpPage(status) {
+      status === true
+        ? this.$router.push("/login/signin")
+        : this.$router.push("/login/register");
+    },
+    // 继续购物按钮点击事件
+    continueShopping() {
+      this.$router.push("/");
     },
   },
   watch: {
@@ -239,6 +310,11 @@ export default {
           color: #757575;
           padding: 0 5px;
           cursor: pointer;
+        }
+        .login {
+          &:hover {
+            color: #ff6700;
+          }
         }
       }
     }
@@ -384,6 +460,12 @@ export default {
             font-size: 14px;
             color: #757575;
             font {
+              color: #ff6700;
+            }
+          }
+          .continue_shopping {
+            cursor: pointer;
+            &:hover {
               color: #ff6700;
             }
           }

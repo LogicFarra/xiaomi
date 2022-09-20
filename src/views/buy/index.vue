@@ -112,7 +112,7 @@
                 :class="[item.index === curClass[0].ver ? 'cur' : '']"
                 v-for="item in initData.version"
                 :key="item.text"
-                @click="configClick(item,'ver')"
+                @click="configClick(item, 'ver')"
               >
                 {{ item.text }}
               </li>
@@ -126,7 +126,7 @@
                 :class="[item.index === curClass[2].col ? 'cur' : '']"
                 v-for="item in initData.disposition"
                 :key="item.text"
-                @click="configClick(item,'dis')"
+                @click="configClick(item, 'dis')"
               >
                 {{ item.text }}
               </li>
@@ -140,7 +140,7 @@
                 :class="[item.index === curClass[2].col ? 'cur' : '']"
                 v-for="item in initData.color"
                 :key="item.index"
-                @click="configClick(item,'col')"
+                @click="configClick(item, 'col')"
               >
                 {{ item.color }}
               </li>
@@ -149,10 +149,14 @@
           <!-- 结算 -->
           <div class="all">
             <p>
-              <font>{{configs.product}}&nbsp;{{configs.version}}&nbsp;{{configs.disposition}}&nbsp;{{configs.color}}</font>
-              <font>{{configs.price}}</font>
+              <font
+                >{{ configs.product }}&nbsp;{{ configs.version }}&nbsp;{{
+                  configs.disposition
+                }}&nbsp;{{ configs.color }}</font
+              >
+              <font>{{ configs.price }}</font>
             </p>
-            <h2>总计: {{configs.price}}</h2>
+            <h2>总计: {{ configs.price }}</h2>
           </div>
           <!-- 操作 -->
           <div class="opration">
@@ -206,7 +210,7 @@
 </template>
 
 <script>
-import { getProductInfoAPI } from "@/api";
+import { getProductInfoAPI, addProductAPI } from "@/api";
 export default {
   name: "buy",
   data() {
@@ -224,13 +228,16 @@ export default {
         { index: 3, url: "" },
         { index: 4, url: "" },
       ],
+      // 选择的参数
       curClass: [{ ver: 0 }, { dis: 0 }, { col: 0 }],
-      configs:{
-        product:'',
-        version:'',
-        disposition:'',
-        color:'',
-        price:''
+      // 当前商品的参数
+      configs: {
+        product: "",
+        version: "",
+        disposition: "",
+        color: "",
+        price: "",
+        img: "",
       },
     };
   },
@@ -281,7 +288,7 @@ export default {
         version: this.initData.version.length,
         disposition: this.initData.disposition.length,
         color: this.initData.color.length,
-      }
+      };
       // 筛选出图片
       for (let i = 0; i < 5; i++) {
         this.imgs[i] = {
@@ -290,47 +297,63 @@ export default {
         };
       }
       // 初始化已选配置
-      this.configs={
-        product : this.initData.product,
-        version : this.initData.version.length !== 0 ? this.initData.version[0].text : '',
-        disposition : this.initData.disposition.length !== 0 ? this.initData.disposition[0].text : '',
-        color : this.initData.color.length !== 0 ? this.initData.color[0].color : '',
-        price : this.initData.version.length !== 0 ? this.initData.version[0].price : this.initData.disposition[0].price
-      }
+      this.configs = {
+        product: this.initData.product,
+        version:
+          this.initData.version.length !== 0
+            ? this.initData.version[0].text
+            : "",
+        disposition:
+          this.initData.disposition.length !== 0
+            ? this.initData.disposition[0].text
+            : "",
+        color:
+          this.initData.color.length !== 0 ? this.initData.color[0].color : "",
+        price:
+          this.initData.version.length !== 0
+            ? this.initData.version[0].price
+            : this.initData.disposition[0].price,
+        img:this.initData.color[0].img
+      };
     },
     // 商品配置点击事件
-    configClick(config,key){
-      switch (key){
-        case 'ver' :
-          this.curClass[0].ver = config.index
-          this.configs.version = config.text
-          this.configs.price = config.price
+    configClick(config, key) {
+      switch (key) {
+        case "ver":
+          this.curClass[0].ver = config.index;
+          this.configs.version = config.text;
+          this.configs.price = config.price;
           break;
-        case 'dis' :
-          this.curClass[1].dis = config.index
-          this.configs.disposition = config.text
-          this.configs.price = config.price
+        case "dis":
+          this.curClass[1].dis = config.index;
+          this.configs.disposition = config.text;
+          this.configs.price = config.price;
           break;
-        case 'col' :
-          this.curClass[2].col = config.index
-          this.configs.color = config.color
+        case "col":
+          this.curClass[2].col = config.index;
+          this.configs.color = config.color;
+          this.configs.img = config.img;
           break;
       }
     },
     // 跳转至登录界面
-    goLogin(){
-      this.$router.push('/login/signin')
+    goLogin() {
+      this.$router.push("/login/signin");
     },
     // 加入购物车
-    addShopCar(){
-      sessionStorage.setItem('curitem',JSON.stringify(this.configs))
+    async addShopCar() {
+      let id = Math.random()
+      this.configs.id = id
+      await addProductAPI(this.configs)
+      sessionStorage.setItem("curitem", JSON.stringify(this.configs))
       this.$router.push({
-        name:'succeed',
-        params:{
-          data:this.configs
-        }
+        name: "succeed",
+        params: {
+          data: this.configs,
+        },
       })
-    }
+      
+    },
   },
   watch: {
     showImg(newvalue) {
@@ -342,9 +365,9 @@ export default {
     },
   },
   created() {
-    this.getInitData()
-    let a = sessionStorage.getItem('logeed')
-    this.login = !a
+    this.getInitData();
+    let a = sessionStorage.getItem("logeed");
+    this.login = !a;
   },
   mounted() {
     this.starTimer();

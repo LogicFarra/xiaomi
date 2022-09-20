@@ -9,8 +9,8 @@
         </div>
       </div>
       <div class="right">
-        <button @click="back">返回上一级</button>
-        <button>去购物车结算</button>
+        <button @click="next(false)">返回上一级</button>
+        <button @click="next(true)">去购物车结算</button>
       </div>
     </header>
     <div class="cutline"></div>
@@ -31,8 +31,8 @@ export default {
         }
     },
     methods:{
-        back(){
-            this.$router.back()
+        next(status){
+            status ? this.$router.push('/cart') : this.$router.back()
         }
     },
     mounted(){

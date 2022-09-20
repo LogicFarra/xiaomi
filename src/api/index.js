@@ -175,3 +175,30 @@ export const getShopCarAPI = ()=>{
         url:"shop_car"
     })
 }
+// 删除购物车中某件商品
+export const deleteShopCarAPI = (id)=>{
+    return axios.request({
+        method:"DELETE",
+        url:"shop_car/"+id,
+    })
+}
+// 搜索购物车中特定的商品信息
+export const searchShopCarAPI = ({product,disposition,version,color})=>{
+    return axios.request({
+        url:"shop_car",
+        params:{
+            product,
+            disposition,
+            version,
+            color
+        }
+    })
+}
+// 添加商品到购物车
+export const addProductAPI = (data)=>{
+    return axios.request({
+        url:"shop_car",
+        method:"POST",
+        data:data
+    })
+}
