@@ -11,7 +11,7 @@
     <!-- 内容 -->
     <div class="videos">
       <ul>
-        <li v-for="item in covers" :key="item.id">
+        <li v-for="item in covers" :key="item.id" @click="play(item.title,item.src)">
           <img :src="item.cover" alt="" width="296px" height="180px" />
           <p>{{item.title}}</p>
           <p class="small_text">{{item.text}}</p>
@@ -19,6 +19,24 @@
         </li>
       </ul>
     </div>
+    <!-- 下拉框 -->
+    <transition>
+        <div class="dropdown" v-if="showDrop">
+          <div class="dropdownContainer">
+            <div class="header">
+              {{title}}
+              <i
+                class="fa fa-times"
+                aria-hidden="true"
+                @click="showDrop = false"
+              ></i>
+            </div>
+            <div class="container">
+              <video controls autoplay :src="videoSrc"></video>
+            </div>
+          </div>
+        </div>
+      </transition>
   </div>
 </template>
 
@@ -28,13 +46,21 @@ export default {
   name: "videoCom",
   data(){
       return{
-          covers:[]
+          covers:[],
+          showDrop:false,
+          title:"",
+          videoSrc:""
       }
   },
   methods:{
     async getCoverData(){
         const { data } = await getVideoCoverAPI()
         this.covers = data.slice(0,4)
+    },
+    play(title,src){
+      this.title = title
+      this.videoSrc = src
+      this.showDrop = true
     }
   },
   created(){
@@ -134,6 +160,65 @@ export default {
       }
     }
   }
+  // 下拉框
+
+    .dropdown {
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.29);
+      z-index: 9999;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .dropdownContainer {
+      width: 800px;
+      background-color: white;
+      box-sizing: border-box;
+      .header {
+        width: 100%;
+        height: 60px;
+        padding: 14px 20px;
+        line-height: 32px;
+        font-size: 18px;
+        background-color: silver;
+        i {
+          float: right;
+          padding: 10px 12px;
+          border-radius: 100px;
+          transition: 0.3s;
+          cursor: pointer;
+          &:hover {
+            background-color: red;
+            color: white;
+          }
+        }
+      }
+      .container {
+        video{
+          width:800px;
+        }
+      }
+    }
+    .v-enter-active {
+      animation: drop 1s;
+    }
+    .v-leave-active {
+      animation: drop 1s reverse;
+    }
+    @keyframes drop {
+      0% {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
 }
 </style>
       

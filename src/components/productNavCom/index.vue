@@ -26,12 +26,12 @@
           }}</a>
         </li>
         <li>
-          <a href="javascript:;" @mouseenter="b(true)" @mouseleave="b(false)"
+          <a href="https://www.mi.com/service" @mouseenter="b(true)" @mouseleave="b(false)"
             >服务中心</a
           >
         </li>
         <li>
-          <a href="javascript:;" @mouseenter="b(true)" @mouseleave="b(false)"
+          <a href="https://www.xiaomi.cn/" @mouseenter="b(true)" @mouseleave="b(false)"
             >社区</a
           >
         </li>
@@ -66,17 +66,27 @@
         <input
           type="text"
           placeholder="电视"
-          @focus="showSearhDropdown = true"
-          @blur="showSearhDropdown = false"
+          v-model="keyword"
+          @mouseenter="showSearhDropdown = true"
+          @mouseleave="showSearhDropdown = false"
         />
         <!-- 搜索框_按钮 -->
-        <div class="search_btn">
+        <div class="search_btn" @click="toSearch">
           <i class="fa fa-search" aria-hidden="true"></i>
         </div>
         <!-- the dropdown of the search bar -->
-        <ul class="search_box_dropdown" v-show="showSearhDropdown">
-          <li v-for="item in searchKeywords" :key="item.id">
-          {{item.keywords}}
+        <ul
+          class="search_box_dropdown"
+          v-show="showSearhDropdown"
+          @mouseenter="showSearhDropdown = true"
+          @mouseleave="showSearhDropdown = false"
+        >
+          <li
+            v-for="item in searchKeywords"
+            :key="item.id"
+            @click="goSearchPage(item.keywords)"
+          >
+            {{ item.keywords }}
           </li>
         </ul>
       </div>
@@ -85,7 +95,7 @@
 </template>
 
 <script>
-import { getProductNavAPI , getSearchKeywordsAPI } from "@/api";
+import { getProductNavAPI, getSearchKeywordsAPI } from "@/api";
 export default {
   name: "ProductNavCom",
   data() {
@@ -95,7 +105,8 @@ export default {
       leave: null, //判断鼠标位置
       products: [], //商品导航下拉菜单的所有数据
       curProducts: [], //商品导航下拉菜单当前展示的数据
-      searchKeywords:[], //搜索框的关键词
+      searchKeywords: [], //搜索框的关键词
+      keyword:"", //输入框数据
     };
   },
   methods: {
@@ -132,24 +143,44 @@ export default {
       this.curProducts = this.products[index - 1].products;
     },
     // 获取搜索框关键词函数
-    async getSearchKeywords(){
-      const {data} = await getSearchKeywordsAPI()
-      this.searchKeywords = data
+    async getSearchKeywords() {
+      const { data } = await getSearchKeywordsAPI();
+      this.searchKeywords = data;
     },
     // 商品点击事件
-    productClick(product){
+    productClick(product) {
       //携带商品名称跳转到buy页面
       this.$router.push({
-        path:"/shop/buy",
+        path: "/shop/buy",
+        query: {
+          product,
+        },
+      });
+    },
+    // 搜索下拉框点击事件
+    goSearchPage(data) {
+      this.$router.push({
+        path:'/shop/search',
         query:{
-          product
+          product : data
         }
       })
+    },
+    // 搜索按钮点击事件
+    toSearch(){
+      if(this.keyword.trim()){
+        this.$router.push({
+          path:"/shop/buy",
+          query:{
+            product:"Xiaomi 12S Pro"
+          }
+        })
+      }
     }
   },
   created() {
     this.getProducts();
-    this.getSearchKeywords()
+    this.getSearchKeywords();
   },
 };
 </script>
@@ -255,10 +286,10 @@ export default {
       height: 50px;
       display: flex;
       &:hover input {
-        border-color: #b0b0b0;
+        border-color: #ff6700;
       }
       &:hover div {
-        border-color: #b0b0b0;
+        border-color: #ff6700;
       }
       // the input of the search bar
       input {
@@ -268,15 +299,10 @@ export default {
         border: 1px solid #e0e0e0;
         padding: 0 10px;
         transition: 0.3s;
-        &:focus {
-          border-color: #ff6700;
-        }
-        &:focus + div {
-          border-color: #ff6700;
-        }
       }
       // the button of the search bar
       div {
+        cursor: pointer;
         width: 52px;
         border-top: 1px solid #e0e0e0;
         border-bottom: 1px solid #e0e0e0;

@@ -136,6 +136,8 @@ export default {
       // 有数据,密码正确
       else if (data[0].password === this.userInfo.password) {
         this.showSucceed = true
+        // 调用vuex设置token并保存
+        this.$store.dispatch('setToken')
         setTimeout(()=>{
           sessionStorage.setItem('logeed',true)
           this.showSucceed = false

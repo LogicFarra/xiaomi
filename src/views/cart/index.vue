@@ -5,11 +5,6 @@
         <img src="@/assets/logo-mi2.png" alt="" />
         <h2>我的购物车</h2>
         <small>温馨提示：产品是否购买成功，以最终下单为准哦，请尽快结算</small>
-        <ul>
-          <li @click="jumpPage(true)" class="login">登录</li>
-          <li>|</li>
-          <li @click="jumpPage(false)" class="login">注册</li>
-        </ul>
       </div>
     </header>
     <main>
@@ -19,14 +14,14 @@
             <li class="row1">
               <div class="col1">
                 <input type="checkbox" :checked="all" @change="allChange" />
-                <font>全选</font>
+                <span>全选</span>
               </div>
               <div class="img"></div>
-              <div class="col2"><font>商品名称</font></div>
-              <div class="col3"><font>单价</font></div>
-              <div class="col4"><font>数量</font></div>
-              <div class="col5"><font>小计</font></div>
-              <div class="col6"><font>操作</font></div>
+              <div class="col2"><span>商品名称</span></div>
+              <div class="col3"><span>单价</span></div>
+              <div class="col4"><span>数量</span></div>
+              <div class="col5"><span>小计</span></div>
+              <div class="col6"><span>操作</span></div>
             </li>
             <li class="row2 row1" v-for="item in initData" :key="item.index">
               <div class="col1">
@@ -65,29 +60,27 @@
             </li>
             <li>|</li>
             <li>
-              已选择<font>{{ productNum }}</font
+              已选择<span>{{ productNum }}</span
               >件
             </li>
           </ul>
-          <div class="purchase" :style="{ background: bgColor, color: color }">
-            <font>去结算</font>
+          <div class="purchase" :style="{ background: bgColor}">
+            <span :style="{color:color}" @click="tobuy">去结算</span>
             <div v-show="notis">请勾选需要结算的商品</div>
           </div>
-          <span
-            >合计:<font>{{ totle }}</font
-            >元</span
+          <span>合计:<span>{{ totle }}元</span></span
           >
         </div>
       </div>
     </main>
-    <RecommendCom></RecommendCom>
+    <YouLike title="购买这件商品的人还购买了"></YouLike>
     <FooterCom></FooterCom>
   </div>
 </template>
 
 <script>
-import RecommendCom from "@/components/recommendCom/index.vue";
 import FooterCom from "@/components/footerCom/index.vue";
+import YouLike from "@/components/youLike/index.vue";
 import {
   getShopCarAPI,
   deleteShopCarAPI,
@@ -96,7 +89,7 @@ import {
 } from "@/api";
 export default {
   name: "cart",
-  components: { RecommendCom, FooterCom },
+  components: { FooterCom, YouLike },
   data() {
     return {
       initData: [
@@ -115,6 +108,7 @@ export default {
       bgColor: "#bababa",
       color: "#838383",
       notis: true,
+      dis : false,
     };
   },
   computed: {
@@ -137,30 +131,25 @@ export default {
     },
     // 初始化初始数据
     filterData(data) {
-      for (let i = 0; i < data.length; i++) {
-        let { product, disposition, version, color } = data[i];
-        data[i].count = 1;
-        data[i].index = i;
-        data[i].chose = false;
-        data[i].price = parseInt(data[i].price);
-        for (let j = i + 1; j < data.length; j++) {
-          let {
-            product: p2,
-            disposition: d2,
-            version: v2,
-            color: c2,
-          } = data[j];
-          if (
-            product === p2 &&
-            disposition === d2 &&
-            version === v2 &&
-            color === c2
-          ) {
-            data[i].count++;
-            data.splice(j, 1);
-            j--;
+      for(let i = 0 ; i < data.length; i++){
+        data[i].count = 1
+      }
+      // 遍历数组
+      for(let i=0;i<data.length;i++){
+        for(let j=i+1;j<data.length;j++){
+          // 查询相同的商品,给第一个商品的数量加一,删掉后面的商品
+          if(data[i].product === data[j].product && data[i].version === data[j].version && data[i].color === data[j].color){
+            data[i].count++
+            data.splice(j,1)
+            j--
           }
         }
+      }
+       // 遍历数据,添加一些基本属性
+       for (let i = 0; i < data.length; i++) {
+        data[i].index = i;    // 添加index,用来标记
+        data[i].chose = false;    // chose属性,表示当前商品是否被选中
+        data[i].price = parseInt(data[i].price);  // 转换价格的数据类型
       }
       return data;
     },
@@ -202,6 +191,7 @@ export default {
     },
     // 商品选择框点击事件
     itemChange(index) {
+      console.log(index)
       let a = this.initData[index];
       a.chose = !a.chose;
       let money = a.count * a.price;
@@ -253,6 +243,18 @@ export default {
     continueShopping() {
       this.$router.push("/");
     },
+    // 跳转到购买页面
+    tobuy(){
+      if(this.dis === true){
+        let list = this.initData.filter((v)=>{
+          return v.chose === true
+        })
+        sessionStorage.setItem('products',JSON.stringify(list))
+        this.$router.push("/shop/checkout")
+      }else{
+        return
+      }
+    }
   },
   watch: {
     totle(newval) {
@@ -260,10 +262,12 @@ export default {
         this.bgColor = "#ff6700";
         this.color = "white";
         this.notis = false;
+        this.dis = true
       } else {
         this.bgColor = "#bababa";
         this.color = "#838383";
         this.notis = true;
+        this.dis = false
       }
     },
   },
@@ -295,27 +299,10 @@ export default {
         margin-right: 10px;
         line-height: 100px;
         color: #424242;
-        float: left;
       }
       small {
         color: #838383;
         line-height: 110px;
-      }
-      ul {
-        float: right;
-        line-height: 100px;
-        li {
-          float: left;
-          font-size: 14px;
-          color: #757575;
-          padding: 0 5px;
-          cursor: pointer;
-        }
-        .login {
-          &:hover {
-            color: #ff6700;
-          }
-        }
       }
     }
   }
@@ -343,7 +330,7 @@ export default {
               width: 110px;
               height: 100%;
               padding: 22px 20px;
-              font {
+              span {
                 margin-right: 5px;
                 margin-top: 2px;
                 float: right;
@@ -359,6 +346,9 @@ export default {
               height: 100%;
             }
             .col2 {
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
               width: 380px;
               height: 100%;
               line-height: 70px;
@@ -459,7 +449,7 @@ export default {
             margin-right: 10px;
             font-size: 14px;
             color: #757575;
-            font {
+            span {
               color: #ff6700;
             }
           }
@@ -475,7 +465,7 @@ export default {
           line-height: 50px;
           float: right;
           color: #ff6700;
-          font {
+          span {
             font-size: 24px;
           }
         }
@@ -491,6 +481,9 @@ export default {
           margin-left: 40px;
           position: relative;
           cursor: pointer;
+          span{
+            width:100%;
+          }
           div {
             width: 200px;
             height: 50px;

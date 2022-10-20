@@ -78,19 +78,19 @@
             </p>
             <p class="title_sale">小米自营</p>
             <p class="title_price">
-              <font class="cur_price">{{ initData.price }}</font>
-              <del>{{ initData.oldPrice }}</del>
+              <font class="cur_price">{{ configs.price }}</font>
+              <del>{{ configs.oldPrice }}</del>
             </p>
           </div>
           <!-- 赠品 -->
-          <div class="gifts">
+          <!-- <div class="gifts" v-if="initData.gifts.length > 0 || initData.gifts">
             <span>赠品</span>
             <ul>
               <li v-for="item in initData.gifts" :key="item.index">
                 {{ item }}
               </li>
             </ul>
-          </div>
+          </div> -->
           <!-- 位置 -->
           <div class="location">
             <p>
@@ -109,7 +109,7 @@
             <p>选择版本</p>
             <ul>
               <li
-                :class="[item.index === curClass[0].ver ? 'cur' : '']"
+                :class="[item.index == curClass[0].ver ? 'cur' : '']"
                 v-for="item in initData.version"
                 :key="item.text"
                 @click="configClick(item, 'ver')"
@@ -123,7 +123,7 @@
             <p>选择配置</p>
             <ul>
               <li
-                :class="[item.index === curClass[2].col ? 'cur' : '']"
+                :class="[item.index == curClass[2].col ? 'cur' : '']"
                 v-for="item in initData.disposition"
                 :key="item.text"
                 @click="configClick(item, 'dis')"
@@ -137,7 +137,7 @@
             <p>选择颜色</p>
             <ul>
               <li
-                :class="[item.index === curClass[2].col ? 'cur' : '']"
+                :class="[item.index == curClass[2].col ? 'cur' : '']"
                 v-for="item in initData.color"
                 :key="item.index"
                 @click="configClick(item, 'col')"
@@ -215,7 +215,6 @@ export default {
   name: "buy",
   data() {
     return {
-      product: this.$route.query.product,
       login: true, //登录提示框的显示和隐藏
       showImg: 0, //当前显示哪张图片
       timer: null,
@@ -238,8 +237,14 @@ export default {
         color: "",
         price: "",
         img: "",
+        oldPrice:""
       },
     };
+  },
+  computed:{
+    product(){
+      return this.$route.query.product
+    }
   },
   methods: {
     // 轮播图自动播放方法
@@ -277,7 +282,6 @@ export default {
     //切图方块被点击事件
     squearClick(num) {
       this.showImg = num;
-      console.log(num);
     },
     // 获取原始数据,并筛选
     async getInitData() {
@@ -313,7 +317,11 @@ export default {
           this.initData.version.length !== 0
             ? this.initData.version[0].price
             : this.initData.disposition[0].price,
-        img:this.initData.color[0].img
+        oldPrice:
+          this.initData.version.length !== 0
+            ? this.initData.version[0].oldPrice
+            : this.initData.disposition[0].oldPrice,
+        img: this.initData.color[0].img,
       };
     },
     // 商品配置点击事件
@@ -323,16 +331,19 @@ export default {
           this.curClass[0].ver = config.index;
           this.configs.version = config.text;
           this.configs.price = config.price;
+          this.configs.oldPrice = config.oldPrice;
           break;
         case "dis":
           this.curClass[1].dis = config.index;
           this.configs.disposition = config.text;
           this.configs.price = config.price;
+          this.configs.oldPrice = config.oldPrice;
           break;
         case "col":
           this.curClass[2].col = config.index;
           this.configs.color = config.color;
           this.configs.img = config.img;
+          this.configs.oldPrice = config.oldPrice;
           break;
       }
     },
@@ -342,17 +353,16 @@ export default {
     },
     // 加入购物车
     async addShopCar() {
-      let id = Math.random()
-      this.configs.id = id
-      await addProductAPI(this.configs)
-      sessionStorage.setItem("curitem", JSON.stringify(this.configs))
+      let id = Math.random();
+      this.configs.id = id;
+      await addProductAPI(this.configs);
+      sessionStorage.setItem("curitem", JSON.stringify(this.configs));
       this.$router.push({
         name: "succeed",
         params: {
           data: this.configs,
         },
-      })
-      
+      });
     },
   },
   watch: {
@@ -363,13 +373,19 @@ export default {
         this.showImg = this.imgs.length - 1;
       }
     },
+    product(newvalue){
+      this.getInitData()
+    }
   },
   created() {
     this.getInitData();
-    let a = sessionStorage.getItem("logeed");
-    this.login = !a;
+    let token = this.$store.state.token;
+    if (token) {
+      this.login = false;
+    }
   },
   mounted() {
+    document.documentElement.scrollTop = 0
     this.starTimer();
   },
 };

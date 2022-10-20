@@ -162,6 +162,7 @@ export default {
 footer {
   // 上半部分
   .footer_top {
+    background-color: white;
     .footer_top_container {
       width: 1226px;
       margin: 0 auto;

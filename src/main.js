@@ -2,6 +2,11 @@ import Vue from 'vue'
 import App from './App.vue'
 import store from './store'
 import router from './router'
+import VueLazyLoad from 'vue-lazyload'
+Vue.use(VueLazyLoad, {
+  preLoad: 1,
+  attempt: 2
+})
 import 'animate.css';
 Vue.config.productionTip = false
 function throttling(fn, time = 1000,stats){

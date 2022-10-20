@@ -12,28 +12,28 @@
         </div>
       </li>
       <li>
-        <div>
+        <div @click="jump('/shop/user/myCenter')">
           <img src="./imgs/user.png" alt="" />
           <img src="./imgs/user2.png" alt="" class="hoverImg"/>
           <span> 个人中心 </span>
         </div>
       </li>
       <li>
-        <div>
+        <div @click="jump('/shop/user/application')">
           <img src="./imgs/tool.png" alt="" />
           <img src="./imgs/tool2.png" alt="" class="hoverImg"/>
           <span> 售后服务 </span>
         </div>
       </li>
       <li>
-        <div>
+        <div @click="open">
           <img src="./imgs/service.png" alt="" />
           <img src="./imgs/service2.png" alt="" class="hoverImg"/>
           <span> 人工客服 </span>
         </div>
       </li>
       <li>
-        <div>
+        <div @click="jump('/cart')">
           <img src="./imgs/car.png" alt="" />
           <img src="./imgs/car2.png" alt="" class="hoverImg"/>
           <span> 购物车 </span>
@@ -61,9 +61,6 @@ export default {
         marginTop:350
       }
   },
-  computed:{
-    
-  },
   methods:{
     watchPageY(){
         let pageY = window.pageYOffset
@@ -77,10 +74,13 @@ export default {
     },
     gotop(){
         document.documentElement.scrollTop = 0
+    },
+    jump(path){
+      this.$router.push(path)
+    },
+    open(){
+      window.open("https://chat.kefu.mi.com/page/index/v2?tag=cn&token=Y24jMTAwMSNjbi53ZWIubWkuaHR0cHMjZGVmYXVsdCNnb29kc0RldGFpbA==&groupId=P0&closedshow=1")
     }
-  },
-  watch:{
-
   },
   mounted(){
       window.addEventListener('scroll',this.throttling(this.watchPageY,500))

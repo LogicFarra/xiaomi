@@ -3,12 +3,12 @@
     <!-- 频道 -->
     <ul class="main_channel_list">
       <li v-for="item in webChannel" :key="item.id">
-        <i :class="item.class"></i><br /><font>{{item.title}}</font>
+        <a :href="item.path"><i :class="item.class"></i><br /><font>{{item.title}}</font></a>
       </li>
     </ul>
     <!-- 宣传图片 -->
     <ul class="main_publicity_picture">
-      <li v-for="item in webChannelPublicityImgs" :key="item.id">
+      <li v-for="item in webChannelPublicityImgs" :key="item.id" @click="toBuy(item.name)">
         <img :src="item.img" alt="" />
       </li>
     </ul>
@@ -35,6 +35,15 @@ export default {
     async getWebChannelPublicity(){
       const { data } = await getWebChannelPublicityAPI()
       this.webChannelPublicityImgs = data
+    },
+    // 宣传图片点击事件
+    toBuy(name){
+      this.$router.push({
+        path:"/shop/buy",
+        query:{
+          product:name
+        }
+      })
     }
   },
   created() {
@@ -66,11 +75,10 @@ export default {
       text-align: center;
       position: relative;
       cursor: pointer;
-      &:hover > i {
-        color: white;
-      }
-      &:hover > font {
-        color: white;
+      &:hover{
+        i,font{
+          color: white;
+        }
       }
       &::after {
         content: "";

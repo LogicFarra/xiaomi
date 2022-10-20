@@ -60,11 +60,6 @@
       "title": "下载app",
       "target": "https://www.mi.com/appdownload",
       "class": "downloadApp"
-    },
-    {
-      "id": 13,
-      "title": "Select Location",
-      "target": ""
     }
   ],
   "shuffling_figure": [
@@ -357,13 +352,6 @@
           "product": "小米路由器4A 千兆版",
           "price": "129元起",
           "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/026a28fc18eff2cfa4d26a799a2da9cc.jpg"
-        },
-        {
-          "id": 6,
-          "product": "查看全部",
-          "price": "小米路由器",
-          "class": "more",
-          "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/2ddc6a2789c5f5ff78fa4ca1402417c8.png"
         }
       ]
     }
@@ -1357,20 +1345,8 @@
   ],
   "search_keywords": [
     {
-      "id": "0",
-      "keywords": "全部商品"
-    },
-    {
-      "id": "1",
-      "keywords": "红米"
-    },
-    {
       "id": "2",
       "keywords": "手机"
-    },
-    {
-      "id": "3",
-      "keywords": "黑鲨5"
     },
     {
       "id": "4",
@@ -1386,53 +1362,62 @@
     },
     {
       "id": "7",
-      "keywords": "Redmi G 2021"
+      "keywords": "电脑"
     }
   ],
   "web_channel": [
     {
       "id": "0",
       "class": "fa fa-clock-o",
-      "title": "保障服务"
+      "title": "保障服务",
+      "path": "https://api.jr.mi.com/activity/scene/scenePCsearch.html?from=search"
     },
     {
       "id": "1",
       "class": "fa fa-building-o",
-      "title": "企业团购"
+      "title": "企业团购",
+      "path": "https://qiye.mi.com/"
     },
     {
       "id": "2",
       "class": "fa fa-smile-o",
-      "title": "F码通道"
+      "title": "F码通道",
+      "path": "https://www.mi.com/shop/order/fcode"
     },
     {
       "id": "3",
       "class": "fa fa-credit-card",
-      "title": "米粉卡"
+      "title": "米粉卡",
+      "path": "https://10046.mi.com/"
     },
     {
       "id": "4",
       "class": "fa fa-retweet",
-      "title": "以旧换新"
+      "title": "以旧换新",
+      "path": "https://www.mi.com/a/h/16769.html"
     },
     {
       "id": "5",
       "class": "fa fa-mobile",
-      "title": "话费充值"
+      "title": "话费充值",
+      "path": "https://recharge.10046.mi.com/"
     }
   ],
   "web_channel_publicity_imgs": [
     {
       "id": "0",
-      "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/32a62196b9af47752c96e7a50c86417c.jpg?w=632&h=340"
+      "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/32a62196b9af47752c96e7a50c86417c.jpg?w=632&h=340",
+      "name": "Xiaomi MIX Fold 2"
     },
     {
       "id": "1",
-      "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/5d1892854c8bb165e755d68bde287d71.jpg?w=632&h=340"
+      "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/5d1892854c8bb165e755d68bde287d71.jpg?w=632&h=340",
+      "name": "Xiaomi 12S Pro"
     },
     {
       "id": "2",
-      "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/28c13d0d11b38ec17fa5d83bc6ba5912.jpg?w=632&h=340"
+      "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/28c13d0d11b38ec17fa5d83bc6ba5912.jpg?w=632&h=340",
+      "name": "Xiaomi 12S Pro"
     }
   ],
   "mobile_phone": {
@@ -3286,19 +3271,23 @@
   "public_imgs": [
     {
       "id": "0",
-      "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/2656295f6c067f48a04a425acf15a096.jpg?thumb=1&w=1839&h=180&f=webp&q=90"
+      "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/2656295f6c067f48a04a425acf15a096.jpg?thumb=1&w=1839&h=180&f=webp&q=90",
+      "name": "Xiaomi 12S Ultra"
     },
     {
       "id": "1",
-      "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/642363ea6aea49e08cb73bc69fb4572e.png?thumb=1&w=1839&h=180&f=webp&q=90"
+      "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/642363ea6aea49e08cb73bc69fb4572e.png?thumb=1&w=1839&h=180&f=webp&q=90",
+      "name": "Xiaomi 12S Ultra"
     },
     {
       "id": "2",
-      "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/88e35cffc82cd98cd53172460067af17.jpg?thumb=1&w=1839&h=180&f=webp&q=90"
+      "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/88e35cffc82cd98cd53172460067af17.jpg?thumb=1&w=1839&h=180&f=webp&q=90",
+      "name": "Xiaomi 12S Ultra"
     },
     {
       "id": "3",
-      "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/88e35cffc82cd98cd53172460067af17.jpg?thumb=1&w=1839&h=180&f=webp&q=90"
+      "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/88e35cffc82cd98cd53172460067af17.jpg?thumb=1&w=1839&h=180&f=webp&q=90",
+      "name": "Xiaomi 12S Ultra"
     }
   ],
   "video_cover": [
@@ -3306,25 +3295,29 @@
       "id": "0",
       "cover": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/e74c4ff741bcdfc5b28a48a43e4edc6d.jpg?thumb=1&w=444&h=270&f=webp&q=90",
       "title": "2021年春季新品发布会第一场",
-      "text": ""
+      "text": "",
+      "src": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/812358b69886e576c66a01f1f00affe9.mp4"
     },
     {
       "id": "1",
       "cover": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/101b19aca4bb489bcef0f503e44ec866.jpg?thumb=1&w=444&h=270&f=webp&q=90",
       "title": "Redmi 10X系列发布会",
-      "text": "Redmi 10X系列发布会"
+      "text": "Redmi 10X系列发布会",
+      "src": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/11c70c96529b6e6938567ec1aa0910e0.mp4"
     },
     {
       "id": "2",
       "cover": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/96563e75833ba4563bd469dd28203b09.jpg?thumb=1&w=444&h=270&f=webp&q=90",
       "title": "小米10 青春版 发布会",
-      "text": ""
+      "text": "",
+      "src": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/7cdabcaa763392c86b944eaf4e68d6a3.mp4"
     },
     {
       "id": "3",
       "cover": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/2fd26bb99b723337a2f8eaba84f7d5bb.jpg?thumb=1&w=444&h=270&f=webp&q=90",
       "title": "小米10 8K手机拍大片",
-      "text": ""
+      "text": "",
+      "src": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/e25d81c4922fca5ebe51877717ef9b76.mp4"
     }
   ],
   "after_sale": [
@@ -3711,6 +3704,65 @@
   ],
   "all_products": [
     {
+      "product": "Xiaomi MIX Alpha",
+      "introduction": "「9月11日，全版本限时优惠100元；购机享24期免息；直播间下单加赠手机壳」骁龙8+ 旗舰处理器 | 徕卡光学镜头 | 徕卡原生双画质 | 徕卡水印、大师镜头包 | 全场景疾速抓拍 | 5000万三主摄 | 小米自研澎湃P1芯片 | 120W小米澎湃秒充 | 4600mAh大电量 | 2K AMOLED屏",
+      "price": "4599元",
+      "oldPrice": "4699元",
+      "version": [
+        {
+          "index": 0,
+          "text": "8GB+128GB",
+          "price": "4599元",
+          "oldPrice": "4699元"
+        },
+        {
+          "index": 1,
+          "text": "8GB+256GB",
+          "price": "4899元",
+          "oldPrice": "4999元"
+        },
+        {
+          "index": 2,
+          "text": "12GB+256GB",
+          "price": "5299元",
+          "oldPrice": "5399元"
+        },
+        {
+          "index": 3,
+          "text": "12GB+512GB",
+          "price": "5799元",
+          "oldPrice": "5899元"
+        }
+      ],
+      "disposition": [],
+      "color": [
+        {
+          "index": 0,
+          "color": "白色",
+          "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1656916237.95638090.png"
+        },
+        {
+          "index": 1,
+          "color": "黑色",
+          "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1656916238.0629960.png"
+        }
+      ],
+      "gifts": [
+        "本组赠品可任选1种",
+        "价值109元定制便携咖啡杯x1，赠完即止",
+        "价值99元小米新定制T恤 白色x1，赠完即止",
+        "价值99元小米手机纪念徽章 套装x1，赠完即止",
+        "价值79元致敬大师系列手机支架 互联网x1，赠完即止"
+      ],
+      "img": [
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1656916238.05977286.png",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1656916237.95638090.png",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1656916238.0629960.png",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1656916238.06123122.png",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1656916237.89556976.png"
+      ]
+    },
+    {
       "product": "Xiaomi 12S Pro",
       "introduction": "「9月11日，全版本限时优惠100元；购机享24期免息；直播间下单加赠手机壳」骁龙8+ 旗舰处理器 | 徕卡光学镜头 | 徕卡原生双画质 | 徕卡水印、大师镜头包 | 全场景疾速抓拍 | 5000万三主摄 | 小米自研澎湃P1芯片 | 120W小米澎湃秒充 | 4600mAh大电量 | 2K AMOLED屏",
       "price": "4599元",
@@ -3770,20 +3822,1651 @@
       ]
     },
     {
-      "product": "",
-      "introduction": "",
-      "price": "",
+      "product": "Xiaomi MIX Fold 2",
+      "introduction": "超轻薄折叠机身｜小米自研微水滴形态转轴｜内外双旗舰屏幕｜徕卡专业光学镜头｜徕卡原生双画质",
+      "price": "8999元",
       "oldPrice": "",
       "version": [
         {
-          "id": "",
-          "text": "",
-          "price": ""
+          "index": "0",
+          "text": "12GB+256GB",
+          "price": "8999元"
+        },
+        {
+          "index": "1",
+          "text": "12GB+512GB",
+          "price": "9999元"
+        },
+        {
+          "index": "2",
+          "text": "12GB+1024GB",
+          "price": "11999元"
         }
       ],
-      "color": [],
-      "gifs": [],
-      "img": []
+      "color": [
+        {
+          "index": 0,
+          "color": "星曜金",
+          "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1660187418.84312919.jpg"
+        },
+        {
+          "index": 1,
+          "color": "月影黑",
+          "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1660187416.22329549.jpg"
+        }
+      ],
+      "gifts": [],
+      "img": [
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1660187413.51081663.jpg",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1660187418.84312919.jpg",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1660187416.22329549.jpg",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1660187413.51081663.jpg",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1660187418.84312919.jpg"
+      ],
+      "disposition": []
+    },
+    {
+      "product": "Xiaomi 12S Ultra",
+      "introduction": "「购机享6期免息；加149元得立式无线充」徕卡专业光学镜头｜骁龙8+ 旗舰处理器｜徕卡原生双画质｜1 英寸大底专业主摄｜小米澎湃 P1 快充芯片｜全场景疾速抓拍｜IP68级防尘防水",
+      "price": "5999元",
+      "oldPrice": "",
+      "version": [
+        {
+          "index": "0",
+          "text": "8GB+256GB",
+          "price": "5999元"
+        },
+        {
+          "index": "1",
+          "text": "12GB+256GB",
+          "price": "6499元"
+        },
+        {
+          "index": "2",
+          "text": "12GB+512GB",
+          "price": "6999元"
+        }
+      ],
+      "color": [
+        {
+          "index": "0",
+          "color": "经典黑",
+          "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1656916151.11811700.png"
+        },
+        {
+          "index": "1",
+          "color": "冷杉绿",
+          "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1656916151.11398320.png"
+        }
+      ],
+      "gifts": [],
+      "img": [
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1656916151.11655203.png",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1656916151.11811700.png",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1656916151.11398320.png",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1656916151.11811700.png",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1656916151.11398320.png"
+      ],
+      "disposition": []
+    },
+    {
+      "product": "Xiaomi 12s",
+      "introduction": "「购机享24期免息，信用卡分期至高立减166元；+299元得多线圈无线充；直播间下单加赠手机壳」骁龙8+ 旗舰处理器 | 单手可握好手感 | 徕卡光学镜头 | 徕卡原生双画质 | 全场景疾速抓拍 | 4500mAh大电量 | 6.28″AMOLED屏幕",
+      "price": "4299元",
+      "oldPrice": "",
+      "version": [
+        {
+          "index": "0",
+          "text": "8GB+256GB",
+          "price": "4299元"
+        },
+        {
+          "index": "1",
+          "text": "8GB+128GB",
+          "price": "3999元"
+        },
+        {
+          "index": "2",
+          "text": "12GB+256GB",
+          "price": "4699元"
+        },
+        {
+          "index": "3",
+          "text": "12GB+512GB",
+          "price": "5199元"
+        }
+      ],
+      "color": [
+        {
+          "index": "0",
+          "color": "白色",
+          "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1656916389.43536967.png"
+        },
+        {
+          "index": "1",
+          "color": "黑色",
+          "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1656916389.39786350.png"
+        },
+        {
+          "index": "2",
+          "color": "原野绿",
+          "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1656916389.39657948.png"
+        },
+        {
+          "index": "3",
+          "color": "紫色",
+          "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1656916389.43587052.png"
+        },
+        {
+          "index": "4",
+          "color": "蓝色",
+          "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1661769652.90194997.png"
+        }
+      ],
+      "gifts": [],
+      "img": [
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1656916389.43757833.png",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1661769652.90194997.png",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1656916389.43587052.png",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1656916389.39657948.png",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1656916389.39786350.png"
+      ],
+      "disposition": []
+    },
+    {
+      "product": "Xiaomi 12 Pro 天玑版",
+      "introduction": "「购机至高享24期免息，信用卡分期享受满减优惠」Xiaomi 12 Pro 天玑版",
+      "price": "3999 元",
+      "oldPrice": "",
+      "version": [
+        {
+          "index": "0",
+          "text": "8GB+128GB",
+          "price": "3999元"
+        },
+        {
+          "index": "1",
+          "text": "12GB+256GB",
+          "price": "4499元"
+        }
+      ],
+      "color": [
+        {
+          "index": "0",
+          "color": "黑色",
+          "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1656916477.1662790.png"
+        },
+        {
+          "index": "1",
+          "color": "蓝色",
+          "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1656916477.1862857.png"
+        }
+      ],
+      "gifts": [],
+      "img": [
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1656916477.17676848.png",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1656916477.1662790.png",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1656916477.1862857.png",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1656916477.1662790.png",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1656916477.1862857.png"
+      ],
+      "disposition": []
+    },
+    {
+      "product": "Xiaomi Civi 1S",
+      "introduction": "「领券下单立减200元！购机赠手机保护壳，至高享6期免息」原生美肌人像2.0 | 4D光追焕颜美妆技术 | 3200万高清质感自拍 | 升级人眼追焦 | 6400万AI三摄 | 3D曲面OLED柔性屏 | 120Hz+Dolby Vision | 55W有线闪充 | 立体声双扬声器 | 多功能NFC",
+      "price": "2299 元",
+      "oldPrice": "",
+      "version": [
+        {
+          "index": "0",
+          "text": "8GB+128GB",
+          "price": "2299元"
+        },
+        {
+          "index": "1",
+          "text": "8GB+256GB",
+          "price": "2599元"
+        },
+        {
+          "index": "2",
+          "text": "12GB+256GB",
+          "price": "2899元"
+        }
+      ],
+      "color": [
+        {
+          "index": "0",
+          "color": "闪闪黑",
+          "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1650439848.89231810.png"
+        },
+        {
+          "index": "1",
+          "color": "闪闪黑",
+          "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1650439848.89231810.png"
+        },
+        {
+          "index": "2",
+          "color": "怦怦粉",
+          "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1650439848.89231810.png"
+        },
+        {
+          "index": "3",
+          "color": "奇迹阳光",
+          "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1650439848.89231810.png"
+        }
+      ],
+      "gifts": [],
+      "img": [
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1650439848.89231810.png",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1650439848.89231810.png",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1650439848.89231810.png",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1650439848.89231810.png",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1650439848.89231810.png"
+      ],
+      "disposition": []
+    },
+    {
+      "product": "Redmi K50 至尊版",
+      "introduction": "「9月11日，全版本限时优惠100元；购机享24期免息；直播间下单加赠手机壳」骁龙8+ 旗舰处理器 | 徕卡光学镜头 | 徕卡原生双画质 | 徕卡水印、大师镜头包 | 全场景疾速抓拍 | 5000万三主摄 | 小米自研澎湃P1芯片 | 120W小米澎湃秒充 | 4600mAh大电量 | 2K AMOLED屏",
+      "price": "4599元",
+      "oldPrice": "4699元",
+      "version": [
+        {
+          "index": 0,
+          "text": "8GB+128GB",
+          "price": "4599元",
+          "oldPrice": "4699元"
+        },
+        {
+          "index": 1,
+          "text": "8GB+256GB",
+          "price": "4899元",
+          "oldPrice": "4999元"
+        },
+        {
+          "index": 2,
+          "text": "12GB+256GB",
+          "price": "5299元",
+          "oldPrice": "5399元"
+        },
+        {
+          "index": 3,
+          "text": "12GB+512GB",
+          "price": "5799元",
+          "oldPrice": "5899元"
+        }
+      ],
+      "disposition": [],
+      "color": [
+        {
+          "index": 0,
+          "color": "白色",
+          "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1656916237.95638090.png"
+        },
+        {
+          "index": 1,
+          "color": "黑色",
+          "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1656916238.0629960.png"
+        }
+      ],
+      "gifts": [
+        "本组赠品可任选1种",
+        "价值109元定制便携咖啡杯x1，赠完即止",
+        "价值99元小米新定制T恤 白色x1，赠完即止",
+        "价值99元小米手机纪念徽章 套装x1，赠完即止",
+        "价值79元致敬大师系列手机支架 互联网x1，赠完即止"
+      ],
+      "img": [
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1656916238.05977286.png",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1656916237.95638090.png",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1656916238.0629960.png",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1656916238.06123122.png",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1656916237.89556976.png"
+      ]
+    },
+    {
+      "product": "Redmi Note 11T Pro+",
+      "introduction": "「9月11日，全版本限时优惠100元；购机享24期免息；直播间下单加赠手机壳」骁龙8+ 旗舰处理器 | 徕卡光学镜头 | 徕卡原生双画质 | 徕卡水印、大师镜头包 | 全场景疾速抓拍 | 5000万三主摄 | 小米自研澎湃P1芯片 | 120W小米澎湃秒充 | 4600mAh大电量 | 2K AMOLED屏",
+      "price": "4599元",
+      "oldPrice": "4699元",
+      "version": [
+        {
+          "index": 0,
+          "text": "8GB+128GB",
+          "price": "4599元",
+          "oldPrice": "4699元"
+        },
+        {
+          "index": 1,
+          "text": "8GB+256GB",
+          "price": "4899元",
+          "oldPrice": "4999元"
+        },
+        {
+          "index": 2,
+          "text": "12GB+256GB",
+          "price": "5299元",
+          "oldPrice": "5399元"
+        },
+        {
+          "index": 3,
+          "text": "12GB+512GB",
+          "price": "5799元",
+          "oldPrice": "5899元"
+        }
+      ],
+      "disposition": [],
+      "color": [
+        {
+          "index": 0,
+          "color": "白色",
+          "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1656916237.95638090.png"
+        },
+        {
+          "index": 1,
+          "color": "黑色",
+          "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1656916238.0629960.png"
+        }
+      ],
+      "gifts": [
+        "本组赠品可任选1种",
+        "价值109元定制便携咖啡杯x1，赠完即止",
+        "价值99元小米新定制T恤 白色x1，赠完即止",
+        "价值99元小米手机纪念徽章 套装x1，赠完即止",
+        "价值79元致敬大师系列手机支架 互联网x1，赠完即止"
+      ],
+      "img": [
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1656916238.05977286.png",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1656916237.95638090.png",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1656916238.0629960.png",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1656916238.06123122.png",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1656916237.89556976.png"
+      ]
+    },
+    {
+      "product": "Redmi Note 11T Pro",
+      "introduction": "「9月11日，全版本限时优惠100元；购机享24期免息；直播间下单加赠手机壳」骁龙8+ 旗舰处理器 | 徕卡光学镜头 | 徕卡原生双画质 | 徕卡水印、大师镜头包 | 全场景疾速抓拍 | 5000万三主摄 | 小米自研澎湃P1芯片 | 120W小米澎湃秒充 | 4600mAh大电量 | 2K AMOLED屏",
+      "price": "4599元",
+      "oldPrice": "4699元",
+      "version": [
+        {
+          "index": 0,
+          "text": "8GB+128GB",
+          "price": "4599元",
+          "oldPrice": "4699元"
+        },
+        {
+          "index": 1,
+          "text": "8GB+256GB",
+          "price": "4899元",
+          "oldPrice": "4999元"
+        },
+        {
+          "index": 2,
+          "text": "12GB+256GB",
+          "price": "5299元",
+          "oldPrice": "5399元"
+        },
+        {
+          "index": 3,
+          "text": "12GB+512GB",
+          "price": "5799元",
+          "oldPrice": "5899元"
+        }
+      ],
+      "disposition": [],
+      "color": [
+        {
+          "index": 0,
+          "color": "白色",
+          "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1656916237.95638090.png"
+        },
+        {
+          "index": 1,
+          "color": "黑色",
+          "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1656916238.0629960.png"
+        }
+      ],
+      "gifts": [
+        "本组赠品可任选1种",
+        "价值109元定制便携咖啡杯x1，赠完即止",
+        "价值99元小米新定制T恤 白色x1，赠完即止",
+        "价值99元小米手机纪念徽章 套装x1，赠完即止",
+        "价值79元致敬大师系列手机支架 互联网x1，赠完即止"
+      ],
+      "img": [
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1656916238.05977286.png",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1656916237.95638090.png",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1656916238.0629960.png",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1656916238.06123122.png",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1656916237.89556976.png"
+      ]
+    },
+    {
+      "product": "Redmi Book Pro 15 2022",
+      "introduction": "「9月11日，全版本限时优惠100元；购机享24期免息；直播间下单加赠手机壳」骁龙8+ 旗舰处理器 | 徕卡光学镜头 | 徕卡原生双画质 | 徕卡水印、大师镜头包 | 全场景疾速抓拍 | 5000万三主摄 | 小米自研澎湃P1芯片 | 120W小米澎湃秒充 | 4600mAh大电量 | 2K AMOLED屏",
+      "price": "4599元",
+      "oldPrice": "4699元",
+      "version": [
+        {
+          "index": 0,
+          "text": "8GB+128GB",
+          "price": "4599元",
+          "oldPrice": "4699元"
+        },
+        {
+          "index": 1,
+          "text": "8GB+256GB",
+          "price": "4899元",
+          "oldPrice": "4999元"
+        },
+        {
+          "index": 2,
+          "text": "12GB+256GB",
+          "price": "5299元",
+          "oldPrice": "5399元"
+        },
+        {
+          "index": 3,
+          "text": "12GB+512GB",
+          "price": "5799元",
+          "oldPrice": "5899元"
+        }
+      ],
+      "disposition": [],
+      "color": [
+        {
+          "index": 0,
+          "color": "白色",
+          "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1656916237.95638090.png"
+        },
+        {
+          "index": 1,
+          "color": "黑色",
+          "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1656916238.0629960.png"
+        }
+      ],
+      "gifts": [
+        "本组赠品可任选1种",
+        "价值109元定制便携咖啡杯x1，赠完即止",
+        "价值99元小米新定制T恤 白色x1，赠完即止",
+        "价值99元小米手机纪念徽章 套装x1，赠完即止",
+        "价值79元致敬大师系列手机支架 互联网x1，赠完即止"
+      ],
+      "img": [
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1656916238.05977286.png",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1656916237.95638090.png",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1656916238.0629960.png",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1656916238.06123122.png",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1656916237.89556976.png"
+      ]
+    },
+    {
+      "product": "Redmi Note 11SE",
+      "introduction": "「9月11日，全版本限时优惠100元；购机享24期免息；直播间下单加赠手机壳」骁龙8+ 旗舰处理器 | 徕卡光学镜头 | 徕卡原生双画质 | 徕卡水印、大师镜头包 | 全场景疾速抓拍 | 5000万三主摄 | 小米自研澎湃P1芯片 | 120W小米澎湃秒充 | 4600mAh大电量 | 2K AMOLED屏",
+      "price": "4599元",
+      "oldPrice": "4699元",
+      "version": [
+        {
+          "index": 0,
+          "text": "8GB+128GB",
+          "price": "4599元",
+          "oldPrice": "4699元"
+        },
+        {
+          "index": 1,
+          "text": "8GB+256GB",
+          "price": "4899元",
+          "oldPrice": "4999元"
+        },
+        {
+          "index": 2,
+          "text": "12GB+256GB",
+          "price": "5299元",
+          "oldPrice": "5399元"
+        },
+        {
+          "index": 3,
+          "text": "12GB+512GB",
+          "price": "5799元",
+          "oldPrice": "5899元"
+        }
+      ],
+      "disposition": [],
+      "color": [
+        {
+          "index": 0,
+          "color": "白色",
+          "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1656916237.95638090.png"
+        },
+        {
+          "index": 1,
+          "color": "黑色",
+          "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1656916238.0629960.png"
+        }
+      ],
+      "gifts": [
+        "本组赠品可任选1种",
+        "价值109元定制便携咖啡杯x1，赠完即止",
+        "价值99元小米新定制T恤 白色x1，赠完即止",
+        "价值99元小米手机纪念徽章 套装x1，赠完即止",
+        "价值79元致敬大师系列手机支架 互联网x1，赠完即止"
+      ],
+      "img": [
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1656916238.05977286.png",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1656916237.95638090.png",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1656916238.0629960.png",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1656916238.06123122.png",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1656916237.89556976.png"
+      ]
+    },
+    {
+      "product": "Redmi 10A",
+      "introduction": "「9月11日，全版本限时优惠100元；购机享24期免息；直播间下单加赠手机壳」骁龙8+ 旗舰处理器 | 徕卡光学镜头 | 徕卡原生双画质 | 徕卡水印、大师镜头包 | 全场景疾速抓拍 | 5000万三主摄 | 小米自研澎湃P1芯片 | 120W小米澎湃秒充 | 4600mAh大电量 | 2K AMOLED屏",
+      "price": "4599元",
+      "oldPrice": "4699元",
+      "version": [
+        {
+          "index": 0,
+          "text": "8GB+128GB",
+          "price": "4599元",
+          "oldPrice": "4699元"
+        },
+        {
+          "index": 1,
+          "text": "8GB+256GB",
+          "price": "4899元",
+          "oldPrice": "4999元"
+        },
+        {
+          "index": 2,
+          "text": "12GB+256GB",
+          "price": "5299元",
+          "oldPrice": "5399元"
+        },
+        {
+          "index": 3,
+          "text": "12GB+512GB",
+          "price": "5799元",
+          "oldPrice": "5899元"
+        }
+      ],
+      "disposition": [],
+      "color": [
+        {
+          "index": 0,
+          "color": "白色",
+          "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1656916237.95638090.png"
+        },
+        {
+          "index": 1,
+          "color": "黑色",
+          "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1656916238.0629960.png"
+        }
+      ],
+      "gifts": [
+        "本组赠品可任选1种",
+        "价值109元定制便携咖啡杯x1，赠完即止",
+        "价值99元小米新定制T恤 白色x1，赠完即止",
+        "价值99元小米手机纪念徽章 套装x1，赠完即止",
+        "价值79元致敬大师系列手机支架 互联网x1，赠完即止"
+      ],
+      "img": [
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1656916238.05977286.png",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1656916237.95638090.png",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1656916238.0629960.png",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1656916238.06123122.png",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1656916237.89556976.png"
+      ]
+    },
+    {
+      "product": "Redmi K50 Pro",
+      "introduction": "「9月11日，全版本限时优惠100元；购机享24期免息；直播间下单加赠手机壳」骁龙8+ 旗舰处理器 | 徕卡光学镜头 | 徕卡原生双画质 | 徕卡水印、大师镜头包 | 全场景疾速抓拍 | 5000万三主摄 | 小米自研澎湃P1芯片 | 120W小米澎湃秒充 | 4600mAh大电量 | 2K AMOLED屏",
+      "price": "4599元",
+      "oldPrice": "4699元",
+      "version": [
+        {
+          "index": 0,
+          "text": "8GB+128GB",
+          "price": "4599元",
+          "oldPrice": "4699元"
+        },
+        {
+          "index": 1,
+          "text": "8GB+256GB",
+          "price": "4899元",
+          "oldPrice": "4999元"
+        },
+        {
+          "index": 2,
+          "text": "12GB+256GB",
+          "price": "5299元",
+          "oldPrice": "5399元"
+        },
+        {
+          "index": 3,
+          "text": "12GB+512GB",
+          "price": "5799元",
+          "oldPrice": "5899元"
+        }
+      ],
+      "disposition": [],
+      "color": [
+        {
+          "index": 0,
+          "color": "白色",
+          "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1656916237.95638090.png"
+        },
+        {
+          "index": 1,
+          "color": "黑色",
+          "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1656916238.0629960.png"
+        }
+      ],
+      "gifts": [
+        "本组赠品可任选1种",
+        "价值109元定制便携咖啡杯x1，赠完即止",
+        "价值99元小米新定制T恤 白色x1，赠完即止",
+        "价值99元小米手机纪念徽章 套装x1，赠完即止",
+        "价值79元致敬大师系列手机支架 互联网x1，赠完即止"
+      ],
+      "img": [
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1656916238.05977286.png",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1656916237.95638090.png",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1656916238.0629960.png",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1656916238.06123122.png",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1656916237.89556976.png"
+      ]
+    },
+    {
+      "product": "Redmi 智能电视X55 2022",
+      "introduction": "双120Hz高刷屏 | HDMI 2.1接口 | 3GB+32GB",
+      "price": "2299元",
+      "oldPrice": "2999元",
+      "version": [],
+      "disposition": [
+        {
+          "index": "0",
+          "text": "55英寸",
+          "price": "2299元",
+          "oldPrice": "2999元",
+          "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1634637813.21863849.jpg"
+        }
+      ],
+      "color": [
+        {
+          "index": 0,
+          "color": "蓝色",
+          "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1634637813.21863849.jpg"
+        }
+      ],
+      "gifts": [],
+      "img": [
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1634637813.21863849.jpg",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1634637813.21885314.jpg",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1634637813.20779375.jpg",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1634637813.21564434.jpg",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1634637813.21952398.jpg"
+      ]
+    },
+    {
+      "product": "Redmi 智能电视X65 2022",
+      "introduction": "双120Hz高刷屏 | HDMI 2.1接口 | 3GB+32GB",
+      "price": "2299元",
+      "oldPrice": "2999元",
+      "version": [],
+      "disposition": [
+        {
+          "index": "0",
+          "text": "55英寸",
+          "price": "2299元",
+          "oldPrice": "2999元",
+          "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1634637813.21863849.jpg"
+        }
+      ],
+      "color": [
+        {
+          "index": 0,
+          "color": "蓝色",
+          "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1634637813.21863849.jpg"
+        }
+      ],
+      "gifts": [],
+      "img": [
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1634637813.21863849.jpg",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1634637813.21885314.jpg",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1634637813.20779375.jpg",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1634637813.21564434.jpg",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1634637813.21952398.jpg"
+      ]
+    },
+    {
+      "product": "小米电视6 65” OLED",
+      "introduction": "双120Hz高刷屏 | HDMI 2.1接口 | 3GB+32GB",
+      "price": "2299元",
+      "oldPrice": "2999元",
+      "version": [],
+      "disposition": [
+        {
+          "index": "0",
+          "text": "55英寸",
+          "price": "2299元",
+          "oldPrice": "2999元",
+          "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1634637813.21863849.jpg"
+        }
+      ],
+      "color": [
+        {
+          "index": 0,
+          "color": "蓝色",
+          "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1634637813.21863849.jpg"
+        }
+      ],
+      "gifts": [],
+      "img": [
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1634637813.21863849.jpg",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1634637813.21885314.jpg",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1634637813.20779375.jpg",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1634637813.21564434.jpg",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1634637813.21952398.jpg"
+      ]
+    },
+    {
+      "product": "小米电视 大师77” OLED",
+      "introduction": "双120Hz高刷屏 | HDMI 2.1接口 | 3GB+32GB",
+      "price": "2299元",
+      "oldPrice": "2999元",
+      "version": [],
+      "disposition": [
+        {
+          "index": "0",
+          "text": "55英寸",
+          "price": "2299元",
+          "oldPrice": "2999元",
+          "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1634637813.21863849.jpg"
+        }
+      ],
+      "color": [
+        {
+          "index": 0,
+          "color": "蓝色",
+          "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1634637813.21863849.jpg"
+        }
+      ],
+      "gifts": [],
+      "img": [
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1634637813.21863849.jpg",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1634637813.21885314.jpg",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1634637813.20779375.jpg",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1634637813.21564434.jpg",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1634637813.21952398.jpg"
+      ]
+    },
+    {
+      "product": "小米透明电视",
+      "introduction": "双120Hz高刷屏 | HDMI 2.1接口 | 3GB+32GB",
+      "price": "2299元",
+      "oldPrice": "2999元",
+      "version": [],
+      "disposition": [
+        {
+          "index": "0",
+          "text": "55英寸",
+          "price": "2299元",
+          "oldPrice": "2999元",
+          "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1634637813.21863849.jpg"
+        }
+      ],
+      "color": [
+        {
+          "index": 0,
+          "color": "蓝色",
+          "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1634637813.21863849.jpg"
+        }
+      ],
+      "gifts": [],
+      "img": [
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1634637813.21863849.jpg",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1634637813.21885314.jpg",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1634637813.20779375.jpg",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1634637813.21564434.jpg",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1634637813.21952398.jpg"
+      ]
+    },
+    {
+      "product": "小米电视 大师 65英寸OLED",
+      "introduction": "双120Hz高刷屏 | HDMI 2.1接口 | 3GB+32GB",
+      "price": "2299元",
+      "oldPrice": "2999元",
+      "version": [],
+      "disposition": [
+        {
+          "index": "0",
+          "text": "55英寸",
+          "price": "2299元",
+          "oldPrice": "2999元",
+          "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1634637813.21863849.jpg"
+        }
+      ],
+      "color": [
+        {
+          "index": 0,
+          "color": "蓝色",
+          "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1634637813.21863849.jpg"
+        }
+      ],
+      "gifts": [],
+      "img": [
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1634637813.21863849.jpg",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1634637813.21885314.jpg",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1634637813.20779375.jpg",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1634637813.21564434.jpg",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1634637813.21952398.jpg"
+      ]
+    },
+    {
+      "product": "Xiaomi Book Pro 14 锐龙版",
+      "introduction": "锐龙6000H系列标压处理器 | 2.8K 90Hz OLED屏 | 14.9mm轻薄机身 | CNC一体精雕工艺 | 16G+512G",
+      "price": "6599 元",
+      "oldPrice": "6999 元",
+      "disposition": [],
+      "version": [
+        {
+          "index": "0",
+          "text": "R5 6600H/16GB/512GB/UMA/14' 2880*1800 90Hz/Gray",
+          "price": "5999元",
+          "oldPrice": "6399元"
+        },
+        {
+          "index": "1",
+          "text": "R7 6800H/16GB/512GB/UMA/14' 2880*1800 90Hz/Gray",
+          "price": "6599元",
+          "oldPrice": "6999元"
+        }
+      ],
+      "color": [
+        {
+          "index": "0",
+          "color": "白色",
+          "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/69DF54AE4E4CBDD13AE642829A9F6C8A.png"
+        }
+      ],
+      "gifts": [],
+      "img": [
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/69DF54AE4E4CBDD13AE642829A9F6C8A.png",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/69DF54AE4E4CBDD13AE642829A9F6C8A.png",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/69DF54AE4E4CBDD13AE642829A9F6C8A.png",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/69DF54AE4E4CBDD13AE642829A9F6C8A.png",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/69DF54AE4E4CBDD13AE642829A9F6C8A.png"
+      ]
+    },
+    {
+      "product": "Redmi G 游戏本 2022",
+      "introduction": "锐龙6000H系列标压处理器 | 2.8K 90Hz OLED屏 | 14.9mm轻薄机身 | CNC一体精雕工艺 | 16G+512G",
+      "price": "6599 元",
+      "oldPrice": "6999 元",
+      "disposition": [],
+      "version": [
+        {
+          "index": "0",
+          "text": "R5 6600H/16GB/512GB/UMA/14' 2880*1800 90Hz/Gray",
+          "price": "5999元",
+          "oldPrice": "6399元"
+        },
+        {
+          "index": "1",
+          "text": "R7 6800H/16GB/512GB/UMA/14' 2880*1800 90Hz/Gray",
+          "price": "6599元",
+          "oldPrice": "6999元"
+        }
+      ],
+      "color": [
+        {
+          "index": "0",
+          "color": "白色",
+          "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/69DF54AE4E4CBDD13AE642829A9F6C8A.png"
+        }
+      ],
+      "gifts": [],
+      "img": [
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/69DF54AE4E4CBDD13AE642829A9F6C8A.png",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/69DF54AE4E4CBDD13AE642829A9F6C8A.png",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/69DF54AE4E4CBDD13AE642829A9F6C8A.png",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/69DF54AE4E4CBDD13AE642829A9F6C8A.png",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/69DF54AE4E4CBDD13AE642829A9F6C8A.png"
+      ]
+    },
+    {
+      "product": "Xiaomi Book Pro 14 2022",
+      "introduction": "锐龙6000H系列标压处理器 | 2.8K 90Hz OLED屏 | 14.9mm轻薄机身 | CNC一体精雕工艺 | 16G+512G",
+      "price": "6599 元",
+      "oldPrice": "6999 元",
+      "disposition": [],
+      "version": [
+        {
+          "index": "0",
+          "text": "R5 6600H/16GB/512GB/UMA/14' 2880*1800 90Hz/Gray",
+          "price": "5999元",
+          "oldPrice": "6399元"
+        },
+        {
+          "index": "1",
+          "text": "R7 6800H/16GB/512GB/UMA/14' 2880*1800 90Hz/Gray",
+          "price": "6599元",
+          "oldPrice": "6999元"
+        }
+      ],
+      "color": [
+        {
+          "index": "0",
+          "color": "白色",
+          "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/69DF54AE4E4CBDD13AE642829A9F6C8A.png"
+        }
+      ],
+      "gifts": [],
+      "img": [
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/69DF54AE4E4CBDD13AE642829A9F6C8A.png",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/69DF54AE4E4CBDD13AE642829A9F6C8A.png",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/69DF54AE4E4CBDD13AE642829A9F6C8A.png",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/69DF54AE4E4CBDD13AE642829A9F6C8A.png",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/69DF54AE4E4CBDD13AE642829A9F6C8A.png"
+      ]
+    },
+    {
+      "product": "Xiaomi Book Pro 16 2022",
+      "introduction": "锐龙6000H系列标压处理器 | 2.8K 90Hz OLED屏 | 14.9mm轻薄机身 | CNC一体精雕工艺 | 16G+512G",
+      "price": "6599 元",
+      "oldPrice": "6999 元",
+      "disposition": [],
+      "version": [
+        {
+          "index": "0",
+          "text": "R5 6600H/16GB/512GB/UMA/14' 2880*1800 90Hz/Gray",
+          "price": "5999元",
+          "oldPrice": "6399元"
+        },
+        {
+          "index": "1",
+          "text": "R7 6800H/16GB/512GB/UMA/14' 2880*1800 90Hz/Gray",
+          "price": "6599元",
+          "oldPrice": "6999元"
+        }
+      ],
+      "color": [
+        {
+          "index": "0",
+          "color": "白色",
+          "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/69DF54AE4E4CBDD13AE642829A9F6C8A.png"
+        }
+      ],
+      "gifts": [],
+      "img": [
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/69DF54AE4E4CBDD13AE642829A9F6C8A.png",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/69DF54AE4E4CBDD13AE642829A9F6C8A.png",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/69DF54AE4E4CBDD13AE642829A9F6C8A.png",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/69DF54AE4E4CBDD13AE642829A9F6C8A.png",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/69DF54AE4E4CBDD13AE642829A9F6C8A.png"
+      ]
+    },
+    {
+      "product": "RedmiBook Pro 14 2022 锐龙版",
+      "introduction": "锐龙6000H系列标压处理器 | 2.8K 90Hz OLED屏 | 14.9mm轻薄机身 | CNC一体精雕工艺 | 16G+512G",
+      "price": "6599 元",
+      "oldPrice": "6999 元",
+      "disposition": [],
+      "version": [
+        {
+          "index": "0",
+          "text": "R5 6600H/16GB/512GB/UMA/14' 2880*1800 90Hz/Gray",
+          "price": "5999元",
+          "oldPrice": "6399元"
+        },
+        {
+          "index": "1",
+          "text": "R7 6800H/16GB/512GB/UMA/14' 2880*1800 90Hz/Gray",
+          "price": "6599元",
+          "oldPrice": "6999元"
+        }
+      ],
+      "color": [
+        {
+          "index": "0",
+          "color": "白色",
+          "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/69DF54AE4E4CBDD13AE642829A9F6C8A.png"
+        }
+      ],
+      "gifts": [],
+      "img": [
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/69DF54AE4E4CBDD13AE642829A9F6C8A.png",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/69DF54AE4E4CBDD13AE642829A9F6C8A.png",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/69DF54AE4E4CBDD13AE642829A9F6C8A.png",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/69DF54AE4E4CBDD13AE642829A9F6C8A.png",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/69DF54AE4E4CBDD13AE642829A9F6C8A.png"
+      ]
+    },
+    {
+      "product": "RedmiBook Pro 15 2022 锐龙版",
+      "introduction": "锐龙6000H系列标压处理器 | 2.8K 90Hz OLED屏 | 14.9mm轻薄机身 | CNC一体精雕工艺 | 16G+512G",
+      "price": "6599 元",
+      "oldPrice": "6999 元",
+      "disposition": [],
+      "version": [
+        {
+          "index": "0",
+          "text": "R5 6600H/16GB/512GB/UMA/14' 2880*1800 90Hz/Gray",
+          "price": "5999元",
+          "oldPrice": "6399元"
+        },
+        {
+          "index": "1",
+          "text": "R7 6800H/16GB/512GB/UMA/14' 2880*1800 90Hz/Gray",
+          "price": "6599元",
+          "oldPrice": "6999元"
+        }
+      ],
+      "color": [
+        {
+          "index": "0",
+          "color": "白色",
+          "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/69DF54AE4E4CBDD13AE642829A9F6C8A.png"
+        }
+      ],
+      "gifts": [],
+      "img": [
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/69DF54AE4E4CBDD13AE642829A9F6C8A.png",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/69DF54AE4E4CBDD13AE642829A9F6C8A.png",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/69DF54AE4E4CBDD13AE642829A9F6C8A.png",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/69DF54AE4E4CBDD13AE642829A9F6C8A.png",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/69DF54AE4E4CBDD13AE642829A9F6C8A.png"
+      ]
+    },
+    {
+      "product": "小米平板5 Pro 12.4",
+      "introduction": "10月18-19日直降200元，到手价2799起！信用卡分期至高立减158元！12.4英寸超清大屏｜MIUI Pad 大屏定制系统｜骁龙870旗舰处理器｜10000mAh长续航",
+      "price": "6599 元",
+      "oldPrice": "6999 元",
+      "disposition": [],
+      "version": [
+        {
+          "index": "0",
+          "text": "8GB+256GB",
+          "price": "3299元",
+          "oldPrice": "3499元"
+        },
+        {
+          "index": "1",
+          "text": "8GB+128GB",
+          "price": "2999元",
+          "oldPrice": "3199元"
+        },
+        {
+          "index": "2",
+          "text": "6GB+128GB",
+          "price": "2799元",
+          "oldPrice": "2999元"
+        },
+        {
+          "index": "3",
+          "text": "12GB+512GB",
+          "price": "3999元",
+          "oldPrice": "4199元"
+        }
+      ],
+      "color": [
+        {
+          "index": "0",
+          "color": "黑色",
+          "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1660138069.26057749.png"
+        },
+        {
+          "index": "1",
+          "color": "森山绿",
+          "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1660138069.26398905.png"
+        },
+        {
+          "index": "2",
+          "color": "银色",
+          "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1660138069.25898988.png"
+        }
+      ],
+      "gifts": [],
+      "img": [
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1660138069.25549662.png",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1660138069.26398905.png",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1660138069.26057749.png",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1660138069.25898988.png",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1660138069.26398905.png"
+      ]
+    },
+    {
+      "product": "小米平板5",
+      "introduction": "10月18-19日直降200元，到手价2799起！信用卡分期至高立减158元！12.4英寸超清大屏｜MIUI Pad 大屏定制系统｜骁龙870旗舰处理器｜10000mAh长续航",
+      "price": "6599 元",
+      "oldPrice": "6999 元",
+      "disposition": [],
+      "version": [
+        {
+          "index": "0",
+          "text": "8GB+256GB",
+          "price": "3299元",
+          "oldPrice": "3499元"
+        },
+        {
+          "index": "1",
+          "text": "8GB+128GB",
+          "price": "2999元",
+          "oldPrice": "3199元"
+        },
+        {
+          "index": "2",
+          "text": "6GB+128GB",
+          "price": "2799元",
+          "oldPrice": "2999元"
+        },
+        {
+          "index": "3",
+          "text": "12GB+512GB",
+          "price": "3999元",
+          "oldPrice": "4199元"
+        }
+      ],
+      "color": [
+        {
+          "index": "0",
+          "color": "黑色",
+          "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1660138069.26057749.png"
+        },
+        {
+          "index": "1",
+          "color": "森山绿",
+          "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1660138069.26398905.png"
+        },
+        {
+          "index": "2",
+          "color": "银色",
+          "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1660138069.25898988.png"
+        }
+      ],
+      "gifts": [],
+      "img": [
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1660138069.25549662.png",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1660138069.26398905.png",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1660138069.26057749.png",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1660138069.25898988.png",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1660138069.26398905.png"
+      ]
+    },
+    {
+      "product": "小米平板5 Pro 5G",
+      "introduction": "10月18-19日直降200元，到手价2799起！信用卡分期至高立减158元！12.4英寸超清大屏｜MIUI Pad 大屏定制系统｜骁龙870旗舰处理器｜10000mAh长续航",
+      "price": "6599 元",
+      "oldPrice": "6999 元",
+      "disposition": [],
+      "version": [
+        {
+          "index": "0",
+          "text": "8GB+256GB",
+          "price": "3299元",
+          "oldPrice": "3499元"
+        },
+        {
+          "index": "1",
+          "text": "8GB+128GB",
+          "price": "2999元",
+          "oldPrice": "3199元"
+        },
+        {
+          "index": "2",
+          "text": "6GB+128GB",
+          "price": "2799元",
+          "oldPrice": "2999元"
+        },
+        {
+          "index": "3",
+          "text": "12GB+512GB",
+          "price": "3999元",
+          "oldPrice": "4199元"
+        }
+      ],
+      "color": [
+        {
+          "index": "0",
+          "color": "黑色",
+          "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1660138069.26057749.png"
+        },
+        {
+          "index": "1",
+          "color": "森山绿",
+          "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1660138069.26398905.png"
+        },
+        {
+          "index": "2",
+          "color": "银色",
+          "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1660138069.25898988.png"
+        }
+      ],
+      "gifts": [],
+      "img": [
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1660138069.25549662.png",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1660138069.26398905.png",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1660138069.26057749.png",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1660138069.25898988.png",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1660138069.26398905.png"
+      ]
+    },
+    {
+      "product": "小米平板5 Pro",
+      "introduction": "10月18-19日直降200元，到手价2799起！信用卡分期至高立减158元！12.4英寸超清大屏｜MIUI Pad 大屏定制系统｜骁龙870旗舰处理器｜10000mAh长续航",
+      "price": "6599 元",
+      "oldPrice": "6999 元",
+      "disposition": [],
+      "version": [
+        {
+          "index": "0",
+          "text": "8GB+256GB",
+          "price": "3299元",
+          "oldPrice": "3499元"
+        },
+        {
+          "index": "1",
+          "text": "8GB+128GB",
+          "price": "2999元",
+          "oldPrice": "3199元"
+        },
+        {
+          "index": "2",
+          "text": "6GB+128GB",
+          "price": "2799元",
+          "oldPrice": "2999元"
+        },
+        {
+          "index": "3",
+          "text": "12GB+512GB",
+          "price": "3999元",
+          "oldPrice": "4199元"
+        }
+      ],
+      "color": [
+        {
+          "index": "0",
+          "color": "黑色",
+          "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1660138069.26057749.png"
+        },
+        {
+          "index": "1",
+          "color": "森山绿",
+          "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1660138069.26398905.png"
+        },
+        {
+          "index": "2",
+          "color": "银色",
+          "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1660138069.25898988.png"
+        }
+      ],
+      "gifts": [],
+      "img": [
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1660138069.25549662.png",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1660138069.26398905.png",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1660138069.26057749.png",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1660138069.25898988.png",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1660138069.26398905.png"
+      ]
+    },
+    {
+      "product": "米家扫地机器人1T",
+      "introduction": "S-cross™3D避障 | 3D VSLAM视觉导航 | 3000Pa超大吸力 | 扫拖一体设计",
+      "price": "6599 元",
+      "oldPrice": "6999 元",
+      "disposition": [],
+      "version": [
+        {
+          "index": "0",
+          "text": "常规版",
+          "price": "999元",
+          "oldPrice": "1999元"
+        }
+      ],
+      "color": [
+        {
+          "index": "0",
+          "color": "黑色",
+          "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1603854163.5218371.jpg"
+        }
+      ],
+      "gifts": [],
+      "img": [
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1603854163.5218371.jpg",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1603854163.49242928.jpg",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1603854155.25429959.jpg",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1603854155.27632050.jpg",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1603854155.3122058.jpg"
+      ]
+    },
+    {
+      "product": "巨省电|米家空调 新一级 1.5匹 睡眠版",
+      "introduction": "S-cross™3D避障 | 3D VSLAM视觉导航 | 3000Pa超大吸力 | 扫拖一体设计",
+      "price": "6599 元",
+      "oldPrice": "6999 元",
+      "disposition": [],
+      "version": [
+        {
+          "index": "0",
+          "text": "常规版",
+          "price": "999元",
+          "oldPrice": "1999元"
+        }
+      ],
+      "color": [
+        {
+          "index": "0",
+          "color": "黑色",
+          "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1603854163.5218371.jpg"
+        }
+      ],
+      "gifts": [],
+      "img": [
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1603854163.5218371.jpg",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1603854163.49242928.jpg",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1603854155.25429959.jpg",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1603854155.27632050.jpg",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1603854155.3122058.jpg"
+      ]
+    },
+    {
+      "product": "巨省电 3匹|变频|新一级能效（鎏金款）",
+      "introduction": "S-cross™3D避障 | 3D VSLAM视觉导航 | 3000Pa超大吸力 | 扫拖一体设计",
+      "price": "6599 元",
+      "oldPrice": "6999 元",
+      "disposition": [],
+      "version": [
+        {
+          "index": "0",
+          "text": "常规版",
+          "price": "999元",
+          "oldPrice": "1999元"
+        }
+      ],
+      "color": [
+        {
+          "index": "0",
+          "color": "黑色",
+          "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1603854163.5218371.jpg"
+        }
+      ],
+      "gifts": [],
+      "img": [
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1603854163.5218371.jpg",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1603854163.49242928.jpg",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1603854155.25429959.jpg",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1603854155.27632050.jpg",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1603854155.3122058.jpg"
+      ]
+    },
+    {
+      "product": "米家冰箱 对开门536L",
+      "introduction": "S-cross™3D避障 | 3D VSLAM视觉导航 | 3000Pa超大吸力 | 扫拖一体设计",
+      "price": "6599 元",
+      "oldPrice": "6999 元",
+      "disposition": [],
+      "version": [
+        {
+          "index": "0",
+          "text": "常规版",
+          "price": "999元",
+          "oldPrice": "1999元"
+        }
+      ],
+      "color": [
+        {
+          "index": "0",
+          "color": "黑色",
+          "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1603854163.5218371.jpg"
+        }
+      ],
+      "gifts": [],
+      "img": [
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1603854163.5218371.jpg",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1603854163.49242928.jpg",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1603854155.25429959.jpg",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1603854155.27632050.jpg",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1603854155.3122058.jpg"
+      ]
+    },
+    {
+      "product": "米家互联网洗烘一体机",
+      "introduction": "S-cross™3D避障 | 3D VSLAM视觉导航 | 3000Pa超大吸力 | 扫拖一体设计",
+      "price": "6599 元",
+      "oldPrice": "6999 元",
+      "disposition": [],
+      "version": [
+        {
+          "index": "0",
+          "text": "常规版",
+          "price": "999元",
+          "oldPrice": "1999元"
+        }
+      ],
+      "color": [
+        {
+          "index": "0",
+          "color": "黑色",
+          "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1603854163.5218371.jpg"
+        }
+      ],
+      "gifts": [],
+      "img": [
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1603854163.5218371.jpg",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1603854163.49242928.jpg",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1603854155.25429959.jpg",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1603854155.27632050.jpg",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1603854155.3122058.jpg"
+      ]
+    },
+    {
+      "product": "Redmi全自动波轮洗衣机1A",
+      "introduction": "S-cross™3D避障 | 3D VSLAM视觉导航 | 3000Pa超大吸力 | 扫拖一体设计",
+      "price": "6599 元",
+      "oldPrice": "6999 元",
+      "disposition": [],
+      "version": [
+        {
+          "index": "0",
+          "text": "常规版",
+          "price": "999元",
+          "oldPrice": "1999元"
+        }
+      ],
+      "color": [
+        {
+          "index": "0",
+          "color": "黑色",
+          "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1603854163.5218371.jpg"
+        }
+      ],
+      "gifts": [],
+      "img": [
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1603854163.5218371.jpg",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1603854163.49242928.jpg",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1603854155.25429959.jpg",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1603854155.27632050.jpg",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1603854155.3122058.jpg"
+      ]
+    },
+    {
+      "product": "米家直驱洗烘一体机",
+      "introduction": "S-cross™3D避障 | 3D VSLAM视觉导航 | 3000Pa超大吸力 | 扫拖一体设计",
+      "price": "6599 元",
+      "oldPrice": "6999 元",
+      "disposition": [],
+      "version": [
+        {
+          "index": "0",
+          "text": "常规版",
+          "price": "999元",
+          "oldPrice": "1999元"
+        }
+      ],
+      "color": [
+        {
+          "index": "0",
+          "color": "黑色",
+          "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1603854163.5218371.jpg"
+        }
+      ],
+      "gifts": [],
+      "img": [
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1603854163.5218371.jpg",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1603854163.49242928.jpg",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1603854155.25429959.jpg",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1603854155.27632050.jpg",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1603854155.3122058.jpg"
+      ]
+    },
+    {
+      "product": "Redmi 电竞路由器 AX5400",
+      "introduction": "米金兑券立减30元（10.14-19日） 2.5G次世代网口 | 高通专业级芯片 | 双WAN接入+双LAN聚合，支持双运营商宽带叠加 | 赠330天游戏加速器",
+      "price": "6599 元",
+      "oldPrice": "6999 元",
+      "disposition": [],
+      "version": [
+        {
+          "index": "0",
+          "text": "常规版",
+          "price": "599元"
+        }
+      ],
+      "color": [
+        {
+          "index": "0",
+          "color": "黑色",
+          "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1644894136.89766020.jpg"
+        }
+      ],
+      "gifts": [],
+      "img": [
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1644894136.89766020.jpg",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1644894136.89278445.jpg",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1644894136.86799755.jpg",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1644894136.8842639.jpg",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1644894136.85154344.jpg"
+      ]
+    },
+    {
+      "product": "小米路由器AX6000",
+      "introduction": "米金兑券立减30元（10.14-19日） 2.5G次世代网口 | 高通专业级芯片 | 双WAN接入+双LAN聚合，支持双运营商宽带叠加 | 赠330天游戏加速器",
+      "price": "6599 元",
+      "oldPrice": "6999 元",
+      "disposition": [],
+      "version": [
+        {
+          "index": "0",
+          "text": "常规版",
+          "price": "599元"
+        }
+      ],
+      "color": [
+        {
+          "index": "0",
+          "color": "黑色",
+          "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1644894136.89766020.jpg"
+        }
+      ],
+      "gifts": [],
+      "img": [
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1644894136.89766020.jpg",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1644894136.89278445.jpg",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1644894136.86799755.jpg",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1644894136.8842639.jpg",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1644894136.85154344.jpg"
+      ]
+    },
+    {
+      "product": "小米路由器AX9000",
+      "introduction": "米金兑券立减30元（10.14-19日） 2.5G次世代网口 | 高通专业级芯片 | 双WAN接入+双LAN聚合，支持双运营商宽带叠加 | 赠330天游戏加速器",
+      "price": "6599 元",
+      "oldPrice": "6999 元",
+      "disposition": [],
+      "version": [
+        {
+          "index": "0",
+          "text": "常规版",
+          "price": "599元"
+        }
+      ],
+      "color": [
+        {
+          "index": "0",
+          "color": "黑色",
+          "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1644894136.89766020.jpg"
+        }
+      ],
+      "gifts": [],
+      "img": [
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1644894136.89766020.jpg",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1644894136.89278445.jpg",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1644894136.86799755.jpg",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1644894136.8842639.jpg",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1644894136.85154344.jpg"
+      ]
+    },
+    {
+      "product": "Xiaomi HomeWiFi 三频 Mesh 路由器",
+      "introduction": "米金兑券立减30元（10.14-19日） 2.5G次世代网口 | 高通专业级芯片 | 双WAN接入+双LAN聚合，支持双运营商宽带叠加 | 赠330天游戏加速器",
+      "price": "6599 元",
+      "oldPrice": "6999 元",
+      "disposition": [],
+      "version": [
+        {
+          "index": "0",
+          "text": "常规版",
+          "price": "599元"
+        }
+      ],
+      "color": [
+        {
+          "index": "0",
+          "color": "黑色",
+          "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1644894136.89766020.jpg"
+        }
+      ],
+      "gifts": [],
+      "img": [
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1644894136.89766020.jpg",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1644894136.89278445.jpg",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1644894136.86799755.jpg",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1644894136.8842639.jpg",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1644894136.85154344.jpg"
+      ]
+    },
+    {
+      "product": "小米路由器4A 千兆版",
+      "introduction": "米金兑券立减30元（10.14-19日） 2.5G次世代网口 | 高通专业级芯片 | 双WAN接入+双LAN聚合，支持双运营商宽带叠加 | 赠330天游戏加速器",
+      "price": "6599 元",
+      "oldPrice": "6999 元",
+      "disposition": [],
+      "version": [
+        {
+          "index": "0",
+          "text": "常规版",
+          "price": "599元"
+        }
+      ],
+      "color": [
+        {
+          "index": "0",
+          "color": "黑色",
+          "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1644894136.89766020.jpg"
+        }
+      ],
+      "gifts": [],
+      "img": [
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1644894136.89766020.jpg",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1644894136.89278445.jpg",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1644894136.86799755.jpg",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1644894136.8842639.jpg",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1644894136.85154344.jpg"
+      ]
     }
   ],
   "user_database": [
@@ -3825,17 +5508,1550 @@
       "id": 0.18918909626668112,
       "account": "121",
       "password": "1"
+    },
+    {
+      "id": 0.21644112599109944,
+      "account": "zhangzihao",
+      "password": "111111"
+    },
+    {
+      "id": 0.6792414969660712,
+      "account": "rewhrt",
+      "password": "111111"
     }
   ],
-  "shop_car": [
+  "shop_car": [],
+  "search_database": [
     {
-      "product": "Xiaomi 12S Pro",
-      "version": "8GB+128GB",
-      "disposition": "",
-      "color": "白色",
+      "type": "手机",
+      "products": [
+        [
+          {
+            "product": "Xiaomi MIX Alpha",
+            "color": "",
+            "version": "6GB+128GB",
+            "price": 1799,
+            "oldPrice": "",
+            "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/a778f1199c659c21c7b0dfe37d443a12.png",
+            "ticket": false,
+            "increase": false,
+            "stages": true,
+            "gifts": true,
+            "new": true
+          },
+          {
+            "product": "Xiaomi MIX Alpha",
+            "color": "",
+            "version": "6GB+128GB",
+            "price": 1799,
+            "oldPrice": "",
+            "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/a778f1199c659c21c7b0dfe37d443a12.png",
+            "ticket": false,
+            "increase": false,
+            "stages": true,
+            "gifts": true,
+            "new": true
+          },
+          {
+            "product": "Xiaomi MIX Alpha",
+            "color": "",
+            "version": "6GB+128GB",
+            "price": 1799,
+            "oldPrice": "",
+            "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/a778f1199c659c21c7b0dfe37d443a12.png",
+            "ticket": false,
+            "increase": false,
+            "stages": true,
+            "gifts": true,
+            "new": true
+          },
+          {
+            "product": "Xiaomi MIX Alpha",
+            "color": "",
+            "version": "6GB+128GB",
+            "price": 1799,
+            "oldPrice": "",
+            "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/a778f1199c659c21c7b0dfe37d443a12.png",
+            "ticket": false,
+            "increase": false,
+            "stages": true,
+            "gifts": true,
+            "new": true
+          },
+          {
+            "product": "Xiaomi MIX Alpha",
+            "color": "",
+            "version": "6GB+128GB",
+            "price": 1799,
+            "oldPrice": "",
+            "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/a778f1199c659c21c7b0dfe37d443a12.png",
+            "ticket": false,
+            "increase": false,
+            "stages": true,
+            "gifts": true,
+            "new": true
+          },
+          {
+            "product": "Xiaomi MIX Alpha",
+            "color": "",
+            "version": "6GB+128GB",
+            "price": 1799,
+            "oldPrice": "",
+            "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/a778f1199c659c21c7b0dfe37d443a12.png",
+            "ticket": false,
+            "increase": false,
+            "stages": true,
+            "gifts": true,
+            "new": true
+          },
+          {
+            "product": "Xiaomi MIX Alpha",
+            "color": "",
+            "version": "6GB+128GB",
+            "price": 1799,
+            "oldPrice": "",
+            "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/a778f1199c659c21c7b0dfe37d443a12.png",
+            "ticket": false,
+            "increase": false,
+            "stages": true,
+            "gifts": true,
+            "new": true
+          },
+          {
+            "product": "Xiaomi MIX Alpha",
+            "color": "",
+            "version": "6GB+128GB",
+            "price": 1799,
+            "oldPrice": "",
+            "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/a778f1199c659c21c7b0dfe37d443a12.png",
+            "ticket": false,
+            "increase": false,
+            "stages": true,
+            "gifts": true,
+            "new": true
+          },
+          {
+            "product": "Xiaomi MIX Alpha",
+            "color": "",
+            "version": "6GB+128GB",
+            "price": 1799,
+            "oldPrice": "",
+            "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/a778f1199c659c21c7b0dfe37d443a12.png",
+            "ticket": false,
+            "increase": false,
+            "stages": true,
+            "gifts": true,
+            "new": true
+          },
+          {
+            "product": "Xiaomi MIX Alpha",
+            "color": "",
+            "version": "6GB+128GB",
+            "price": 1799,
+            "oldPrice": "",
+            "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/a778f1199c659c21c7b0dfe37d443a12.png",
+            "ticket": false,
+            "increase": false,
+            "stages": true,
+            "gifts": true,
+            "new": true
+          },
+          {
+            "product": "Xiaomi MIX Alpha",
+            "color": "",
+            "version": "6GB+128GB",
+            "price": 1799,
+            "oldPrice": "",
+            "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/a778f1199c659c21c7b0dfe37d443a12.png",
+            "ticket": false,
+            "increase": false,
+            "stages": true,
+            "gifts": true,
+            "new": true
+          },
+          {
+            "product": "Xiaomi MIX Alpha",
+            "color": "",
+            "version": "6GB+128GB",
+            "price": 1799,
+            "oldPrice": "",
+            "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/a778f1199c659c21c7b0dfe37d443a12.png",
+            "ticket": false,
+            "increase": false,
+            "stages": true,
+            "gifts": true,
+            "new": true
+          },
+          {
+            "product": "Xiaomi MIX Alpha",
+            "color": "",
+            "version": "6GB+128GB",
+            "price": 1799,
+            "oldPrice": "",
+            "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/a778f1199c659c21c7b0dfe37d443a12.png",
+            "ticket": false,
+            "increase": false,
+            "stages": true,
+            "gifts": true,
+            "new": true
+          },
+          {
+            "product": "Xiaomi MIX Alpha",
+            "color": "",
+            "version": "6GB+128GB",
+            "price": 1799,
+            "oldPrice": "",
+            "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/a778f1199c659c21c7b0dfe37d443a12.png",
+            "ticket": false,
+            "increase": false,
+            "stages": true,
+            "gifts": true,
+            "new": true
+          },
+          {
+            "product": "Xiaomi MIX Alpha",
+            "color": "",
+            "version": "6GB+128GB",
+            "price": 1799,
+            "oldPrice": "",
+            "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/a778f1199c659c21c7b0dfe37d443a12.png",
+            "ticket": false,
+            "increase": false,
+            "stages": true,
+            "gifts": true,
+            "new": true
+          },
+          {
+            "product": "Xiaomi MIX Alpha",
+            "color": "",
+            "version": "6GB+128GB",
+            "price": 1799,
+            "oldPrice": "",
+            "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/a778f1199c659c21c7b0dfe37d443a12.png",
+            "ticket": false,
+            "increase": false,
+            "stages": true,
+            "gifts": true,
+            "new": true
+          },
+          {
+            "product": "Xiaomi MIX Alpha",
+            "color": "",
+            "version": "6GB+128GB",
+            "price": 1799,
+            "oldPrice": "",
+            "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/a778f1199c659c21c7b0dfe37d443a12.png",
+            "ticket": false,
+            "increase": false,
+            "stages": true,
+            "gifts": true,
+            "new": true
+          },
+          {
+            "product": "Xiaomi MIX Alpha",
+            "color": "",
+            "version": "6GB+128GB",
+            "price": 1799,
+            "oldPrice": "",
+            "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/a778f1199c659c21c7b0dfe37d443a12.png",
+            "ticket": false,
+            "increase": false,
+            "stages": true,
+            "gifts": true,
+            "new": true
+          },
+          {
+            "product": "Xiaomi MIX Alpha",
+            "color": "",
+            "version": "6GB+128GB",
+            "price": 1799,
+            "oldPrice": "",
+            "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/a778f1199c659c21c7b0dfe37d443a12.png",
+            "ticket": false,
+            "increase": false,
+            "stages": true,
+            "gifts": true,
+            "new": true
+          },
+          {
+            "product": "Xiaomi MIX Alpha",
+            "color": "",
+            "version": "6GB+128GB",
+            "price": 1799,
+            "oldPrice": "",
+            "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/a778f1199c659c21c7b0dfe37d443a12.png",
+            "ticket": false,
+            "increase": false,
+            "stages": true,
+            "gifts": true,
+            "new": true
+          },
+          {
+            "product": "Xiaomi MIX Alpha",
+            "color": "",
+            "version": "6GB+128GB",
+            "price": 1799,
+            "oldPrice": "",
+            "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/a778f1199c659c21c7b0dfe37d443a12.png",
+            "ticket": false,
+            "increase": false,
+            "stages": true,
+            "gifts": true,
+            "new": true
+          },
+          {
+            "product": "Xiaomi MIX Alpha",
+            "color": "",
+            "version": "6GB+128GB",
+            "price": 1799,
+            "oldPrice": "",
+            "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/a778f1199c659c21c7b0dfe37d443a12.png",
+            "ticket": false,
+            "increase": false,
+            "stages": true,
+            "gifts": true,
+            "new": true
+          },
+          {
+            "product": "Xiaomi MIX Alpha",
+            "color": "",
+            "version": "6GB+128GB",
+            "price": 1799,
+            "oldPrice": "",
+            "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/a778f1199c659c21c7b0dfe37d443a12.png",
+            "ticket": false,
+            "increase": false,
+            "stages": true,
+            "gifts": true,
+            "new": true
+          },
+          {
+            "product": "Xiaomi MIX Alpha",
+            "color": "",
+            "version": "6GB+128GB",
+            "price": 1799,
+            "oldPrice": "",
+            "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/a778f1199c659c21c7b0dfe37d443a12.png",
+            "ticket": false,
+            "increase": false,
+            "stages": true,
+            "gifts": true,
+            "new": true
+          },
+          {
+            "product": "Xiaomi MIX Alpha",
+            "color": "",
+            "version": "6GB+128GB",
+            "price": 1799,
+            "oldPrice": "",
+            "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/a778f1199c659c21c7b0dfe37d443a12.png",
+            "ticket": false,
+            "increase": false,
+            "stages": true,
+            "gifts": true,
+            "new": true
+          },
+          {
+            "product": "Xiaomi MIX Alpha",
+            "color": "",
+            "version": "6GB+128GB",
+            "price": 1799,
+            "oldPrice": "",
+            "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/a778f1199c659c21c7b0dfe37d443a12.png",
+            "ticket": false,
+            "increase": false,
+            "stages": true,
+            "gifts": true,
+            "new": true
+          },
+          {
+            "product": "Xiaomi MIX Alpha",
+            "color": "",
+            "version": "6GB+128GB",
+            "price": 1799,
+            "oldPrice": "",
+            "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/a778f1199c659c21c7b0dfe37d443a12.png",
+            "ticket": false,
+            "increase": false,
+            "stages": true,
+            "gifts": true,
+            "new": true
+          },
+          {
+            "product": "Xiaomi MIX Alpha",
+            "color": "",
+            "version": "6GB+128GB",
+            "price": 1799,
+            "oldPrice": "",
+            "img": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/a778f1199c659c21c7b0dfe37d443a12.png",
+            "ticket": false,
+            "increase": false,
+            "stages": true,
+            "gifts": true,
+            "new": true
+          }
+        ]
+      ]
+    },
+    {
+      "type": "电脑",
+      "products": [
+        [
+          {
+            "product": "Redmi Book Pro 15 2022",
+            "color": "",
+            "version": "6GB+128GB",
+            "price": 5399,
+            "oldPrice": 5599,
+            "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1647319964.75187703.png",
+            "ticket": false,
+            "increase": false,
+            "stages": false,
+            "gifts": false,
+            "new": false
+          },
+          {
+            "product": "Redmi Book Pro 15 2022",
+            "color": "",
+            "version": "6GB+128GB",
+            "price": 5399,
+            "oldPrice": 5599,
+            "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1647319964.75187703.png",
+            "ticket": false,
+            "increase": false,
+            "stages": false,
+            "gifts": false,
+            "new": false
+          },
+          {
+            "product": "Redmi Book Pro 15 2022",
+            "color": "",
+            "version": "6GB+128GB",
+            "price": 5399,
+            "oldPrice": 5599,
+            "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1647319964.75187703.png",
+            "ticket": false,
+            "increase": false,
+            "stages": false,
+            "gifts": false,
+            "new": false
+          },
+          {
+            "product": "Redmi Book Pro 15 2022",
+            "color": "",
+            "version": "6GB+128GB",
+            "price": 5399,
+            "oldPrice": 5599,
+            "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1647319964.75187703.png",
+            "ticket": false,
+            "increase": false,
+            "stages": false,
+            "gifts": false,
+            "new": false
+          },
+          {
+            "product": "Redmi Book Pro 15 2022",
+            "color": "",
+            "version": "6GB+128GB",
+            "price": 5399,
+            "oldPrice": 5599,
+            "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1647319964.75187703.png",
+            "ticket": false,
+            "increase": false,
+            "stages": false,
+            "gifts": false,
+            "new": false
+          },
+          {
+            "product": "Redmi Book Pro 15 2022",
+            "color": "",
+            "version": "6GB+128GB",
+            "price": 5399,
+            "oldPrice": 5599,
+            "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1647319964.75187703.png",
+            "ticket": false,
+            "increase": false,
+            "stages": false,
+            "gifts": false,
+            "new": false
+          },
+          {
+            "product": "Redmi Book Pro 15 2022",
+            "color": "",
+            "version": "6GB+128GB",
+            "price": 5399,
+            "oldPrice": 5599,
+            "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1647319964.75187703.png",
+            "ticket": false,
+            "increase": false,
+            "stages": false,
+            "gifts": false,
+            "new": false
+          },
+          {
+            "product": "Redmi Book Pro 15 2022",
+            "color": "",
+            "version": "6GB+128GB",
+            "price": 5399,
+            "oldPrice": 5599,
+            "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1647319964.75187703.png",
+            "ticket": false,
+            "increase": false,
+            "stages": false,
+            "gifts": false,
+            "new": false
+          },
+          {
+            "product": "Redmi Book Pro 15 2022",
+            "color": "",
+            "version": "6GB+128GB",
+            "price": 5399,
+            "oldPrice": 5599,
+            "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1647319964.75187703.png",
+            "ticket": false,
+            "increase": false,
+            "stages": false,
+            "gifts": false,
+            "new": false
+          },
+          {
+            "product": "Redmi Book Pro 15 2022",
+            "color": "",
+            "version": "6GB+128GB",
+            "price": 5399,
+            "oldPrice": 5599,
+            "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1647319964.75187703.png",
+            "ticket": false,
+            "increase": false,
+            "stages": false,
+            "gifts": false,
+            "new": false
+          },
+          {
+            "product": "Redmi Book Pro 15 2022",
+            "color": "",
+            "version": "6GB+128GB",
+            "price": 5399,
+            "oldPrice": 5599,
+            "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1647319964.75187703.png",
+            "ticket": false,
+            "increase": false,
+            "stages": false,
+            "gifts": false,
+            "new": false
+          },
+          {
+            "product": "Redmi Book Pro 15 2022",
+            "color": "",
+            "version": "6GB+128GB",
+            "price": 5399,
+            "oldPrice": 5599,
+            "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1647319964.75187703.png",
+            "ticket": false,
+            "increase": false,
+            "stages": false,
+            "gifts": false,
+            "new": false
+          },
+          {
+            "product": "Redmi Book Pro 15 2022",
+            "color": "",
+            "version": "6GB+128GB",
+            "price": 5399,
+            "oldPrice": 5599,
+            "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1647319964.75187703.png",
+            "ticket": false,
+            "increase": false,
+            "stages": false,
+            "gifts": false,
+            "new": false
+          },
+          {
+            "product": "Redmi Book Pro 15 2022",
+            "color": "",
+            "version": "6GB+128GB",
+            "price": 5399,
+            "oldPrice": 5599,
+            "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1647319964.75187703.png",
+            "ticket": false,
+            "increase": false,
+            "stages": false,
+            "gifts": false,
+            "new": false
+          },
+          {
+            "product": "Redmi Book Pro 15 2022",
+            "color": "",
+            "version": "6GB+128GB",
+            "price": 5399,
+            "oldPrice": 5599,
+            "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1647319964.75187703.png",
+            "ticket": false,
+            "increase": false,
+            "stages": false,
+            "gifts": false,
+            "new": false
+          }
+        ]
+      ]
+    },
+    {
+      "type": "冰箱",
+      "products": [
+        [
+          {
+            "product": "米家冰箱 对开门536L",
+            "color": "墨羽岩",
+            "version": "",
+            "price": 2199,
+            "oldPrice": 2499,
+            "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/77FEA0C99A2824B61078DC4D0212A566.png",
+            "ticket": false,
+            "increase": false,
+            "stages": true,
+            "gifts": false,
+            "new": false
+          },
+          {
+            "product": "米家冰箱 对开门536L",
+            "color": "墨羽岩",
+            "version": "",
+            "price": 2199,
+            "oldPrice": 2499,
+            "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/77FEA0C99A2824B61078DC4D0212A566.png",
+            "ticket": false,
+            "increase": false,
+            "stages": true,
+            "gifts": false,
+            "new": false
+          },
+          {
+            "product": "米家冰箱 对开门536L",
+            "color": "墨羽岩",
+            "version": "",
+            "price": 2199,
+            "oldPrice": 2499,
+            "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/77FEA0C99A2824B61078DC4D0212A566.png",
+            "ticket": false,
+            "increase": false,
+            "stages": true,
+            "gifts": false,
+            "new": false
+          },
+          {
+            "product": "米家冰箱 对开门536L",
+            "color": "墨羽岩",
+            "version": "",
+            "price": 2199,
+            "oldPrice": 2499,
+            "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/77FEA0C99A2824B61078DC4D0212A566.png",
+            "ticket": false,
+            "increase": false,
+            "stages": true,
+            "gifts": false,
+            "new": false
+          },
+          {
+            "product": "米家冰箱 对开门536L",
+            "color": "墨羽岩",
+            "version": "",
+            "price": 2199,
+            "oldPrice": 2499,
+            "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/77FEA0C99A2824B61078DC4D0212A566.png",
+            "ticket": false,
+            "increase": false,
+            "stages": true,
+            "gifts": false,
+            "new": false
+          },
+          {
+            "product": "米家冰箱 对开门536L",
+            "color": "墨羽岩",
+            "version": "",
+            "price": 2199,
+            "oldPrice": 2499,
+            "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/77FEA0C99A2824B61078DC4D0212A566.png",
+            "ticket": false,
+            "increase": false,
+            "stages": true,
+            "gifts": false,
+            "new": false
+          },
+          {
+            "product": "米家冰箱 对开门536L",
+            "color": "墨羽岩",
+            "version": "",
+            "price": 2199,
+            "oldPrice": 2499,
+            "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/77FEA0C99A2824B61078DC4D0212A566.png",
+            "ticket": false,
+            "increase": false,
+            "stages": true,
+            "gifts": false,
+            "new": false
+          },
+          {
+            "product": "米家冰箱 对开门536L",
+            "color": "墨羽岩",
+            "version": "",
+            "price": 2199,
+            "oldPrice": 2499,
+            "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/77FEA0C99A2824B61078DC4D0212A566.png",
+            "ticket": false,
+            "increase": false,
+            "stages": true,
+            "gifts": false,
+            "new": false
+          },
+          {
+            "product": "米家冰箱 对开门536L",
+            "color": "墨羽岩",
+            "version": "",
+            "price": 2199,
+            "oldPrice": 2499,
+            "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/77FEA0C99A2824B61078DC4D0212A566.png",
+            "ticket": false,
+            "increase": false,
+            "stages": true,
+            "gifts": false,
+            "new": false
+          },
+          {
+            "product": "米家冰箱 对开门536L",
+            "color": "墨羽岩",
+            "version": "",
+            "price": 2199,
+            "oldPrice": 2499,
+            "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/77FEA0C99A2824B61078DC4D0212A566.png",
+            "ticket": false,
+            "increase": false,
+            "stages": true,
+            "gifts": false,
+            "new": false
+          },
+          {
+            "product": "米家冰箱 对开门536L",
+            "color": "墨羽岩",
+            "version": "",
+            "price": 2199,
+            "oldPrice": 2499,
+            "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/77FEA0C99A2824B61078DC4D0212A566.png",
+            "ticket": false,
+            "increase": false,
+            "stages": true,
+            "gifts": false,
+            "new": false
+          },
+          {
+            "product": "米家冰箱 对开门536L",
+            "color": "墨羽岩",
+            "version": "",
+            "price": 2199,
+            "oldPrice": 2499,
+            "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/77FEA0C99A2824B61078DC4D0212A566.png",
+            "ticket": false,
+            "increase": false,
+            "stages": true,
+            "gifts": false,
+            "new": false
+          }
+        ]
+      ]
+    },
+    {
+      "type": "电视",
+      "products": [
+        [
+          {
+            "product": "Redmi 智能电视X55 2022",
+            "color": "墨羽岩",
+            "version": "",
+            "price": 2299,
+            "oldPrice": 2999,
+            "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1634637813.21863849.jpg",
+            "ticket": false,
+            "increase": true,
+            "stages": true,
+            "gifts": false,
+            "new": false
+          },
+          {
+            "product": "Redmi 智能电视X55 2022",
+            "color": "墨羽岩",
+            "version": "",
+            "price": 2299,
+            "oldPrice": 2999,
+            "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1634637813.21863849.jpg",
+            "ticket": false,
+            "increase": true,
+            "stages": true,
+            "gifts": false,
+            "new": false
+          },
+          {
+            "product": "Redmi 智能电视X55 2022",
+            "color": "墨羽岩",
+            "version": "",
+            "price": 2299,
+            "oldPrice": 2999,
+            "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1634637813.21863849.jpg",
+            "ticket": false,
+            "increase": true,
+            "stages": true,
+            "gifts": false,
+            "new": false
+          },
+          {
+            "product": "Redmi 智能电视X55 2022",
+            "color": "墨羽岩",
+            "version": "",
+            "price": 2299,
+            "oldPrice": 2999,
+            "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1634637813.21863849.jpg",
+            "ticket": false,
+            "increase": true,
+            "stages": true,
+            "gifts": false,
+            "new": false
+          },
+          {
+            "product": "Redmi 智能电视X55 2022",
+            "color": "墨羽岩",
+            "version": "",
+            "price": 2299,
+            "oldPrice": 2999,
+            "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1634637813.21863849.jpg",
+            "ticket": false,
+            "increase": true,
+            "stages": true,
+            "gifts": false,
+            "new": false
+          },
+          {
+            "product": "Redmi 智能电视X55 2022",
+            "color": "墨羽岩",
+            "version": "",
+            "price": 2299,
+            "oldPrice": 2999,
+            "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1634637813.21863849.jpg",
+            "ticket": false,
+            "increase": true,
+            "stages": true,
+            "gifts": false,
+            "new": false
+          },
+          {
+            "product": "Redmi 智能电视X55 2022",
+            "color": "墨羽岩",
+            "version": "",
+            "price": 2299,
+            "oldPrice": 2999,
+            "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1634637813.21863849.jpg",
+            "ticket": false,
+            "increase": true,
+            "stages": true,
+            "gifts": false,
+            "new": false
+          },
+          {
+            "product": "Redmi 智能电视X55 2022",
+            "color": "墨羽岩",
+            "version": "",
+            "price": 2299,
+            "oldPrice": 2999,
+            "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1634637813.21863849.jpg",
+            "ticket": false,
+            "increase": true,
+            "stages": true,
+            "gifts": false,
+            "new": false
+          },
+          {
+            "product": "Redmi 智能电视X55 2022",
+            "color": "墨羽岩",
+            "version": "",
+            "price": 2299,
+            "oldPrice": 2999,
+            "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1634637813.21863849.jpg",
+            "ticket": false,
+            "increase": true,
+            "stages": true,
+            "gifts": false,
+            "new": false
+          },
+          {
+            "product": "Redmi 智能电视X55 2022",
+            "color": "墨羽岩",
+            "version": "",
+            "price": 2299,
+            "oldPrice": 2999,
+            "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1634637813.21863849.jpg",
+            "ticket": false,
+            "increase": true,
+            "stages": true,
+            "gifts": false,
+            "new": false
+          },
+          {
+            "product": "Redmi 智能电视X55 2022",
+            "color": "墨羽岩",
+            "version": "",
+            "price": 2299,
+            "oldPrice": 2999,
+            "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1634637813.21863849.jpg",
+            "ticket": false,
+            "increase": true,
+            "stages": true,
+            "gifts": false,
+            "new": false
+          },
+          {
+            "product": "Redmi 智能电视X55 2022",
+            "color": "墨羽岩",
+            "version": "",
+            "price": 2299,
+            "oldPrice": 2999,
+            "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1634637813.21863849.jpg",
+            "ticket": false,
+            "increase": true,
+            "stages": true,
+            "gifts": false,
+            "new": false
+          },
+          {
+            "product": "Redmi 智能电视X55 2022",
+            "color": "墨羽岩",
+            "version": "",
+            "price": 2299,
+            "oldPrice": 2999,
+            "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1634637813.21863849.jpg",
+            "ticket": false,
+            "increase": true,
+            "stages": true,
+            "gifts": false,
+            "new": false
+          },
+          {
+            "product": "Redmi 智能电视X55 2022",
+            "color": "墨羽岩",
+            "version": "",
+            "price": 2299,
+            "oldPrice": 2999,
+            "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1634637813.21863849.jpg",
+            "ticket": false,
+            "increase": true,
+            "stages": true,
+            "gifts": false,
+            "new": false
+          },
+          {
+            "product": "Redmi 智能电视X55 2022",
+            "color": "墨羽岩",
+            "version": "",
+            "price": 2299,
+            "oldPrice": 2999,
+            "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1634637813.21863849.jpg",
+            "ticket": false,
+            "increase": true,
+            "stages": true,
+            "gifts": false,
+            "new": false
+          },
+          {
+            "product": "Redmi 智能电视X55 2022",
+            "color": "墨羽岩",
+            "version": "",
+            "price": 2299,
+            "oldPrice": 2999,
+            "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1634637813.21863849.jpg",
+            "ticket": false,
+            "increase": true,
+            "stages": true,
+            "gifts": false,
+            "new": false
+          },
+          {
+            "product": "Redmi 智能电视X55 2022",
+            "color": "墨羽岩",
+            "version": "",
+            "price": 2299,
+            "oldPrice": 2999,
+            "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1634637813.21863849.jpg",
+            "ticket": false,
+            "increase": true,
+            "stages": true,
+            "gifts": false,
+            "new": false
+          },
+          {
+            "product": "Redmi 智能电视X55 2022",
+            "color": "墨羽岩",
+            "version": "",
+            "price": 2299,
+            "oldPrice": 2999,
+            "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1634637813.21863849.jpg",
+            "ticket": false,
+            "increase": true,
+            "stages": true,
+            "gifts": false,
+            "new": false
+          },
+          {
+            "product": "Redmi 智能电视X55 2022",
+            "color": "墨羽岩",
+            "version": "",
+            "price": 2299,
+            "oldPrice": 2999,
+            "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1634637813.21863849.jpg",
+            "ticket": false,
+            "increase": true,
+            "stages": true,
+            "gifts": false,
+            "new": false
+          },
+          {
+            "product": "Redmi 智能电视X55 2022",
+            "color": "墨羽岩",
+            "version": "",
+            "price": 2299,
+            "oldPrice": 2999,
+            "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1634637813.21863849.jpg",
+            "ticket": false,
+            "increase": true,
+            "stages": true,
+            "gifts": false,
+            "new": false
+          },
+          {
+            "product": "Redmi 智能电视X55 2022",
+            "color": "墨羽岩",
+            "version": "",
+            "price": 2299,
+            "oldPrice": 2999,
+            "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1634637813.21863849.jpg",
+            "ticket": false,
+            "increase": true,
+            "stages": true,
+            "gifts": false,
+            "new": false
+          },
+          {
+            "product": "Redmi 智能电视X55 2022",
+            "color": "墨羽岩",
+            "version": "",
+            "price": 2299,
+            "oldPrice": 2999,
+            "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1634637813.21863849.jpg",
+            "ticket": false,
+            "increase": true,
+            "stages": true,
+            "gifts": false,
+            "new": false
+          }
+        ]
+      ]
+    },
+    {
+      "type": "洗衣机",
+      "products": [
+        [
+          {
+            "product": "米家直驱洗烘一体机",
+            "color": "钛金灰",
+            "version": "",
+            "price": 1999,
+            "oldPrice": 2499,
+            "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1660924790.56562133.jpg",
+            "ticket": false,
+            "increase": false,
+            "stages": true,
+            "gifts": false,
+            "new": true
+          },
+          {
+            "product": "米家直驱洗烘一体机",
+            "color": "钛金灰",
+            "version": "",
+            "price": 1999,
+            "oldPrice": 2499,
+            "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1660924790.56562133.jpg",
+            "ticket": false,
+            "increase": false,
+            "stages": true,
+            "gifts": false,
+            "new": true
+          },
+          {
+            "product": "米家直驱洗烘一体机",
+            "color": "钛金灰",
+            "version": "",
+            "price": 1999,
+            "oldPrice": 2499,
+            "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1660924790.56562133.jpg",
+            "ticket": false,
+            "increase": false,
+            "stages": true,
+            "gifts": false,
+            "new": true
+          },
+          {
+            "product": "米家直驱洗烘一体机",
+            "color": "钛金灰",
+            "version": "",
+            "price": 1999,
+            "oldPrice": 2499,
+            "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1660924790.56562133.jpg",
+            "ticket": false,
+            "increase": false,
+            "stages": true,
+            "gifts": false,
+            "new": true
+          },
+          {
+            "product": "米家直驱洗烘一体机",
+            "color": "钛金灰",
+            "version": "",
+            "price": 1999,
+            "oldPrice": 2499,
+            "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1660924790.56562133.jpg",
+            "ticket": false,
+            "increase": false,
+            "stages": true,
+            "gifts": false,
+            "new": true
+          },
+          {
+            "product": "米家直驱洗烘一体机",
+            "color": "钛金灰",
+            "version": "",
+            "price": 1999,
+            "oldPrice": 2499,
+            "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1660924790.56562133.jpg",
+            "ticket": false,
+            "increase": false,
+            "stages": true,
+            "gifts": false,
+            "new": true
+          },
+          {
+            "product": "米家直驱洗烘一体机",
+            "color": "钛金灰",
+            "version": "",
+            "price": 1999,
+            "oldPrice": 2499,
+            "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1660924790.56562133.jpg",
+            "ticket": false,
+            "increase": false,
+            "stages": true,
+            "gifts": false,
+            "new": true
+          },
+          {
+            "product": "米家直驱洗烘一体机",
+            "color": "钛金灰",
+            "version": "",
+            "price": 1999,
+            "oldPrice": 2499,
+            "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1660924790.56562133.jpg",
+            "ticket": false,
+            "increase": false,
+            "stages": true,
+            "gifts": false,
+            "new": true
+          },
+          {
+            "product": "米家直驱洗烘一体机",
+            "color": "钛金灰",
+            "version": "",
+            "price": 1999,
+            "oldPrice": 2499,
+            "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1660924790.56562133.jpg",
+            "ticket": false,
+            "increase": false,
+            "stages": true,
+            "gifts": false,
+            "new": true
+          },
+          {
+            "product": "米家直驱洗烘一体机",
+            "color": "钛金灰",
+            "version": "",
+            "price": 1999,
+            "oldPrice": 2499,
+            "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1660924790.56562133.jpg",
+            "ticket": false,
+            "increase": false,
+            "stages": true,
+            "gifts": false,
+            "new": true
+          },
+          {
+            "product": "米家直驱洗烘一体机",
+            "color": "钛金灰",
+            "version": "",
+            "price": 1999,
+            "oldPrice": 2499,
+            "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1660924790.56562133.jpg",
+            "ticket": false,
+            "increase": false,
+            "stages": true,
+            "gifts": false,
+            "new": true
+          },
+          {
+            "product": "米家直驱洗烘一体机",
+            "color": "钛金灰",
+            "version": "",
+            "price": 1999,
+            "oldPrice": 2499,
+            "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1660924790.56562133.jpg",
+            "ticket": false,
+            "increase": false,
+            "stages": true,
+            "gifts": false,
+            "new": true
+          },
+          {
+            "product": "米家直驱洗烘一体机",
+            "color": "钛金灰",
+            "version": "",
+            "price": 1999,
+            "oldPrice": 2499,
+            "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1660924790.56562133.jpg",
+            "ticket": false,
+            "increase": false,
+            "stages": true,
+            "gifts": false,
+            "new": true
+          },
+          {
+            "product": "米家直驱洗烘一体机",
+            "color": "钛金灰",
+            "version": "",
+            "price": 1999,
+            "oldPrice": 2499,
+            "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1660924790.56562133.jpg",
+            "ticket": false,
+            "increase": false,
+            "stages": true,
+            "gifts": false,
+            "new": true
+          },
+          {
+            "product": "米家直驱洗烘一体机",
+            "color": "钛金灰",
+            "version": "",
+            "price": 1999,
+            "oldPrice": 2499,
+            "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1660924790.56562133.jpg",
+            "ticket": false,
+            "increase": false,
+            "stages": true,
+            "gifts": false,
+            "new": true
+          }
+        ]
+      ]
+    }
+  ],
+  "userNav": [
+    {
+      "title": "订单中心",
+      "children": [
+        {
+          "name": "我的订单",
+          "path": "/shop/user/order",
+          "nav": [
+            {
+              "title": "全部有效订单",
+              "index": 1
+            },
+            {
+              "title": "待支付",
+              "index": 2
+            },
+            {
+              "title": "待收货",
+              "index": 3
+            },
+            {
+              "title": "订单回收站",
+              "index": 4
+            }
+          ]
+        },
+        {
+          "name": "评价晒单",
+          "path": "/shop/user/comment"
+        },
+        {
+          "name": "话费充值订单",
+          "path": "/shop/user/calls"
+        },
+        {
+          "name": "以旧换新订单",
+          "path": "/shop/change"
+        }
+      ]
+    },
+    {
+      "title": "个人中心",
+      "children": [
+        {
+          "name": "我的个人中心",
+          "path": "/shop/user/myCenter"
+        },
+        {
+          "name": "消息通知",
+          "path": "/shop/user/message",
+          "nav": [
+            {
+              "title": "全部消息",
+              "index": 1
+            },
+            {
+              "title": "物流动态",
+              "index": 2
+            },
+            {
+              "title": "特惠活动",
+              "index": 3
+            }
+          ]
+        },
+        {
+          "name": "购买资格",
+          "path": "/shop/user/purchase",
+          "nav": [
+            {
+              "title": "未使用",
+              "index": 1
+            },
+            {
+              "title": "已使用/已过期",
+              "index": 2
+            }
+          ]
+        },
+        {
+          "name": "现金账户",
+          "path": "/shop/user/catch"
+        },
+        {
+          "name": "小米礼品卡",
+          "path": "/shop/user/gifts",
+          "nav": [
+            {
+              "title": "绑定礼品卡卡",
+              "index": 1
+            },
+            {
+              "title": "我的礼品",
+              "index": 2
+            },
+            {
+              "title": "常见问题",
+              "index": 3
+            }
+          ]
+        },
+        {
+          "name": "现金券",
+          "path": "/shop/user/tickts",
+          "nav": [
+            {
+              "title": "我的现金券",
+              "index": 1
+            },
+            {
+              "title": "常见问题",
+              "index": 2
+            }
+          ]
+        },
+        {
+          "name": "喜欢的商品",
+          "path": "/shop/user/like"
+        },
+        {
+          "name": "优惠券",
+          "path": "/shop/user/coupons",
+          "nav": [
+            {
+              "title": "未使用",
+              "index": 1
+            },
+            {
+              "title": "已使用",
+              "index": 2
+            },
+            {
+              "title": "已失效",
+              "index": 3
+            },
+            {
+              "title": "兑换优惠券",
+              "index": 4
+            }
+          ]
+        },
+        {
+          "name": "收货地址",
+          "path": "/shop/user/location"
+        },
+        {
+          "name": "红包",
+          "path": "/shop/user/red",
+          "nav": [
+            {
+              "title": "未使用",
+              "index": 1
+            },
+            {
+              "title": "已使用/已失效",
+              "index": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "售后服务",
+      "children": [
+        {
+          "name": "服务记录",
+          "path": "/shop/user/servers"
+        },
+        {
+          "name": "申请服务",
+          "path": "/shop/user/application"
+        },
+        {
+          "name": "领取快递报销",
+          "path": "/shop/user/delivery"
+        }
+      ]
+    },
+    {
+      "title": "账户管理",
+      "children": [
+        {
+          "name": "个人信息",
+          "path": "/shop/user/infomation",
+          "href": "https://account.xiaomi.com/fe/service/account?cUserId=MobeBh9nndWIs4wnOk_qB4giGIo&userId=2718372159&_locale=zh_CN"
+        },
+        {
+          "name": "修改密码",
+          "path": "/shop/user/pass",
+          "href": "https://account.xiaomi.com/fe/service/account?cUserId=MobeBh9nndWIs4wnOk_qB4giGIo&userId=2718372159&_locale=zh_CN#service=setPassword"
+        },
+        {
+          "name": "注销服务",
+          "path": "/shop/user/logout",
+          "href": "https://m.mi.com/userdelete?from=pc"
+        }
+      ]
+    }
+  ],
+  "changeNewImg": [
+    "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/8e86d6f2b409ca0fd71e4a4fcb8d1ea5.jpg",
+    "https://i8.mifile.cn/b2c-mimall-media/d2ca5c790525f13d2f1c4e377291e046.jpg",
+    "https://i8.mifile.cn/b2c-mimall-media/ed9e44777687a54c2b480180f69ffbd2.jpg",
+    "https://i8.mifile.cn/b2c-mimall-media/9756804871a0748f42a48c17d5c39af2.jpg",
+    "https://i8.mifile.cn/b2c-mimall-media/f3449ffca188a6a6b65f252bc0167c3c.png",
+    "https://i8.mifile.cn/b2c-mimall-media/4bfa3aca664b905bfe2c5fd856ef1e37.jpg",
+    "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/62a89997e238bdd3caaec733b10c88cb.jpeg",
+    "https://i8.mifile.cn/b2c-mimall-media/ab6f0417032f0a6ba78b6f1a51835659.jpg",
+    "https://i8.mifile.cn/b2c-mimall-media/af7a62393aeb5dd4c19116a25de61202.jpg",
+    "https://i8.mifile.cn/b2c-mimall-media/f0cc50823293f2dfed234f2ee45ea3f7.jpg",
+    "https://i8.mifile.cn/b2c-mimall-media/5c34cdc343c6c622ff554ecdf1941439.jpg",
+    "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/125f7cc49e7cbcceebb011e1a52a2157.jpg",
+    "https://i8.mifile.cn/b2c-mimall-media/4d5979196fe0c70871bcc6693613a37c.jpg",
+    "https://i8.mifile.cn/b2c-mimall-media/1e6646ce3d2001d7ef9a38b7798deb31.jpg",
+    "https://i8.mifile.cn/b2c-mimall-media/8e0c09842405a7881175c22aa25b1d4b.jpg"
+  ],
+  "citys": [
+    {
+      "id": "0",
+      "name": "张子豪",
+      "phone": "15273988957",
+      "location": "湖南省长沙市",
+      "detailLocation": "湖南都市职业学院",
+      "label": "学校"
+    }
+  ],
+  "youLike": [
+    {
+      "name": "Xiaomi 12S Pro",
       "price": "4599元",
-      "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1656916237.95638090.png",
-      "id": 0.6578009489817129
+      "good": "20.1万",
+      "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1656916237.95638090.png"
+    },
+    {
+      "name": "Xiaomi 12S Pro",
+      "price": "4599元",
+      "good": "20.1万",
+      "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1656916237.95638090.png"
+    },
+    {
+      "name": "Xiaomi 12S Pro",
+      "price": "4599元",
+      "good": "20.1万",
+      "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1656916237.95638090.png"
+    },
+    {
+      "name": "Xiaomi 12S Pro",
+      "price": "4599元",
+      "good": "20.1万",
+      "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1656916237.95638090.png"
+    },
+    {
+      "name": "Xiaomi 12S Pro",
+      "price": "4599元",
+      "good": "20.1万",
+      "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1656916237.95638090.png"
+    },
+    {
+      "name": "Xiaomi 12S Pro",
+      "price": "4599元",
+      "good": "20.1万",
+      "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1656916237.95638090.png"
+    },
+    {
+      "name": "Xiaomi 12S Pro",
+      "price": "4599元",
+      "good": "20.1万",
+      "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1656916237.95638090.png"
+    },
+    {
+      "name": "Xiaomi 12S Pro",
+      "price": "4599元",
+      "good": "20.1万",
+      "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1656916237.95638090.png"
+    },
+    {
+      "name": "Xiaomi 12S Pro",
+      "price": "4599元",
+      "good": "20.1万",
+      "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1656916237.95638090.png"
+    },
+    {
+      "name": "Xiaomi 12S Pro",
+      "price": "4599元",
+      "good": "20.1万",
+      "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1656916237.95638090.png"
+    },
+    {
+      "name": "Xiaomi 12S Pro",
+      "price": "4599元",
+      "good": "20.1万",
+      "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1656916237.95638090.png"
+    },
+    {
+      "name": "Xiaomi 12S Pro",
+      "price": "4599元",
+      "good": "20.1万",
+      "img": "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1656916237.95638090.png"
     }
   ]
 }

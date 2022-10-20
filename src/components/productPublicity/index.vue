@@ -17,7 +17,7 @@
         </p>
       </div>
       <!-- 只有一个菜单时显示 -->
-      <p class="normal" v-show="titleNum">
+      <p class="normal" v-show="titleNum" @click="seeMore">
         <font>查看更多</font>
         <i class="fa fa-chevron-right" aria-hidden="true"></i>
       </p>
@@ -38,7 +38,7 @@
       </ul>
       <ul class="product_container_right">
         <!-- 大展示框 -->
-        <li v-for="item in curProducts" :key="item.id">
+        <li v-for="item in curProducts" :key="item.id" @click="buy">
           <img :src="item.img" width="160px" height="160px" />
           <h3>{{ item.name }}</h3>
           <p class="desc">{{ item.explain }}</p>
@@ -49,7 +49,7 @@
         </li>
         <div class="more">
           <!-- 小宣传图 -->
-          <li class="small_part" v-show="smallProduct.show">
+          <li class="small_part" v-show="smallProduct.show" @click="buy">
             <img :src="smallProduct.data.img" width="80px" height="80px" />
             <h3>{{ smallProduct.data.name }}</h3>
             <p class="price">
@@ -57,7 +57,7 @@
             </p>
           </li>
           <!-- 浏览更多 -->
-          <li class="see_more" v-show="showMore.show">
+          <li class="see_more" v-show="showMore.show" @click="seeMore">
             <p>浏览更多</p>
             <small>{{ showMore.data }}</small>
             <i class="fa fa-arrow-right" aria-hidden="true"></i>
@@ -167,6 +167,24 @@ export default {
         show: false,
       };
     },
+    // 去购买页面
+    buy(){
+      this.$router.push({
+        path:"/shop/buy",
+        query:{
+          product:this.p
+        }
+      })
+    },
+    // 查看更多
+    seeMore(){
+      this.$router.push({
+        path:"/shop/search",
+        query:{
+          product:this.type
+        }
+      })
+    }
   },
   watch: {
     curType(newvalue) {
@@ -177,7 +195,7 @@ export default {
     },
   },
   // 接收原始数据
-  props: ["data"],
+  props: ["data","p","type"],
 };
 </script>
 

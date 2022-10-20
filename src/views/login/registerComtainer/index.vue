@@ -72,6 +72,9 @@
         <button @click="showS = false">取消</button>
       </p>
     </div>
+    <div class="s a" v-show="error">
+      服务器维护中,暂时无法注册
+    </div>
   </div>
 </template>
   
@@ -95,7 +98,8 @@ export default {
       },
       agree:false,
       warning:false,
-      showS:false
+      showS:false,
+      error:false
     };
   },
   computed: {
@@ -149,12 +153,16 @@ export default {
           this.warning = false
         },3000)
         }else{
-          let id = Math.random()
-          let data = {
-            id:id,
-            ...this.user
-          }
-          this.addPerson(data)
+          this.error = true
+          setTimeout(()=>{
+            this.error = false
+          },2000)
+          // let id = Math.random()
+          // let data = {
+          //   id:id,
+          //   ...this.user
+          // }
+          // this.addPerson(data)
         }
         
       }else{
@@ -374,6 +382,9 @@ export default {
         }
       }
     }
+  }
+  .a{
+    padding:30px 50px;
   }
 }
 </style>

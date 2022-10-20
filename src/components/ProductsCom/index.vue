@@ -2,33 +2,35 @@
   <div class="product_main">
     <div class="product_main_container">
       <!-- 中间宣传广告 -->
-      <img :src="publicImgs[0].img" alt="" class="product1" />
+      <img :src="publicImgs[0].img" alt="" class="product1" @click="toBuy(publicImgs[0].name)" />
       <!-- 手机 -->
-      <productPublicityCom :data="mobile_phone_data"></productPublicityCom>
+      <productPublicityCom :data="mobile_phone_data" p="Xiaomi MIX Fold 2" type="手机"></productPublicityCom>
       <!-- 智能穿戴 -->
-      <productPublicityCom :data="technology_wear_data"></productPublicityCom>
+      <productPublicityCom :data="technology_wear_data" p="Redmi K50 至尊版" type="手机"></productPublicityCom>
       <!-- 笔记本 平板 -->
-      <productPublicityCom :data="computer_ipad_data"></productPublicityCom>
+      <productPublicityCom :data="computer_ipad_data" p="Xiaomi Book Pro 14 锐龙版" type="电脑"></productPublicityCom>
       <!-- 家电 -->
-      <productPublicityCom :data="home_appliances_data"></productPublicityCom>
+      <productPublicityCom :data="home_appliances_data" p="Redmi 智能电视X55 2022" type="电视"></productPublicityCom>
       <!-- 中间宣传广告 -->
-      <img :src="publicImgs[1].img" alt="" class="product1" />
+      <img :src="publicImgs[1].img" alt="" class="product1" @click="toBuy(publicImgs[1].name)"/>
       <!-- 生活电器 -->
       <productPublicityCom
         :data="domestic_appliance_data"
+        p="米家扫地机器人1T"
+        type="洗衣机"
       ></productPublicityCom>
       <!-- 中间宣传广告 -->
-      <img :src="publicImgs[2].img" alt="" class="product1" />
+      <img :src="publicImgs[2].img" alt="" class="product1" @click="toBuy(publicImgs[2].name)"/>
       <!-- 厨房电器 -->
-      <productPublicityCom :data="kitchen_appliances_data"></productPublicityCom>
+      <productPublicityCom :data="kitchen_appliances_data" p="米家扫地机器人1T" type="冰箱"></productPublicityCom>
       <!-- 智能家居 -->
-      <productPublicityCom :data="technology_home_data"></productPublicityCom>
+      <productPublicityCom :data="technology_home_data" p="米家扫地机器人1T" type="洗衣机"></productPublicityCom>
       <!-- 运动出行 -->
-      <productPublicityCom :data="sport_data"></productPublicityCom>
+      <productPublicityCom :data="sport_data" p="米家扫地机器人1T" type="洗衣机"></productPublicityCom>
       <!-- 中间宣传广告 -->
-      <img :src="publicImgs[3].img" alt="" class="product1" />
+      <img :src="publicImgs[3].img" alt="" class="product1" @click="toBuy(publicImgs[3].name)"/>
       <!-- 日用百货 -->
-      <productPublicityCom :data="daily_necessities_data"></productPublicityCom>
+      <productPublicityCom :data="daily_necessities_data" p="米家扫地机器人1T" type="冰箱"></productPublicityCom>
       <!-- 视频 -->
       <VideoCom></VideoCom>
     </div>
@@ -75,6 +77,14 @@ export default {
       const { data } = await API();
       return data;
     },
+    toBuy(name){
+      this.$router.push({
+        path:"/shop/buy",
+        query:{
+          product:name
+        }
+      })
+    }
   },
   created() {
     // 获取商品原始数据

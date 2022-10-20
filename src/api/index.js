@@ -202,3 +202,49 @@ export const addProductAPI = (data)=>{
         data:data
     })
 }
+// 查询指定类型所有商品
+export const searchProductAPI = (keyword)=>{
+    return axios.request({
+        url:"search_database?type="+keyword
+    })
+}
+//获取个人中心导航栏数据
+export const userCenterNavAPI = ()=>{
+    return axios.request({
+        url:"userNav"
+    })
+}
+// 获取以旧换新页面图片
+export const changeNewsImgAPI = ()=>{
+    return axios.request({
+        url:"changeNewImg"
+    })
+}
+// 获取收货地址数据
+export const getLocationAPI = ()=>{
+    return axios.request({
+        url:"citys"
+    })
+}
+// 添加收货地址到数据库
+export const addLocationAPI = (data)=>{
+    return axios.request({
+        url:"citys",
+        method:"POST",
+        data:data
+    })
+}
+//修改收货地址到数据库
+export const editLocationAPI = (id,data)=>{
+    return axios.request({
+        url:'citys/'+id,
+        method:"PUT",
+        data:data
+    })
+}
+// 获取猜你喜欢组件数据
+export const getLikeAPI = ()=>{
+    return axios.request({
+        url:"youLike"
+    })
+}

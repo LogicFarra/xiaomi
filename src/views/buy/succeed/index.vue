@@ -14,12 +14,12 @@
       </div>
     </header>
     <div class="cutline"></div>
-    <RecommendCom></RecommendCom>
+    <YouLike title="购买该商品的人还购买了"></YouLike>
   </div>
 </template>
 
 <script>
-import RecommendCom from "../../../components/recommendCom/index.vue";
+import YouLike from "@/components/youLike/index.vue";
 export default {
     name: "shopSucceed",
     data() {
@@ -38,7 +38,7 @@ export default {
     mounted(){
         document.documentElement.scrollTop = 0
     },
-    components: { RecommendCom }
+    components: { YouLike }
 };
 </script>
 

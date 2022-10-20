@@ -65,7 +65,7 @@
       <ul class="box">
         <li class="col" v-for="item in curProducts" :key="item.index">
           <ul class="col_list">
-            <li v-for="item2 in item" :key="item2.id">
+            <li v-for="item2 in item" :key="item2.id" @click="toBuy">
               <img
                 :src="item2.img"
                 alt=""
@@ -99,7 +99,7 @@ export default {
         {index:4,class:''}
       ],
       products:[],    //导航栏所有信息  
-      curProducts:[[],[],[],[]],  //当前展示的导航栏子信息  
+      curProducts:[[],[],[],[]],  //当前展示的导航栏子信息
     };
   },
   methods: {
@@ -178,6 +178,15 @@ export default {
       this.curProducts[1] = cur.slice(6,12)
       this.curProducts[2] = cur.slice(12,18)
       this.curProducts[3] = cur.slice(18)
+    },
+    // 查看某商品
+    toBuy(){
+      this.$router.push({
+        path:"/shop/buy",
+        query:{
+          product:"Xiaomi 12S Pro"
+        }
+      })
     }
   },
   created() {
