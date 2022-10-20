@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunkxiaomi"]=self["webpackChunkxiaomi"]||[]).push([[345],{1345:function(u,e,n){n.r(e),n.d(e,{default:function(){return s}});var t=function(){var u=this,e=u._self._c;return e("h1",[u._v("logout")])},o=[],r={name:"userLogout"},a=r,i=n(1001),l=(0,i.Z)(a,t,o,!1,null,"a8d282be",null),s=l.exports}}]);
+//# sourceMappingURL=345.c251bb1f.js.map
